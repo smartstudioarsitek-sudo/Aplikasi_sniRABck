@@ -2,83 +2,121 @@ import pandas as pd
 import os
 import io
 
-def detect_header_row(file_path, keywords=["No", "Uraian", "Koefisien", "Harga Satuan", "UPAH", "Kode"]):
+def clean_currency(x):
     """
-    Mencari baris header yang sebenarnya dengan memindai 30 baris pertama.
+    Membersihkan format uang string 'Rp 100,000.00' menjadi float 100000.0
+    Menangani koma sebagai ribuan.
     """
+    if isinstance(x, (int, float)):
+        return x
+    if pd.isna(x) or x == '':
+        return 0.0
+    
+    # Ubah ke string, buang "Rp", buang spasi
+    s = str(x).replace('Rp', '').replace(' ', '').strip()
+    
+    # Hapus koma (pemisah ribuan format US) -> 100,000.00 jadi 100000.00
+    if ',' in s:
+        s = s.replace(',', '')
+    
     try:
-        # Gunakan encoding 'latin-1' atau 'cp1252' jika 'utf-8' gagal
+        return float(s)
+    except ValueError:
+        return 0.0
+
+def detect_separator(file_path):
+    """Mendeteksi apakah file pakai koma (,) atau titik koma (;)"""
+    try:
+        with open(file_path, 'r', encoding='latin-1', errors='replace') as f:
+            for _ in range(5): # Cek 5 baris pertama
+                line = f.readline()
+                if ';' in line: return ';'
+                if ',' in line: return ','
+    except:
+        pass
+    return ',' # Default
+
+def detect_header_row(file_path, separator):
+    """Mencari baris header yang mengandung kata kunci"""
+    keywords = ["No", "Uraian", "Koefisien", "Harga", "Kode", "Komponen"]
+    try:
         with open(file_path, 'r', encoding='latin-1', errors='replace') as f:
             for i in range(30):
                 line = f.readline()
-                # Hitung berapa keyword yang muncul
-                matches = sum(1 for k in keywords if k.lower() in line.lower())
-                # Jika baris ini punya minimal 2 kata kunci, atau ada kata 'Uraian' dan 'Satuan'
-                if matches >= 2: 
+                # Hitung kecocokan keyword
+                if sum(1 for k in keywords if k.lower() in line.lower()) >= 2:
                     return i
-    except Exception as e:
-        print(f"Warning scanning file {file_path}: {e}")
+    except:
+        pass
     return 0
 
 def ingest_analysis_file(file_path):
-    """
-    Membaca file CSV yang memiliki baris header tidak konsisten.
-    Menggunakan engine='python' untuk menghindari 'tokenizing data error'.
-    """
-    header_row = detect_header_row(file_path)
+    # 1. Deteksi Pemisah (Koma atau Titik Koma?)
+    sep = detect_separator(file_path)
+    
+    # 2. Cari baris Header
+    header_row = detect_header_row(file_path, separator=sep)
     
     try:
-        # PENTING: engine='python' lebih lambat tapi jauh lebih kuat menangani file 'kotor'
-        # on_bad_lines='skip' akan melewati baris yang rusak daripada membuat error
+        # 3. Baca File
         df = pd.read_csv(
             file_path, 
             header=header_row, 
+            sep=sep,  # Gunakan pemisah yang dideteksi
             engine='python', 
             on_bad_lines='skip',
-            encoding='latin-1' 
+            encoding='latin-1'
         )
     except Exception as e:
-        # Fallback jika gagal
-        return pd.DataFrame()
+        return pd.DataFrame() # Return kosong jika gagal total
 
-    # Standarisasi Nama Kolom
-    # Kita buat semua nama kolom jadi huruf kecil dan hapus spasi agar mudah dipanggil
-    df.columns = df.columns.astype(str).str.strip().str.lower()
+    # 4. Bersihkan Nama Kolom (Huruf kecil & tanpa spasi aneh)
+    df.columns = df.columns.astype(str).str.strip().str.lower().str.replace('\n', ' ')
     
-    # Mapping nama kolom dari berbagai variasi ke standar internal
+    # 5. Mapping Kamus Bahasa (Agar aplikasi mengerti bahasa file Anda)
     column_mapping = {
+        # Variasi Nama Barang
         'uraian': 'deskripsi',
         'uraian pekerjaan': 'deskripsi',
-        'item': 'deskripsi',
-        'upah - material - alat': 'deskripsi', # Khusus file Upah Bahan
+        'komponen': 'deskripsi', # Ditemukan di Upah Bahan.csv
+        'nama bahan': 'deskripsi',
+        
+        # Variasi Satuan
         'sat.': 'satuan',
         'satuan': 'satuan',
+        'unit': 'satuan',
+        
+        # Variasi Koefisien
         'koefisien': 'koefisien',
         'koef': 'koefisien',
+        
+        # Variasi Harga
         'harga satuan': 'harga_satuan',
-        'harga  satuan (rp)': 'harga_satuan',
         'harga satuan (rp)': 'harga_satuan',
-        'jumlah harga (rp)': 'total_harga'
+        'harga_dasar': 'harga_satuan', # Ditemukan di Upah Bahan.csv
+        'harga': 'harga_satuan',
+        
+        # Variasi Kategori
+        'kategori': 'kategori'
     }
     
-    # Rename kolom jika ditemukan
     df = df.rename(columns=column_mapping)
     
-    # Filter kolom sampah (Unnamed)
-    valid_cols = [c for c in df.columns if 'unnamed' not in c]
+    # 6. Bersihkan Data Angka (PENTING!)
+    if 'harga_satuan' in df.columns:
+        df['harga_satuan'] = df['harga_satuan'].apply(clean_currency)
+        
+    if 'koefisien' in df.columns:
+         df['koefisien'] = df['koefisien'].apply(clean_currency)
+
+    # 7. Validasi Akhir (Hapus kolom hantu)
+    valid_cols = [c for c in df.columns if 'unnamed' not in c and c != '']
     df = df[valid_cols]
 
-    # Hapus baris yang 'deskripsi'-nya kosong (biasanya baris total atau footer)
+    # Hapus baris kosong yang tidak punya deskripsi
     if 'deskripsi' in df.columns:
         df = df.dropna(subset=['deskripsi'])
-        # Hapus baris yang isinya cuma judul bab (misal "A. TENAGA KERJA")
-        # Ciri: Koefisien kosong
-        if 'koefisien' in df.columns:
-            # Kita pertahankan baris hanya jika dia punya koefisien (artinya dia komponen)
-            # ATAU jika ini file sumber daya (tidak punya koefisien tapi punya harga)
-            pass 
 
-    # Tambahkan metadata
     df['sumber_file'] = os.path.basename(file_path)
     
     return df
