@@ -1,0 +1,3215 @@
+﻿Kode;Komponen;Satuan;Harga_Dasar;Kategori
+L.01;Pekerja;OH;126000;Upah
+L.02;Tukang batu;OH;175000;Upah
+L.02;Tukang kayu;OH;175000;Upah
+L.02;Tukang besi;OH;175000;Upah
+L.02;Tukang cat;OH;175000;Upah
+L.02;Tukang pelitur;OH;175000;Upah
+L.02;Tukang pipa;OH;175000;Upah
+L.02;Tukang penganyam bronjong;OH;175000;Upah
+L.02;Tukang tebas;OH;175000;Upah
+L.02;Tukang las;OH;175000;Upah
+L.02;Tukang las geotextile;OH;175000;Upah
+L.02;Tukang listrik;OH;175000;Upah
+L.02;Tukang alumunium;OH;175000;Upah
+L.02;Tukang kaca;OH;175000;Upah
+L.02;Tukang erection;OH;175000;Upah
+L.02;Tukang tanam;OH;175000;Upah
+;Tukang Tanam ;OH ;175000;Upah
+;Kepala Tukang Tanam ;OH ;203000;Upah
+;Tukang pemelihara taman;OH ;175000;Upah
+;Tukang pemelihara taman (115% Pekerja);OH ;175000;Upah
+;Tukang gali;OH;175000;Upah
+;Tukang aspal;OH;175000;Upah
+L.03;Kepala tukang;OH;203000;Upah
+L.04;Mandor;OH;224000;Upah
+L.05;Juru ukur;OH;403000;Upah
+L.06;Pembantu juru ukur;OH;126000;Upah
+L.07;Mekanik alat berat;OH;250000;Upah
+L.08;Operator alat berat;OH;250000;Upah
+L.09;Pembantu operator alat berat;OH;126000;Upah
+L.10;Sopir;OH;250000;Upah
+L.11;Kenek;OH;126000;Upah
+;Administrasi bor;OH;126000;Upah
+;Ahli geologist;OH;1061666.667;Upah
+;Ahli topografi;OH;1061666.667;Upah
+;Crew driller;OH;126000;Upah
+;Driller;OH;250000;Upah
+;Juru gambar;OH;448500;Upah
+;Koordinator driller;OH;448500;Upah
+;Operator pompa;OH;250000;Upah
+;Pembantu driller;OH;126000;Upah
+;Pembantu mekanik alat berat;OH;126000;Upah
+;Supir kendaraan <  2 ton (termasuk sedan);OH;250000;Upah
+L.14.b;Tenaga Terampil Operator ;OH ;250000;Upah
+;Tenaga Ahli Muda ;OH ;801666.6667;Upah
+;;;;
+MATERIAL;;;;
+MATERIAL  TANAH DAN  BATUAN;;;;
+;Agregat kasar;m3;385000;Material
+;Agregar Kasar ;kg ;226.4705882;Material
+;Agg Pokok;m3;350000;Material
+;Agg Pengunci;m3;360000;Material
+;Agg Penutup;m3;370000;Material
+;Bata merah;buah;650;Material
+;Bata merah 5 x  11 x  22 cm (per m3);m3;590000;Material
+;Bata ringan;m3;703500;Material
+;Bata ringan t=10 cm;m3;685800;Material
+;Bata ringan tebal 10 cm;buah;11000;Material
+;Bata ringan tebal 20 cm;buah;20000;Material
+;Bata ringan tebal 7,5 cm;buah;8500;Material
+;Bata rooster;buah;15000;Material
+;Bata Berongga Uk. 12x11x24 ;buah ;15000;Material
+;Batu alam andesit  bakar;m²;179300;Material
+;Batu alam andesit  non bakar;m²;177500;Material
+;Batu belah (base camp - lokasi pekerjaan);m3;339861;Material
+;Batu belah (quarry - base camp);m3;235000;Material
+;Batu belah (quarry - lokasi pekerjaan);m3;286500;Material
+;Pasangan batu ukuran 20/50 t=40cm;m3;286500;Material
+;Fondasi pasangan batu;m3;286500;Material
+;Batu belah (quarry);m3;127500;Material
+;Batu candi;m²;152000;Material
+;Batu kali (quarry - base camp);m3;187400;Material
+;Batu kali (quarry);m3;142500;Material
+;Batu Muka ukuran 12x18 cm;m2;97500;Material
+;Batu ;m3;97500;Material
+;Batu paras;m3;125000;Material
+;Batu pecah;kg;210;Material
+;Batu pecah 3/5;m3;363800;Material
+;Batu pecah 5/7;m3;351800;Material
+;Batu putih;m²;123000;Material
+;Batu putih breksi;m²;117700;Material
+;Batu sikat;kg;6000;Material
+;Batu split 1/2;m3;450000;Material
+;Batu split 2/3;m3;450000;Material
+;Koral Beton;m3;352300;Material
+;Batu tempel hitam;m3;121600;Material
+;Fly ash;kg;600;Material
+;HB-10;buah;12000;Material
+;HB-15;buah;12000;Material
+;HB-20;buah;13000;Material
+;Kerikil;kg;210;Material
+;Kerikil ;m3;352300;Material
+;Koral bulat;m3;225000;Material
+;Pasir Beton;kg;300;Material
+;Pasir Beton;m3;370200;Material
+;Pasir beton (Base camp - lokasi pekerjaan);m3;422600;Material
+;Pasir beton (quarry - Base camp);m3;325200;Material
+;Pasir beton (quarry - lokasi pekerjaan);m3;370200;Material
+;Pasir beton (quarry);m3;170000;Material
+;Pasir pasang;m3;200000;Material
+;Pasir pasang (quarry - base camp);m3;200000;Material
+;Pasir pasang (quarry - lokasi pekerjaan);m3;295000;Material
+;Pasir pasang (quarry);m3;150000;Material
+;Pasir urug (quarry - base camp);m3;165500;Material
+;Pasir urug (quarry - lokasi pekerjaan);m3;254700;Material
+;Pasir Urug (quarry);m3;120000;Material
+;Urukan Pasir Uruk;m3;488180;Material
+;Serbuk batu granit;kg;12000;Material
+;Serbuk batu traso;kg;13000;Material
+;Sirtu (base camp - lokasi pekerjaan);m3;288700;Material
+;Sirtu (quarry - base camp);m3;184400;Material
+;Sirtu (quarry - lokasi pekerjaan);m3;261800;Material
+;Sirtu (quarry);m3;120000;Material
+;Tanah biasa (quarry - lokasi pekerjaan);m3;146900;Material
+;Tanah biasa (quarry);m3;44000;Material
+;Tanah liat  (quarry);m3;64500;Material
+;Tanah liat (quarry-lokasi pekerjaan);m3;160000;Material
+;Tanah padas  (quarry - lokasi pekerjaan);m3;163600;Material
+;Tanah padas  (quarry);m3;47500;Material
+;Tanah Pilihan (quarry - lokasi pekerjaan);m3;146900;Material
+;Tanah Pilihan (quarry);m3;48000;Material
+;Tanah Subur;m3;165000;Material
+MATERIAL KAYU DAN BAMBU;;;;Material
+;Bambu cerucuk Ø 10 cm panjang 600 cm;batang;17800;Material
+;Bambu cerucuk Ø 15 cm panjang 600 cm;batang;22600;Material
+;Bambu Ø 10 cm panjang 600 cm;batang;14800;Material
+;Bambu Ø 6 - 8 cm, pjg 6m;batang;12900;Material
+;Bambu panjang 4,5 m;batang;14500;Material
+;bambu panjang 2 meter;batang;7000;Material
+;Anyaman Bambu ;lembar ;50000;Material
+;Bilik bambu;m2;21000;Material
+;Blockboard tebal 18 mm;m2;410600;Material
+;Dolken kayu φ 8-10 panjang 400 cm;m';5000;Material
+;Dolken kayu φ 8-10 panjang 400 cm;batang;20000;Material
+;Kayu;m3;11950000;Material
+;Kayu Balok Borneo;M3;2700000;Material
+;Kayu balok 6/12 kelas I;m3;25000000;Material
+;Kayu balok 6/12 kelas II;m3;11950000;Material
+;Kayu balok kelas II ;M3;20000000;Material
+;Kayu balok 6/15 kelas I;m3;25000000;Material
+;Kayu balok 6/15 kelas II;m3;11950000;Material
+;Kayu balok 6/15 kelas II (batang);batang;314000;Material
+;Tiang kayu 8/12 kelas II tinggi 4m;m3;6500000;Material
+;Tiang kayu 5/7 kelas II tinggi 3m;m3;6500000;Material
+;Kaso 5/7;m3;6500000;Material
+;Kaso 5/7 kayu kelas II;m3;6500000;Material
+;Kayu kaso 5/7 kelas III;m3;3500000;Material
+;Kayu Meranti (papan);m³;6966600;Material
+;Papan Kayu ukuran 2/20 cm;m3;2500000;Material
+;Papan Cor ;m3;2500000;Material
+;Kayu papan 3/20 cm;m3;2825000;Material
+;Kayu papan kelas I;m3;26000000;Material
+;Kayu papan kelas II;m3;7500000;Material
+;Kayu papan kelas III;m3;5000000;Material
+;Kayu Papan tebal 9 mm;M3;4750000;Material
+;Kayu papan kelas III (m2);m2;160000;Material
+;Kayu sengon (balok);m3;4000000;Material
+;Kayu Sengon (papan);m³;3573600;Material
+;List kayu 2x4 cm;m3;6000000;Material
+;List kayu profil;m';5000;Material
+;List kayu profil kelas II;M;5500;Material
+;Multiplek tebal 4 mm;lembar;116700;Material
+;Multiplek tebal 9 mm;lembar;116700;Material
+;Multiplek tebal 12 mm;lembar;152600;Material
+;Multiplek tebal 18 mm;lembar;226600;Material
+;Perancah kayu;m3;2500000;Material
+;Phenol film 12mm;lembar;230000;Material
+;Pintu Double teakwood rangka kayu;m2;150000;Material
+;Pintu panel kayu lapis timbal uk. 1x2 m;unit;10000000;Material
+;Plywood 12 mm;lembar;167300;Material
+;Plywood 4 mm m3;m3;6298700;Material
+;Plywood 3 mm;lembar;62500;Material
+;Plywood 4 mm;lembar;75000;Material
+;Plywood 6 mm;lembar;84200;Material
+;Plywood 9 mm (120x240);lembar;127000;Material
+;Reng 2x3 cm;m3;8750000;Material
+;Reng 3x4 cm;m3;9302000;Material
+;Teakwood 4 mm (120x240);lembar;76300;Material
+;Teakwood 4 mm (90x210);lembar;65600;Material
+;Teakwood 9 mm (90x210);lembar;114000;Material
+;Tripleks  t=9mm;lembar;101200;Material
+;Veeneer tebal 2 mm;m2;150000;Material
+MATERIAL PIPA PVC DAN HDPE;;;;Material
+;Assesoris  PVC;m';5700;Material
+;Pipa HDPE 40/33 mm;m';13300;Material
+;"Pipa PVC  tipe D Ø 2""";m';23500;Material
+;"Pipa PVC AW Ø 1""";m';11250;Material
+;"PIPA PVC AW ; DN. 1""
+(25 mm) dan
+aksesoris";m';11500;Material
+;"Pipa PVC AW ; DN. 1""
+(25 mm) + fitting &
+aksesoris";m';11700;Material
+;"Pipa PVC AW Ø 1/2""";batang;27500;Material
+;"Pipa PVC AW Ø 1/2"" (m)";m';6875;Material
+;"PIPA PVC AW ; DN.
+1/2"" (15 mm) dan
+aksesoris";m';6900;Material
+;"Pipa PVC AW ; DN.
+1/2"" (15 mm) +
+fitting & aksesoris";m';7100;Material
+;"Pipa PVC AW Ø 10""";m';150000;Material
+;"Pipa PVC AW Ø 1-1/2""";m';20000;Material
+;"PIPA PVC AW ; DN. 1-
+1/2"" (40 mm) dan
+aksesoris";m';20500;Material
+;"Pipa PVC AW ; DN. 1-
+1/2"" (40 mm) +
+fitting & aksesoris";m';22000;Material
+;"Pipa PVC AW Ø 1-1/4""";m';18500;Material
+;"PIPA PVC AW ; DN. 1-
+1/4"" (32 mm) dan
+aksesoris";m';18900;Material
+;"Pipa PVC AW ; DN. 1-
+1/4"" (32 mm) +
+fitting & aksesoris";m';19000;Material
+;"Pipa PVC AW Ø 12""";m';177500;Material
+;"Pipa PVC AW ; DN. 12"" (300 mm) + fitting & aksesoris";m';179000;Material
+;"Pipa PVC AW Ø 14""";m';200000;Material
+;"Pipa PVC AW ; DN. 14"" (350 mm) + fitting & aksesoris";m';201000;Material
+;"Pipa PVC AW Ø 16""";m';233750;Material
+;"Pipa PVC AW ; DN. 16"" (400 mm) + fitting & aksesoris";m';234000;Material
+;"Pipa PVC AW Ø 2""";m';26000;Material
+;"PIPA PVC AW ; DN. 2""
+(50 mm) dan
+aksesoris";m';26500;Material
+;"Pipa PVC AW ; DN. 2"" (50 mm) + fitting & aksesoris";m';28000;Material
+;"Pipa PVC AW Ø 2-1/2""";m';33625;Material
+;"PIPA PVC AW ; DN. 2-
+1/2"" (65 mm) dan
+aksesoris";m';33900;Material
+;"Pipa PVC AW ; DN. 2-1/2"" (65 mm) + fitting & aksesoris";m';40000;Material
+;"Pipa PVC AW Ø 3""";m';51075;Material
+;"PIPA PVC AW ; DN. 3""
+(80 mm) dan
+aksesoris";m';51500;Material
+;"Pipa PVC AW ; DN. 3""
+(80 mm) + fitting &
+aksesoris";m';53000;Material
+;"Pipa PVC AW Ø 3/4""";batang;35000;Material
+;"Pipa PVC AW Ø 3/4"" (m)";m';8750;Material
+;"PIPA PVC AW ; DN.
+3/4"" (20 mm) dan
+aksesoris";m';8900;Material
+;"Pipa PVC AW ; DN.
+3/4"" (20 mm) +
+fitting & aksesoris";m';9300;Material
+;"Pipa PVC AW Ø 4""";m';72375;Material
+;"PIPA PVC AW ; DN. 4""
+(100 mm) dan
+aksesoris";m';72700;Material
+;"Pipa PVC AW ; DN. 4""
+(100 mm) + fitting &
+aksesoris";m';74000;Material
+;"Pipa PVC AW Ø 5""";m';100000;Material
+;"Pipa PVC AW ; DN. 5""
+(125 mm) + fitting &
+aksesoris";m';101000;Material
+;"Pipa PVC AW Ø 6""";m';107500;Material
+;"Pemasangan 1 m pipa PVC AW, DN. 6"" (150 mm)";m';108000;Material
+;"Pipa PVC AW Ø 8""";m';132500;Material
+;"Pipa PVC AW ; DN. 8""
+(200 mm) + fitting &
+aksesoris";m';133000;Material
+;"Pipa PVC D Ø 10""";m';232900;Material
+;"Pipa PVC D ; DN.
+10"" (250 mm) +
+fitting & aksesoris";m';233000;Material
+;"Pipa PVC AW ; DN.
+10"" (250 mm) +
+fitting & aksesoris";m';232000;Material
+;"Pipa PVC D Ø 1-1/2""";m';11175;Material
+;"Pipa PVC D ; DN. 1-1/2"" (40 mm) + fitting & aksesoris";m';12000;Material
+;"Pipa PVC D Ø 1-1/4""";m';10000;Material
+;"Pipa PVC D ; DN. 1-1/4"" (32 mm) + fitting & aksesoris";m';11000;Material
+;"Pipa PVC D Ø 12""";m';319750;Material
+;"Pipa PVC D ; DN.
+12"" (300 mm) +
+fitting & aksesoris";m';320000;Material
+;"Pipa PVC D Ø 14""";m';325000;Material
+;"Pipa PVC D ; DN.
+14"" (350 mm) +
+fitting & aksesoris";m';323000;Material
+;"Pipa PVC D Ø 16""";m';362500;Material
+;"Pipa PVC D ; DN.
+16"" (400 mm) +
+fitting & aksesoris";m';363000;Material
+;"Pipa PVC D Ø 2""";m';14750;Material
+;"Pipa PVC D ; DN. 2"" (50 mm) + fitting & aksesoris";m';15000;Material
+;"Pipa PVC D Ø 2-1/2""";m';20625;Material
+;"Pipa PVC D ; DN.
+2-1/2"" (65 mm) +
+fitting & aksesoris";m';21000;Material
+;"Pipa PVC D Ø 3""";m';28600;Material
+;"Pipa PVC D ; DN.
+3"" (80 mm) + fitting &
+aksesoris";m';29000;Material
+;"Pipa PVC D Ø 4""";m';39575;Material
+;"Pipa PVC D ; DN. 4"" (100 mm) + fitting & aksesoris";m';40000;Material
+;"Pipa PVC D Ø 5""";m';63200;Material
+;"Pipa PVC D ; DN. 5"" (125 mm) + fitting & aksesoris";m';64000;Material
+;"Pipa PVC D Ø 6""";m';79775;Material
+;"Pipa PVC D ; DN. 6"" (150 mm) + fitting & aksesoris";m';80000;Material
+;"Pipa PVC D Ø 8""";m';139575;Material
+;"Pipa PVC D ; DN. 8"" (200 mm) + fitting & aksesoris";m';140000;Material
+;"Pipa PVC dia. 1""";m';11250;Material
+;"Pipa PVC dia. 2""";m';26000;Material
+;"Pipa Tembaga B280 1/4""";m';34300;Material
+;Duct Tape ;gulung ;9050;Material
+;"Pipa Tembaga B280 3/8""";m';45300;Material
+;"Pipa Tembaga B280 1/2""";m';46400;Material
+;"Pipa Tembaga B280 5/8""";m';101600;Material
+;"Pipa Tembaga B280 3/4""";m';122700;Material
+;"Pipa Tembaga B280 7/8""";m';351600;Material
+;"Pipa Tembaga B280 1""";m';370000;Material
+;"Pipa Tembaga B280 1-1/8""";m';375000;Material
+;"Pipa Tembaga B280 1-3/8""";m';380000;Material
+;"Pipa Tembaga B280 1-5/8""";m';290000;Material
+;PRV SET dia. 50 mm dan aksesoris;unit ;6131000;Material
+;PRV SET dia. 65 mm dan aksesoris;unit ;8397000;Material
+;PRV SET dia. 80 mm dan aksesoris;unit ;8550000;Material
+;PRV SET dia. 100 mm dan aksesoris;unit ;14250000;Material
+;PRV SET dia. 150 mm dan aksesoris;unit ;14500000;Material
+;PRV SET dia. 200 mm dan aksesoris;unit ;15500000;Material
+;MCV Set dia. 80 mm;unit ;20500000;Material
+;MCV Set dia. 100 mm;unit ;20900000;Material
+;MCV Set dia. 150 mm;unit ;30300000;Material
+;BCV Set dia. 50 mm;set ;1700000;Material
+;Flow Switch dia. 50 mm;buah ;83000;Material
+;Sigh Glass ;buah ;85000;Material
+;Flow Switch ;buah ;104000;Material
+;Test Drain Valve ;buah ;750000;Material
+;Coupling 1 set ;set ;115000;Material
+;Temper Switch ;buah ;700000;Material
+;BCV Set dia. 65 mm;set ;1900000;Material
+;BCV Set dia. 80 mm;set ;2100000;Material
+;BCV Set dia. 100 mm;set ;2400000;Material
+;BCV Set dia. 150 mm;set ;2600000;Material
+;Automatic Air Vent  dia. 50 mm;unit ;635000;Material
+;Automatic Air Vent  dia. 80 mm;unit;766500;Material
+;Automatic Air Vent  dia. 100 mm;unit ;980000;Material
+;Automatic Air Vent  dia. 150 mm;unit;1150000;Material
+;Flow Meter Analog dia. 100 mm;unit ;1300000;Material
+;Flow Meter Analog dia. 200 mm;unit ;1500000;Material
+;"Landing Velve 2,5""";unit ;1259000;Material
+;Orifice Plate dia. 25 mm;unit ;1500000;Material
+;Sprinkler Head Pendant dan Aksesoris ;unit ;85000;Material
+;Sprinkler Head Upright dan Aksesoris ;unit ;82900;Material
+;Hydrant Pillar dan Aksesoris ;unit ;3750000;Material
+;Indoor Hydrant Box dan Aksesoris ;unit ;1200000;Material
+;Outdoor Hydrant Box dan Aksesoris ;unit ;1700000;Material
+;Siamesse Connection dan Aksesoris ;unit ;2200000;Material
+;Fire Extinguisher 3 kg  dan Aksesoris ;Unit ;171500;Material
+;Fire Extinguisher 5 kg  dan Aksesoris ;unit;227900;Material
+;Fire Extinguisher 25 kg  dan Aksesoris ;unit ;1900000;Material
+;Jockey Fire Pump Vertical Multi Stage 25 USGPM ;unit ;7400000;Material
+;Main Fire Pump Centrifugal  End Suction 1.000 USGPM ;unit ;10000000;Material
+;Diesel Fire Pump Centrifugal End Suction dan Aksesoris ;unit ;12000000;Material
+;Main Fire Pump Centrifugal End Suction dan Aksesoris ;Unit ;14000000;Material
+;Diesel Fire Pump Centrifugal End Suction dan Aksesoris;unit ;12000000;Material
+;Pipa PVC dia. 63 mm;m';14750;Material
+;"Pipa PVC, DN. 2-1/2""
+(65 mm)";m';15000;Material
+;Pipa PVC dia. 90 mm;m';28600;Material
+;"Pipa PVC, DN. 3"" (80
+mm)";m';29000;Material
+;Pipa PVC dia. 110 mm;m';39575;Material
+;"Pipa PVC, DN. 4"" (100
+mm)";m';40000;Material
+;Pipa PVC dia. 150 mm;m';63200;Material
+;"Pipa PVC, DN. 6"" (150
+mm)";m';64000;Material
+;Pipa PVC dia. 200 mm;m';139575;Material
+;"Pipa PVC, DN. 8"" (200
+mm)";m';140000;Material
+;Pipa PVC dia. 250 mm;m';287500;Material
+;"Pipa PVC, DN. 10""
+(250 mm)";m';288000;Material
+;Sewa Tripot;hari ;108000;Material
+;Pipa PVC dia. 300 mm;m';305000;Material
+;"Pipa PVC, DN. 12""
+(300 mm)";m';306000;Material
+;Pipa PVC dia. 400 mm;m';336700;Material
+;"Pipa PVC, DN. 16""
+(400 mm)";m';337000;Material
+;Pipa PVC dia. 450 mm;m';368000;Material
+;"Pipa PVC, DN. 18""
+(450 mm)";m';369000;Material
+;Pipa PVC dia. 500 mm;m';398500;Material
+;"Pipa PVC, DN. 20""
+(500 mm)";m';399000;Material
+;Pipa PVC dia. 600 mm;m';425000;Material
+;"Pipa PVC, DN. 24""
+(600 mm)";m';426000;Material
+;Pipa PVC dia. 800 mm;m';487000;Material
+;"Pipa PVC, DN. 32""
+(800 mm";m';488000;Material
+;Pipa PVC dia. 900 mm;m';515000;Material
+;"Pipa PVC, DN. 36""
+(900 mm";m';516000;Material
+;Pipa PVC dia. 1000 mm;m';547000;Material
+;"Pipa PVC, DN. 40""
+(1000 mm)";m';548000;Material
+;Pipa PVC dia. 1100 mm;m';589000;Material
+;"Pipa PVC, DN. 44""
+(1100 mm)";m';590000;Material
+;Pipa PVC dia. 1200 mm;m';617000;Material
+;"Pipa PVC, DN. 48""
+(1200 mm)";m';618000;Material
+;Pipa PVC dia. 15 mm;m';5200;Material
+;"Pipa PVC, DN. 1/2""
+(15 mm)";m';5300;Material
+;Pipa PVC dia. 20 mm;m';7500;Material
+;"Pipa PVC, DN. 3/4""
+(20 mm)";m';7600;Material
+;Pipa PVC dia. 25 mm;m';8300;Material
+;"Pipa PVC, DN. 1"" (25 mm)";m';8400;Material
+;Pipa PVC dia. 32 mm;m';9700;Material
+;"Pipa PVC, DN. 1-1/4""
+(32 mm";m';10000;Material
+;Pipa PVC dia. 40 mm;m';10500;Material
+;"Pipa PVC, DN. 1-1/2""
+(40 mm)";m';10600;Material
+;Pipa PVC dia. 50 mm;m';13700;Material
+;"Pipa PVC, DN. 2"" (50 mm)";m';13800;Material
+;Gergaji Pipa;hari ;32500;Material
+;"Peralatan potong pipa
+T1/manual (gergaji) /
+saw";hari ;35000;Material
+;Pipa Galvanis dia. 63 mm;m';183333.3333;Material
+;"Pipa Galvanis, DN. 2-
+1/2"" (65 mm)";m';185000;Material
+;Pipa Galvanis dia. 100 mm;m';309000;Material
+;"Pipa Galvanis, DN. 4""
+(100 mm)";m';310000;Material
+;Pipa Galvanis dia. 125 mm;m';435000;Material
+;"Pipa Galvanis, DN. 5""
+(125 mm)";m';436000;Material
+;Pipa Galvanis dia. 150 mm;m';395000;Material
+;"Pipa Galvanis, DN. 6""
+(150 mm)";m';396000;Material
+;Pipa Galvanis dia. 200 mm;m';417000;Material
+;"Pipa Galvanis, DN. 8""
+(200 mm)";m';418000;Material
+;Pipa Galvanis dia. 250 mm;m';467000;Material
+;"Pipa Galvanis,
+DN.10"" (250 mm)";m';468000;Material
+;Pipa Galvanis dia. 300 mm;m';512000;Material
+;"Pipa Galvanis, DN. 12""
+(300 mm";m';513000;Material
+;Pipa Galvanis dia. 400 mm;m';593000;Material
+;"Pipa Galvanis, DN. 16""
+(400 mm)";m';594000;Material
+;Pipa Galvanis dia. 450 mm;m';612000;Material
+;"Pipa Galvanis, DN. 18""
+(450 mm";m';61300;Material
+;Pipa Galvanis dia. 500 mm;m';655000;Material
+;"Pipa Galvanis, DN. 20""
+(500 mm)";m';656000;Material
+;Pipa Galvanis dia. 600 mm;m';697000;Material
+;"Pipa Galvanis, DN. 24"" (600 mm)";m';698000;Material
+;Pipa Galvanis dia. 800 mm;m';715000;Material
+;"Pipa Galvanis, DN. 32"" (800 mm)";m';716000;Material
+;Pipa Galvanis dia. 900 mm;m';756000;Material
+;"Pipa Galvanis, DN. 36"" (900 mm)";m';757000;Material
+;Pipa Galvanis dia. 1000 mm;m';799000;Material
+;"Pipa Galvanis,
+DN. 40"" (1000 mm)";m';780000;Material
+;Pipa Galvanis dia. 1100 mm;m';830000;Material
+;"Pipa Galvanis,
+DN. 44"" (1100 mm)";m';831000;Material
+;Pipa Galvanis dia. 1200 mm;m';867000;Material
+;"Pipa Galvanis,
+DN. 48"" (1200 mm";m';868000;Material
+;Pipa Galvanis dia. 15 mm;m';51000;Material
+;"Pipa Galvanis,
+DN. 1/2"" (15 mm)";m';52000;Material
+;Pipa Galvanis dia. 20 mm;m';67000;Material
+;"Pipa Galvanis,
+DN. 3/4"" (20 mm)";m';68000;Material
+;Pipa Galvanis dia. 25 mm;m';71000;Material
+;"Pipa Galvanis, DN. 1""
+(25 mm)";m';72000;Material
+;Pipa Galvanis dia. 32 mm;m';79000;Material
+;"Pipa Galvanis,
+DN. 1-1/4"" (32 mm)";m';80000;Material
+;Pipa Galvanis dia. 40 mm;m';86000;Material
+;"Pipa Galvanis,
+DN. 1-1/2"" (40 mm)";m';87000;Material
+;Pipa Galvanis dia. 50 mm;m';94000;Material
+;"Pipa Galvanis, DN. 2""
+(50 mm";m';95000;Material
+;Cilinder Saw;hari ;75000;Material
+;"Peralatan potong pipa
+T2/mekanik / cilinder saw";hari ;75000;Material
+;Pipa HDPE dia. 63 mm;m';24700;Material
+;"Pipa HDPE, DN. 2-1/2""
+(65 mm)";m';25000;Material
+;Pipa HDPE dia. 100 mm;m';49000;Material
+;"Pipa HDPE, DN. 4""
+(100 mm)";m';50000;Material
+;Pipa HDPE dia. 125 mm;m';57000;Material
+;"Pipa HDPE, DN. 5""
+(125 mm)";m';58000;Material
+;Pipa HDPE dia. 150 mm;m';63000;Material
+;"Pipa HDPE, DN. 6""
+(150 mm";m';64000;Material
+;Pipa HDPE dia. 200 mm;m';74000;Material
+;"Pipa HDPE, DN. 8""
+(200 mm)";m';75000;Material
+;Pipa HDPE dia. 250 mm;m';81000;Material
+;"Pipa HDPE, DN.10""
+(250 mm)";m';82000;Material
+;Pipa HDPE dia. 300 mm;m';93000;Material
+;"Pipa HDPE, DN. 12""
+(300 mm";m';94000;Material
+;Pipa HDPE dia. 400 mm;m';101000;Material
+;"Pipa HDPE, DN. 16""
+(400 mm)";m';102000;Material
+;Pipa HDPE dia. 450 mm;m';123000;Material
+;"Pipa HDPE, DN. 18""
+(450 mm)";m';124000;Material
+;Pipa HDPE dia. 500 mm;m';142000;Material
+;"Pipa HDPE, DN. 20""
+(500 mm)";m';143000;Material
+;Pipa HDPE dia. 600 mm;m';156000;Material
+;"Pipa HDPE, DN. 24""
+(600 mm";m';157000;Material
+;Pipa HDPE dia. 800 mm;m';164000;Material
+;"Pipa HDPE, DN. 32""
+(800 mm)";m';165000;Material
+;Pipa HDPE dia. 900 mm;m';172000;Material
+;"Pipa HDPE, DN. 36""
+(900 mm)";m';173000;Material
+;Pipa HDPE dia. 1000 mm;m';186000;Material
+;"Pipa HDPE, DN. 40""
+(1000 mm)";m';187000;Material
+;Pipa HDPE dia. 1100 mm;m';197000;Material
+;"Pipa HDPE, DN. 44""
+(1100 mm)";m';198000;Material
+;Pipa HDPE dia. 1200 mm;m';215000;Material
+;"Pipa HDPE, DN. 48""
+(1200 mm)";m';216000;Material
+;Pipa HDPE dia. 15 mm;m';12500;Material
+;"Pipa HDPE, DN. 1/2""
+(15 mm)";m';13000;Material
+;Pipa HDPE dia. 20 mm;m';17900;Material
+;"Pipa HDPE, DN. 3/4""
+(20 mm)";m';18000;Material
+;Pipa HDPE dia. 25 mm;m';20700;Material
+;"Pipa HDPE, DN. 1""
+(25 mm)";m';21000;Material
+;Pipa HDPE dia. 32 mm;m';21300;Material
+;"Pipa HDPE,
+DN. 1-1/4"" (32 mm)";m';22000;Material
+;Pipa HDPE dia. 40 mm;m';22500;Material
+;"Pipa HDPE,
+DN. 1-1/2"" (40 mm)";m';23000;Material
+;Pipa HDPE dia. 50 mm;m';23100;Material
+;"Pipa HDPE, DN. 2""
+(50 mm)";m';24000;Material
+;Pipa Baja dia. 63 mm;m';520000;Material
+;"Pipa Baja Karbon, DN.
+2-1/2"" (65 mm)";m';525000;Material
+;Pipa Baja dia. 100 mm;m';645000;Material
+;"Pipa Baja Karbon, DN.
+4"" (100 mm)";m';650000;Material
+;Pipa Baja dia. 125 mm;m';766000;Material
+;"Pipa Baja Karbon, DN.
+5"" (125 mm)";m';770000;Material
+;Pipa Baja dia. 150 mm;m';810000;Material
+;"Pipa Baja Karbon, DN.
+6"" (150 mm)";m';815000;Material
+;Pipa Baja dia. 200 mm;m';890000;Material
+;"Pipa Baja Karbon, DN.
+8"" (200 mm)";m';895000;Material
+;Pipa Baja dia. 250 mm;m';940000;Material
+;"Pipa Baja Karbon, DN.
+10"" (250 mm)";m';945000;Material
+;Pipa Baja dia. 300 mm;m';1050000;Material
+;"Pipa Baja Karbon, DN.
+12"" (300 mm)";m';1055000;Material
+;Pipa Baja dia. 400 mm;m';2300000;Material
+;"Pipa Baja Karbon, DN. 16""
+(400 mm)";m';2305000;Material
+;Pipa Baja dia. 450 mm;m';2450000;Material
+;"Pipa Baja Karbon, DN. 18""
+(450 mm";m';2455000;Material
+;Pipa Baja dia. 500 mm;m';2560000;Material
+;"Pipa Baja Karbon, DN.
+20"" (500 mm)";m';2565000;Material
+;Pipa Baja dia. 600 mm;m';2650000;Material
+;"Pipa Baja Karbon, DN. 24""
+(600 mm)";m';2655000;Material
+;Pipa Baja dia. 800 mm;m';2790000;Material
+;"Pipa Baja Karbon, DN. 32""
+(800 mm)";m';2795000;Material
+;Pipa Baja dia. 900 mm;m';2950000;Material
+;"Pipa Baja Karbon, DN. 36""
+(900 mm)";m';2955000;Material
+;Pipa Baja dia. 1000 mm;m';3110000;Material
+;"Pipa Baja Karbon, DN. 40""
+(1000 mm)";m';3115000;Material
+;Pipa Baja dia. 1100 mm;m';3230000;Material
+;"Pipa Baja Karbon, DN. 44""
+(1100 mm)";m';3235000;Material
+;Pipa Baja dia. 1200 mm;m';3350000;Material
+;"Pipa Baja Karbon, DN. 48""
+(1200 mm";m';3355000;Material
+;"PVC  Ø 1 1/4""  s  10 tekanan nominal 10 bar (1,0 mpa) 4m";batang;79700;Material
+;"PVC  Ø 1 1/5""  s  10 tekanan nominal 10 bar (1,0 mpa) 6m";batang;145400;Material
+;"PVC  Ø 1""  s  10 tekanan nominal 10 bar (1,0 mpa) 4m";batang;51600;Material
+;"PVC  Ø 1/2""  s  10 tekanan nominal 10 bar (1,0 mpa) 4m";batang;30700;Material
+;"PVC  Ø 2""  s  12,5 tekanan nominal 10 bar (1,0 mpa) 6m";batang;214900;Material
+;"PVC  Ø 3""  s  12,5 tekanan nominal 10 bar (1,0 mpa) 6m";batang;423300;Material
+;"PVC  Ø 3/4""  s  10 tekanan nominal 10 bar (1,0 mpa) 4m";batang;33400;Material
+;"PVC  Ø 4""  s  12,5 tekanan nominal 10 bar (1,0 mpa) 6m";batang;641300;Material
+;"PVC  Ø 6""  s  12,5 tekanan nominal 10 bar (1,0 mpa) 6m";batang;1823000;Material
+;"PVC  Ø 8""  s  12,5 tekanan nominal 10 bar (1,0 mpa) 6m";batang;2043200;Material
+;MATERIAL PIPA GALVANIS;;;Material
+;Assesoris  galvanis;m';5500;Material
+;"Pipa  galvanis medium B Ø  1  1/2"" panjang  6  m";batang;405700;Material
+;"Pipa  galvanis medium B Ø  1"" panjang  6  m";batang;263000;Material
+;"Pipa  galvanis medium B Ø  1/2"" panjang  6  m";m';24400;Material
+;"Pipa  galvanis medium B Ø  2  1/2"" panjang  6  m";batang;550000;Material
+;"Pipa  galvanis medium B Ø  3"" panjang  6  m";batang;1035100;Material
+;"Pipa  galvanis medium B Ø  3/4"" panjang  6  m";batang;181200;Material
+;"Pipa  galvanis medium B Ø  4"" panjang  6  m";batang;1475300;Material
+;"Pipa besi stainless  steel Ø1""  t=1.5 mm";m';44800;Material
+;"Pipa besi stainless  steel Ø2""  t=1.5 mm";m';92400;Material
+;"Pipa galvanis  medium A Ø 1 1/2""  panjang 6 m";batang;461800;Material
+;"Pipa galvanis  medium A Ø 1""  panjang 6 m";batang;266100;Material
+;"Pipa galvanis  medium A Ø 1/2""  panjang 6 m";batang;132500;Material
+;"Pipa galvanis  medium A Ø 2""  panjang 6 m";batang;528600;Material
+;"Pipa galvanis  medium A Ø 3""  panjang 6 m";batang;1021000;Material
+;"Pipa galvanis  medium A Ø 3/4""  panjang 6 m";batang;177900;Material
+;"Pipa galvanis  medium A Ø 4""  panjang 6 m";batang;1487200;Material
+;"Pipa galvanis  medium A Ø 5""  panjang 6 m";batang;1981200;Material
+;"Pipa galvanis  medium A Ø 6""  panjang 6 m";batang;1558300;Material
+;"Pipa galvanis  medium A Ø 8""  panjang 6 m";batang;2267400;Material
+;"Pipa galvanis  medium B  Ø 2""  panjang 6 m";batang;598800;Material
+;"Pipa galvanis  medium B  Ø 5""  panjang 6 m";batang;2031000;Material
+;"Pipa galvanis  medium B  Ø 6""  panjang 6 m";batang;2451200;Material
+;"Pipa galvanis  medium B  Ø 8""  panjang 6 m";batang;3466200;Material
+;"Pipa galvanis  medium Class  Ø 1 1/2"" +Aksesoris ";m';82466.66667;Material
+;"Pipa galvanis MED CLASS ; DN. 1-1/2"" (40 mm) + fitting & aksesoris";m';82500;Material
+;"Pipa galvanis  medium Class  Ø 1 1/4"" +Aksesoris ";m';80633.33333;Material
+;"Pipa galvanis MED
+CLASS ; DN. 1-1/4""
+(32 mm) + fitting &
+aksesoris";m';81000;Material
+;"Pipa galvanis  medium Class Ø 1"" + Aksesoris";m';49850;Material
+;"Pipa galvanis MED
+CLASS ; DN. 1"" (25
+mm) + fitting &
+aksesoris";m';50000;Material
+;"Pipa galvanis  medium Class Ø 1/2"" + Aksesoris";m';27583.33333;Material
+;"Pipa galvanis MED CLASS ; DN. 1/2"" (15 mm) + fitting & aksesoris";m';28000;Material
+;"Pipa galvanis  medium Class Ø 2"" +Aksesoris ";m';93600;Material
+;"Pipa galvanis MED CLASS ; DN. 2"" (50 mm) + fitting & aksesoris";m';94000;Material
+;"Pipa galvanis  medium Class Ø 2-1/2"" +Aksesoris ";m';94666.66667;Material
+;"Pipa galvanis MED CLASS ; DN. 2-1/2"" (65 mm) + fitting & aksesoris";m';95000;Material
+;"Pipa galvanis  medium Class Ø 3"" +Aksesoris ";m';175666.6667;Material
+;"Pipa galvanis MED CLASS ; DN. 3"" (80 mm) + fitting & aksesoris";m';176000;Material
+;"Pipa galvanis  medium Class Ø 3/4"" + Aksesoris ";m';35150;Material
+;"Pipa galvanis MED CLASS ; DN. 3/4"" (20 mm) + fitting & aksesoris";m';36000;Material
+;"Pipa galvanis  medium Class Ø 4"" +Aksesoris ";m';253366.6667;Material
+;"Pipa galvanis MED CLASS ; DN. 4"" (100 mm) + fitting & aksesoris";m';253500;Material
+;"Pipa galvanis  medium Class Ø 5"" +Aksesoris ";m';335700;Material
+;"Pipa galvanis MED CLASS ; DN. 5"" (125 mm) + fitting & aksesoris";m';336000;Material
+;"Pipa galvanis  medium Class Ø 6"" + Aksesoris ";m';265216.6667;Material
+;"Pipa galvanis MED CLASS ; DN. 6"" (150 mm) + fitting & aksesoris";m';266000;Material
+;"Pipa galvanis  medium Class Ø 8"" + Aksesois ";m';383400;Material
+;"Pipa galvanis MED CLASS ; DN. 8"" (200 mm) + fitting & aksesoris";m';384000;Material
+;"Pipa galvanis  medium Class Ø 10"" + Aksesois ";m';390500;Material
+;"Pipa galvanis MED CLASS ; DN. 10"" (250 mm) + fitting & aksesoris";m';391000;Material
+;"Pipa galvanis  medium Class Ø 12"" + Aksesois ";m';399500;Material
+;"Pipa galvanis MED CLASS ; DN. 12"" (300 mm) + fitting & aksesoris";m';340000;Material
+;"Pipa galvanis  medium Class Ø 14"" + Aksesois ";m';410500;Material
+;"Pipa galvanis MED CLASS ; DN. 14"" (350 mm) + fitting & aksesoris";m';411000;Material
+;"Pipa galvanis  medium Class Ø 16"" + Aksesois ";m';417500;Material
+;"Pipa galvanis MED CLASS ; DN. 16"" (400 mm) + fitting & aksesoris";m';418000;Material
+;"Pipa galvanis SCH 40 Ø 1/2"" + Aksesois ";m';39666.66667;Material
+;"Pipa galvanis SCH 40 ; DN. 1/2"" (15 mm) + fitting & aksesoris";m';40000;Material
+;"Pipa galvanis SCH 40 Ø 3/4"" + Aksesois ";m';47666.66667;Material
+;"Pipa galvanis SCH 40 ; DN. 3/4"" (20 mm) + fitting & aksesoris";m';48000;Material
+;"Pipa galvanis SCH 40 Ø 1"" + Aksesois ";m';66333.33333;Material
+;"Pipa galvanis SCH 40 ; DN. 1"" (25 mm) + fitting & aksesoris";m';66500;Material
+;"Pipa galvanis SCH 40 Ø 1-1/4"" + Aksesois ";m';88000;Material
+;"Pipa galvanis SCH 40 ; DN. 1-1/4"" (32 mm) + fitting & aksesoris";m';88500;Material
+;"Pipa galvanis SCH 40 Ø 1-1/2"" + Aksesois ";m';102500;Material
+;"Pipa galvanis SCH 40 ; DN. 1-1/2"" (40 mm) + fitting & aksesoris";m';103000;Material
+;"Pipa galvanis SCH 40 Ø 2"" + Aksesois ";m';188833.3333;Material
+;"Pipa galvanis SCH 40 ; DN. 2"" (50 mm) + fitting & aksesoris";m';189000;Material
+;"Pipa galvanis SCH 40 Ø 2-1/2"" + Aksesois ";m';205500;Material
+;"Pipa galvanis SCH 40 ; DN. 2-1/2"" (65 mm) + fitting & aksesoris";m';206000;Material
+;"Pipa galvanis SCH 40 Ø 3"" + Aksesois ";m';359666.6667;Material
+;"Pipa galvanis SCH 40 ; DN. 3"" (80 mm) + fitting & aksesoris";m';360000;Material
+;"Pipa galvanis SCH 40 Ø 4"" + Aksesois ";m';380500;Material
+;"Pipa galvanis SCH 40 ; DN. 4"" (100 mm) + fitting & aksesoris";m';381000;Material
+;"Pipa galvanis SCH 40 Ø 5"" + Aksesois ";m';505500;Material
+;"Pipa galvanis SCH 40 ; DN. 5"" (125 mm) + fitting & aksesoris";m';502000;Material
+;"Pipa galvanis SCH 40 Ø 6"" + Aksesois ";m';635500;Material
+;"Pipa galvanis SCH 40 ; DN. 6"" (150 mm) + fitting & aksesoris";m';636000;Material
+;"Pipa galvanis SCH 40 Ø 8"" + Aksesois ";m';987166.6667;Material
+;"Pipa galvanis SCH 40 ; DN. 8"" (200 mm) + fitting & aksesoris";m';987500;Material
+;"Pipa galvanis SCH 40 Ø 10"" + Aksesois ";m';1322166.667;Material
+;"Pipa galvanis SCH 40 ; DN. 10"" (250 mm) + fitting & aksesoris";m';1322500;Material
+;"Pipa galvanis SCH 40 Ø 12"" + Aksesois ";m';1405500;Material
+;"Pipa galvanis SCH 40 ; DN. 12"" (300 mm) + fitting & aksesoris";m';1406000;Material
+;"Pipa galvanis SCH 40 Ø 14"" + Aksesois ";m';1463833.333;Material
+;"Pipa galvanis SCH 40 ; DN. 14"" (350 mm) + fitting & aksesoris";m';1464000;Material
+;"Pipa galvanis SCH 40 Ø 16"" + Aksesois ";m';1501666.667;Material
+;"Pipa galvanis SCH 40 ; DN. 16"" (400 mm) + fitting & aksesoris";m';1502000;Material
+;"Pipa PPR PN 10 Ø 1/2"" + Aksesois ";m';16050;Material
+;"Pipa PPR PN 10 ; DN. 1/2"" (15 mm) + fitting & aksesoris";m';16100;Material
+;"Pipa PPR PN 10 Ø 3/4"" + Aksesois ";m';19475;Material
+;"Pipa PPR PN 10 ; DN. 3/4"" (20 mm) + fitting & aksesoris";m';19700;Material
+;"Pipa PPR PN 10 Ø 1"" + Aksesois ";m';28275;Material
+;"Pipa PPR PN 10 ; DN. 1"" (25 mm) + fitting & aksesoris";m';28500;Material
+;"Pipa PPR PN 10 Ø 1-1/4"" + Aksesois ";m';41875;Material
+;"Pipa PPR PN 10 ; DN. 1-1/4"" (32 mm) + fitting & aksesoris";m';42000;Material
+;"Pipa PPR PN 10 Ø 1-1/2"" + Aksesois ";m';62175;Material
+;"Pipa PPR PN 10 ; DN. 1-1/2"" (40 mm) + fitting & aksesoris";m';62500;Material
+;"Pipa PPR PN 10 Ø 2"" + Aksesois ";m';95500;Material
+;"Pipa PPR PN 10 ; DN. 2"" (50 mm) + fitting & aksesoris";m';96000;Material
+;"Pipa PPR PN 10 Ø 2-1/2"" + Aksesois ";m';131625;Material
+;"Pipa PPR PN 10 ; DN. 2-1/2"" (65 mm) + fitting & aksesoris";m';132000;Material
+;"Pipa PPR PN 10 Ø 3"" + Aksesois ";m';183275;Material
+;"Pipa PPR PN 10 ; DN. 3"" (80 mm) + fitting & aksesoris";m';183500;Material
+;"Pipa PPR PN 10 Ø 4"" + Aksesois ";m';276425;Material
+;"Pipa PPR PN 10 ; DN. 4"" (100 mm) + fitting & aksesoris";m';276600;Material
+;"Pipa PPR PN 10 Ø 6"" + Aksesois ";m';930025;Material
+;"Pipa PPR PN 10 ; DN. 6"" (150 mm) + fitting & aksesoris";m';930500;Material
+;"Pipa PPR PN 20 Ø 1/2"" + Aksesois ";m';20325;Material
+;"Pipa PPR PN 20 ; DN. 1/2"" (15 mm) + fitting & aksesoris";m';931000;Material
+;"Pipa PPR PN 20 Ø 3/4"" + Aksesois ";m';28525;Material
+;"Pipa PPR PN 20 ; DN. 3/4"" (20 mm) + fitting & aksesoris";m';29000;Material
+;"Pipa PPR PN 20 Ø 1"" + Aksesois ";m';43675;Material
+;"Pipa PPR PN 20 ; DN. 1"" (25 mm) + fitting & aksesoris";m';44000;Material
+;"Pipa PPR PN 20 Ø 1-1/4"" + Aksesois ";m';64625;Material
+;"Pipa PPR PN 20 ; DN. 1-1/4"" (32 mm) + fitting & aksesoris";m';65000;Material
+;"Pipa PPR PN 20 Ø 1-1/2"" + Aksesois ";m';98175;Material
+;"Pipa PPR PN 20 ; DN. 1-1/2"" (40 mm) + fitting & aksesoris";m';98500;Material
+;"Pipa PPR PN 20 Ø 2"" + Aksesois ";m';152625;Material
+;"Pipa PPR PN 20 ; DN. 2"" (50 mm) + fitting & aksesoris";m';153000;Material
+;"Pipa PPR PN 20 Ø 2-1/2"" + Aksesois ";m';214000;Material
+;"Pipa PPR PN 20 ; DN. 2-1/2"" (65 mm) + fitting & aksesoris";m';214500;Material
+;"Pipa PPR PN 20 Ø 3"" + Aksesois ";m';305375;Material
+;"Pipa PPR PN 20 ; DN. 3"" (80 mm) + fitting & aksesoris";m';305500;Material
+;"Pipa PPR PN 20 Ø 4"" + Aksesois ";m';453900;Material
+;"Pipa PPR PN 20 ; DN. 4"" (100 mm) + fitting & aksesoris";m';454000;Material
+;"Pipa PPR PN 20 Ø 6"" + Aksesois ";m';1534825;Material
+;"Pipa PPR PN 20 ; DN. 6"" (150 mm) + fitting & akseso";m';1535000;Material
+;"Pipa BS Ø 1/2"" + Aksesois ";m';30000;Material
+;"Pipa BS MED CLASS ; DN. 1/2"" (15 mm) + fitting & aksesoris";m';30500;Material
+;"Pipa BS Ø 3/4"" + Aksesois ";m';37000;Material
+;"Pipa BS MED CLASS ; DN. 3/4"" (20 mm) + fitting & aksesoris";m';37500;Material
+;"Pipa BS Ø 1"" + Aksesois ";m';52500;Material
+;"Pipa BS MED CLASS ; DN. 1"" (25 mm) + fitting & aksesoris";m';53000;Material
+;"Pipa BS Ø 1-1/4"" + Aksesois ";m';67500;Material
+;"Pipa BS MED CLASS DN. 1-1/4"" (32 mm) + fitting & aksesoris";m';68000;Material
+ ;"Pipa BS Ø 1-1/2"" + Aksesois ";m';76666.66667;Material
+;"Pipa BS MED CLASS DN. 1-1/2"" (40 mm) + fitting & aksesoris";m';77000;Material
+;"Pipa BS Ø 2"" + Aksesois ";m';102666.6667;Material
+;"Pipa BS MED CLASS ; DN. 2"" (50 mm) + fitting & aksesoris";m';103000;Material
+;"Pipa BS Ø 2-1/2"" + Aksesois ";m';129333.3333;Material
+;"Pipa BS MED CLASS DN. 2-1/2"" (65 mm) + fitting & aksesoris";m';130000;Material
+;"Pipa BS  Ø 3"" + Aksesois ";m';165500;Material
+;"Pipa BS MED CLASS ; DN. 3"" (80 mm) + fitting & aksesoris";m';166000;Material
+;"Pipa BS Ø 4"" + Aksesois ";m';237166.6667;Material
+;"Pipa BS MED CLASS ; DN. 4"" (100 mm) + fitting & aksesoris";m';237500;Material
+;"Pipa BS Ø 5"" + Aksesois ";m';317166.6667;Material
+;"Pipa BS MED CLASS ; DN. 5"" (125 mm) + fitting & aksesoris";m';317500;Material
+;"Pipa BS Ø 6"" + Aksesois ";m';376500;Material
+;"Pipa BS MED CLASS ; DN. 6"" (150 mm) + fitting & aksesoris";m';377000;Material
+;"Pipa BS Ø 8"" + Aksesois ";m';663000;Material
+;"Pipa BS MED CLASS ; DN. 8"" (200 mm) + fitting & aksesoris";m';663500;Material
+;"Pipa BS MED CLASS ; DN. 10"" (250 mm) + fitting & aksesoris";m';756000;Material
+;"Pipa BS Ø 10"" + Aksesois ";m';755916.6667;Material
+;"Pipa BS MED CLASS ; DN. 12"" (300 mm) + fitting & aksesoris";m';883000;Material
+;"Pipa BS Ø 12"" + Aksesois ";m';882666.6667;Material
+;"Pipa BS MED CLASS ; DN. 14"" (350 mm) + fitting & aksesoris";m';1086000;Material
+;"Pipa BS Ø 14"" + Aksesois ";m';1085500;Material
+;"Pipa BS MED CLASS ; DN. 16"" (400 mm) + fitting & aksesoris";m';1241000;Material
+;"Pipa BS Ø 16"" + Aksesois ";m';1240500;Material
+;"Pipa BS SCH 40 ; DN. 1/2"" (15 mm) + fitting & aksesoris";m';250000;Material
+;"Pipa BS SCH 40 ; DN. 3/4"" (20 mm) + fitting & aksesoris";m';260000;Material
+;"Pipa BS SCH 40 ; DN. 1-1/4"" (32 mm) + fitting & aksesoris";m';270000;Material
+;"Pipa BS SCH 40 ; DN. 1-1/2"" (40 mm) + fitting & aksesoris";m';280000;Material
+;"Pipa BS SCH 40 ; DN. 2"" (50 mm) + fitting & aksesoris";m';290000;Material
+;"Pipa BS SCH 40 ; DN. 2-1/2"" (65 mm) + fitting & aksesoris";m';300000;Material
+;"Pipa BS SCH 40 ; DN. 3"" (80 mm) + fitting & aksesoris";m';310000;Material
+;"Pipa BS SCH 40 ; DN. 4"" (100 mm) + fitting & aksesoris";m';320000;Material
+;"Pipa BS SCH 40 ; DN. 5"" (125 mm) + fitting & aksesoris";m';330000;Material
+;"Pipa BS SCH 40 ; DN. 6"" (150 mm) + fitting & aksesoris";m';340000;Material
+;"Pipa BS SCH 40 ; DN. 8"" (200 mm) + fitting & aksesoris";m';350000;Material
+;"Pipa BS SCH 40 ; DN. 10"" (250 mm) + fitting & aksesoris";m';360000;Material
+;"Pipa BS SCH 40 ; DN. 12"" (300 mm) + fitting & aksesoris";m';370000;Material
+;"Pipa BS SCH 40 ; DN. 14"" (350 mm) + fitting & aksesoris";m';380000;Material
+;"Pipa BS SCH 40 ; DN. 16"" (400 mm) + fitting & aksesoris";m';390000;Material
+;"Pipa Tanah, DN. 6"" (150 mm";m';187500;Material
+;"Pipa Tanah, DN. 8"" (200 mm)";m';205000;Material
+;"Gate Valve dia. 1/2""";unit ;1500000;Material
+;"Gate Valve dia. 3/4""";unit ;1700000;Material
+;"Gate Valve dia. 1""";unit ;1900000;Material
+;"Gate Valve dia. 1-1/4""";unit ;2050000;Material
+;"Gate Valve dia. 1-1/2""";unit ;2125000;Material
+;"Gate Valve dia.2""";unit ;2315000;Material
+;"Gate Valve dia.2-1/2""";unit ;2475000;Material
+;"Gate Valve dia.3""";unit ;2750000;Material
+;"Gate Valve dia.4""";unit ;2995000;Material
+;"Gate Valve dia.5""";unit ;3250000;Material
+;"Gate Valve dia.6""";unit ;3570000;Material
+;"Gate Valve dia.8""";unit ;3950000;Material
+;"Gate Valve dia.10""";unit ;4210000;Material
+;"Gate Valve dia.12""";unit ;4520000;Material
+;"Gate Valve dia.6""";unit ;5750000;Material
+;"Ball Velve dia. 1/2""";unit ;25000;Material
+;"Ball Velve dia. 3/4""";unit ;36750;Material
+;"Ball Velve dia. 1""";unit ;46100;Material
+;"Ball Velve dia. 1-1/4""";unit ;68000;Material
+;"Ball Velve dia. 1-1/2""";unit ;79000;Material
+;"Ball Velve dia. 2""";unit ;118000;Material
+;"Ball Velve dia. 2-1/2""";unit ;145000;Material
+;"Ball Velve dia. 3""";unit ;215000;Material
+;"Ball Velve dia. 4""";unit ;233300;Material
+;"Check Velve dia. 1/2""";unit ;39000;Material
+;"Check Velve dia. 3/4""";unit ;59000;Material
+;"Check Velve dia. 1""";unit ;88350;Material
+;"Check Velve dia. 1-1/4""";unit ;110960;Material
+;"Check Velve dia. 1-1/2""";unit ;148960;Material
+;"Check Velve dia. 2""";unit ;215460;Material
+;"Check Velve dia. 2-1/2""";unit ;265000;Material
+;"Check Velve dia. 3""";unit ;587000;Material
+;"Check Velve dia. 4""";unit ;1440000;Material
+;"Check Velve dia. 5""";unit ;2750000;Material
+;"Check Velve dia. 6""";unit ;3050000;Material
+;"Check Velve dia. 8""";unit ;3470000;Material
+;"Check Velve dia. 10""";unit ;3680000;Material
+;"Check Velve dia. 12""";unit ;3970000;Material
+;"Strainer dia. 1/2""";unit ;36000;Material
+;"Strainer dia. 3/4""";unit ;47000;Material
+;"Strainer dia. 1""";unit ;59000;Material
+;"Strainer dia. 1-1/4""";unit ;95600;Material
+;"Strainer dia. 1-1/2""";unit ;143000;Material
+;"Strainer dia. 2""";unit ;303600;Material
+;"Strainer dia. 2-1/2""";unit ;415600;Material
+;"Strainer dia. 3""";unit ;552000;Material
+;"Strainer dia. 4""";unit ;809600;Material
+;"Strainer dia. 5""";unit ;873000;Material
+;"Strainer dia. 6""";unit ;970500;Material
+;"Strainer dia. 8""";unit ;1260000;Material
+;"Strainer dia. 10""";unit ;1540000;Material
+;"Strainer dia. 12""";unit ;1670000;Material
+;"Strainer dia. 14""";unit ;1820000;Material
+;"Floater Velve dia. 1/2""";unit ;221000;Material
+;"Floater Velve dia. 3/4""";unit ;250000;Material
+;"Floater Velve dia. 1""";unit ;375000;Material
+;"Floater Velve dia. 1-1/4""";unit ;485000;Material
+;"Floater Velve dia. 1-1/2""";unit ;630000;Material
+;"Floater Velve dia. 2""";unit ;870000;Material
+;"Floater Velve dia. 2-1/2""";unit ;980000;Material
+;"Floater Velve dia. 3""";unit ;1170000;Material
+;"Floater Velve dia. 4""";unit ;1370000;Material
+;"Floater Velve dia. 5""";unit ;1520000;Material
+;"Floater Velve dia. 6""";unit ;1740000;Material
+;"Floater Velve dia. 8""";unit ;1960000;Material
+;"Floater Velve dia. 10""";unit ;2130000;Material
+;"Floater Velve dia. 12""";unit ;2480000;Material
+;"Foot Velve dia. 1/2""";unit ;21450;Material
+;"Foot Velve dia. 3/4""";unit ;69400;Material
+;"Foot Velve dia. 1""";unit ;83800;Material
+;"Foot Velve dia. 1-1/4""";unit ;134600;Material
+;"Foot Velve dia. 1-1/2""";unit ;202000;Material
+;"Foot Velve dia. 2""";unit ;331300;Material
+;"Foot Velve dia. 2-1/2""";unit ;348000;Material
+;"Foot Velve dia. 3""";unit ;609000;Material
+;"Foot Velve dia. 4""";unit ;870000;Material
+;"Foot Velve dia. 5""";unit ;920500;Material
+;"Foot Velve dia. 6""";unit ;1055000;Material
+;"Foot Velve dia. 8""";unit ;1315000;Material
+;"Foot Velve dia. 10""";unit ;1525000;Material
+;"Foot Velve dia. 12""";unit ;1740000;Material
+;"Foot Velve dia. 14""";unit ;1980000;Material
+;"Flexible Joint dia. 1/2""";unit ;33600;Material
+;"Flexible Joint dia. 3/4""";unit ;46500;Material
+;"Flexible Joint dia. 1""";unit ;87500;Material
+;"Flexible Joint dia. 1-1/4""";unit ;97800;Material
+;"Flexible Joint dia. 1-1/2""";unit ;105700;Material
+;"Flexible Joint dia. 2""";unit ;136500;Material
+;"Flexible Joint dia. 2-1/2""";unit ;157900;Material
+;"Flexible Joint dia. 3""";unit ;165400;Material
+;"Flexible Joint dia. 4""";unit ;360000;Material
+;"Flexible Joint dia. 5""";unit ;740900;Material
+;"Flexible Joint dia. 6""";unit ;937500;Material
+;"Flexible Joint dia. 8""";unit ;1050900;Material
+;"Flexible Joint dia. 10""";unit ;1345000;Material
+;"Flexible Joint dia. 12""";unit ;1678000;Material
+;"Flexible Joint dia. 14""";unit ;1945000;Material
+;"Butterfly Velve dia. 2""";unit ;136100;Material
+;"Butterfly Velve dia. 2-1/2""";unit ;170700;Material
+;"Butterfly Velve dia. 3""";unit ;276400;Material
+;"Butterfly Velve dia. 4""";unit ;303600;Material
+;"Butterfly Velve dia. 5""";unit ;515200;Material
+;"Butterfly Velve dia. 6""";unit ;829300;Material
+;"Butterfly Velve dia. 8""";unit ;1364500;Material
+;"Butterfly Velve dia. 10""";unit ;1808900;Material
+;"Butterfly Velve dia. 12""";unit ;2170800;Material
+;"Globe Velve dia. 1/2""";unit ;104500;Material
+;"Globe Velve dia. 3/4""";unit ;118000;Material
+;"Globe Velve dia. 1""";unit ;140500;Material
+;"Globe Velve dia. 1-1/4""";unit ;189900;Material
+;"Globe Velve dia. 1-1/2""";unit ;252900;Material
+;"Globe Velve dia. 2""";unit ;966300;Material
+;"Globe Velve dia. 2-1/2""";unit ;1214300;Material
+;"Globe Velve dia. 3""";unit ;1573100;Material
+;"Globe Velve dia. 4""";unit ;2121400;Material
+;"Globe Velve dia. 5""";unit ;3890000;Material
+;"Globe Velve dia. 6""";unit ;4996000;Material
+;"Globe Velve dia. 8""";unit ;5740000;Material
+;"Pressure Gauge dia. 1/2""";unit ;58000;Material
+;"Pressure Gauge dia. 1""";unit ;79800;Material
+;"Pressure Gauge dia. 2""";unit ;123000;Material
+;"Pressure Gauge dia. 2-1/2""";unit ;132700;Material
+;"Pressure Gauge dia. 3""";unit ;165400;Material
+;"Pressure Gauge dia. 4""";unit ;218500;Material
+;"Water Meter dia. 1/2""";Bh ;270750;Material
+;"Water Meter dia. 3/4""";Bh ;655914;Material
+;"Water Meter dia. 1""";Bh ;1416800;Material
+;"Water Meter dia. 1-1/2""";Bh ;1740600;Material
+;"Water Meter dia. 2""";Bh ;2392000;Material
+;"Water Meter dia. 3""";Bh ;2700000;Material
+;"Water Meter dia. 4""";Bh ;2980000;Material
+;"Water Meter dia. 6""";Bh ;3540900;Material
+;"Water Meter dia. 8""";Bh ;3947000;Material
+;"Water Meter dia. 10""";Bh ;4230900;Material
+;"Water Meter dia. 12""";Bh ;4560000;Material
+;"Water Meter dia. 16""";Bh ;4760900;Material
+;"Flow Meter Analog dia.4""";bh ;2449000;Material
+;"Clean Out dia. 2""";bh ;47500;Material
+;"Clean Out dia. 2-1/2""";bh ;56700;Material
+;"Clean Out dia. 3""";bh ;65000;Material
+;"Clean Out dia. 4""";bh ;72500;Material
+;"Clean Out dia. 5""";bh ;178900;Material
+;"Clean Out dia. 6""";bh ;230880;Material
+;"Clean Out dia. 8""";bh ;370000;Material
+;"Roof Drain dia. 2""";Bh ;29800;Material
+;"Roof Drain dia. 2-1/2""";Bh ;33925;Material
+;"Roof Drain dia. 3""";Bh ;37375;Material
+;"Roof Drain dia. 4""";Bh ;40250;Material
+;"Roof Drain dia. 5""";Bh ;51700;Material
+;"Roof Drain dia. 6""";Bh ;61100;Material
+;"Roof Drain dia. 8""";Bh ;90250;Material
+;"Roof Drain dia. 10""";Bh ;142500;Material
+;"Roof Drain dia. 12""";Bh ;167500;Material
+;"Floor Clean Out dia. 2""";Bh ;136800;Material
+;"Floor Clean Out dia. 2-1/2""";Bh ;163100;Material
+;"Floor Clean Out dia. 3""";Bh ;199500;Material
+;"Floor Clean Out dia. 4""";Bh ;300300;Material
+;"Floor Clean Out dia. 6""";Bh ;415500;Material
+;"Floor Clean Out dia. 8""";Bh ;507600;Material
+;"Vent Cap dia. 2""";Bh ;45000;Material
+;"Vent Cap dia. 3""";Bh ;65000;Material
+;"Vent Cap dia. 4""";Bh ;80000;Material
+;"PRV set dia. 2""";Bh ;4900000;Material
+;"PRV set dia. 2-1/2""";Bh ;5350000;Material
+;"PRV Set dia. 3""";Bh ;7500000;Material
+;"PRV set dia. 4""";Bh ;8450000;Material
+;"PRV set dia. 6""";Bh ;8930000;Material
+;"PRV set dia. 8""";Bh ;9430000;Material
+;"AAV dia. 1/2""";unit ;250000;Material
+;"AAV dia.1""";unit ;850000;Material
+;"AAV dia. 2""";unit ;1050000;Material
+;"AAV dia. 3""";unit ;1230800;Material
+;"AAV dia. 4""";unit ;1432000;Material
+;"AAV dia. 6""";unit ;1653000;Material
+;"Vent Out dia. 2""";unit ;235000;Material
+;WLC dan Pengkabelan ;unit ;81100;Material
+;Pressure Switch ;unit ;220800;Material
+;"Header Pipa PVC AW Dia. 4""";m';1325000;Material
+;"Header Pipa Galvanis MED Class Dia. 4""";m';5600000;Material
+;"Header Pipa BS SCH 40 Dia. 8""";m';3500000;Material
+;"Header Pipa BS SCH 40 Dia. 10""";m';4600000;Material
+;"Dop PVC dia. 3""";Bh ;9950;Material
+;"Dop PVC dia. 4""";Bh ;19500;Material
+;"Dop PVC dia. 6""";Bh ;28000;Material
+;Pipa DCI dia. 100 mm;m';1083333.333;Material
+;"Pipa DCI, DN. 4""
+(100 mm)";m';1083000;Material
+;Pipa DCI dia. 125 mm;m';1100000;Material
+;"Pipa DCI, DN. 5""
+(125 mm)";m';1100000;Material
+;Pipa DCI dia. 150 mm;m';1300000;Material
+;"Pipa DCI, DN. 6""
+(150 mm)";m';1300000;Material
+;Pipa DCI dia. 200 mm;m';1450000;Material
+;"Pipa DCI, DN. 8""
+(200 mm)";m';1450000;Material
+;Pipa DCI dia. 250 mm;m';1570000;Material
+;"Pipa DCI, DN. 10""
+(250 mm)";m';1570000;Material
+;Pipa DCI dia. 300 mm;m';1630000;Material
+;"Pipa DCI, DN. 12""
+(300 mm)";m';1640000;Material
+;Pipa DCI dia. 400 mm;m';1780000;Material
+;"Pipa DCI, DN. 16""
+(400 mm)";m';1790000;Material
+;Pipa DCI dia. 450 mm;m';1840000;Material
+;"Pipa DCI, DN. 18""
+(450 mm)";m';1850000;Material
+;Pipa DCI dia. 500 mm;m';1950000;Material
+;"Pipa DCI, DN. 20""
+(500 mm)";m';1960000;Material
+;Pipa DCI dia. 600 mm;m';2100000;Material
+;"Pipa DCI, DN. 24""
+(600 mm)";m';2115000;Material
+;Pipa DCI dia. 800 mm;m';2350000;Material
+;"Pipa DCI, DN. 32""
+(800 mm)";m';2360000;Material
+;Pipa DCI dia. 900 mm;m';2430000;Material
+;"Pipa DCI, DN. 36""
+(900 mm)";m';2440000;Material
+;Pipa DCI dia. 1000 mm;m';2560000;Material
+;"Pipa DCI, DN. 40""
+(1000 mm)";m';2570000;Material
+;Pipa DCI dia. 1100 mm;m';2720000;Material
+;"Pipa DCI, DN. 44""
+(1100 mm)";m';2730000;Material
+;"Pipa DCI, DN. 48""
+(1200 mm)";m';236000;Material
+;Pipa Beton dia. 200 mm;m';235000;Material
+;"Pipa Beton, DN. 8"" (200 mm)";m';236000;Material
+;Pipa Beton dia. 300 mm;m';264000;Material
+;"Pipa Beton, DN. 12"" (300 mm)";m';265000;Material
+;Pipa Beton dia. 400 mm;m';285000;Material
+;"Pipa Beton, DN. 16"" (400 mm)";m';286000;Material
+;Pipa Beton dia. 500 mm;m';299000;Material
+;"Pipa Beton, DN. 20"" (500 mm)";m';300000;Material
+;Pipa Beton dia. 600 mm;m';350000;Material
+;"Pipa Beton, DN. 24"" (600 mm)";m';351000;Material
+;Pipa Beton dia. 700 mm;m';410000;Material
+;"Pipa Beton, DN. 28"" (700 mm)";m';411000;Material
+;Pipa Beton dia. 800 mm;m';490000;Material
+;"Pipa Beton, DN. 32"" (800 mm)";m';491000;Material
+;Pipa Beton dia. 1000 mm;m';570000;Material
+;"Pipa Beton, DN. 40"" (1000 mm)";m';571000;Material
+;Pipa Beton dia. 1200 mm;m';640000;Material
+;"Pipa Beton, DN. 48"" (1200 mm)";m';641000;Material
+;"Valve Ø 6"" (150 mm)";buah;225000;Material
+;"Valve Ø 8"" (200 mm)";buah;290000;Material
+;"Valve Ø 10"" (250 mm)";buah;350000;Material
+;"Valve Ø 12"" (300 mm)";buah;410000;Material
+;"Valve Ø 16"" (400 mm)";buah;490000;Material
+;"Valve Ø 18"" (450 mm)";buah;530000;Material
+;"Valve Ø 20"" (500 mm)";buah;590000;Material
+;"Valve Ø 24"" (600 mm)";buah;670000;Material
+;"Valve Ø 28"" (700 mm)";buah;750000;Material
+;"Valve Ø 32"" (800 mm)";buah;810000;Material
+;"Valve Ø 36"" (900 mm)";buah;890000;Material
+;"Valve Ø 40"" (1000 mm)";buah;950000;Material
+;"Valve Ø 44"" (1100 mm)";buah;1050000;Material
+;"Valve Ø 48"" (1200 mm)";buah;1119000;Material
+;"Valve Ø 1/2"" (15 mm)";buah;95000;Material
+;"Valve Ø 3/4"" (20 mm)";buah;105000;Material
+;"Valve Ø 1"" (25 mm)";buah;115000;Material
+;"Valve Ø 1-1/4"" (32 mm)";buah;129000;Material
+;"Valve Ø 1-1/2"" (40 mm)";buah;135000;Material
+;"Valve Ø 2"" (50 mm)";buah;150000;Material
+;"Valve Ø 2-1/2"" (65 mm)";buah;170000;Material
+;"Valve Ø 3"" (80 mm)";buah;192000;Material
+;"Valve Ø 4"" (100 mm)";buah;205000;Material
+;"Valve Ø 5"" (125 mm)";buah;215000;Material
+;"Tee Ø 6"" (150 mm)";buah;65000;Material
+;"Tee Ø 8"" (200 mm)";buah;138000;Material
+;"Tee Ø 10"" (250 mm)";buah;215000;Material
+;"Tee Ø 18"" (450 mm)";buah;285000;Material
+;"Tee Ø 20"" (500 mm)";buah;350000;Material
+;"Tee Ø 24"" (600 mm)";buah;435000;Material
+;"Tee Ø 28"" (700 mm)";buah;510000;Material
+;"Tee Ø 32"" (800 mm)";buah;599000;Material
+;"Tee Ø 36"" (900 mm)";buah;670000;Material
+;"Tee Ø 40"" (1000 mm)";buah;750000;Material
+;"Tee Ø 44"" (1100 mm)";buah;830000;Material
+;"Tee Ø 48"" (1200 mm)";buah;950000;Material
+;"Tee Ø 1/2"" (15 mm)";buah;20000;Material
+;"Tee Ø 3/4"" (20 mm)";buah;27000;Material
+;"Tee Ø 1"" (25 mm)";buah ;30000;Material
+;"Tee Ø 1-1/4"" (32 mm)";buah;32000;Material
+;"Tee Ø 1-1/2"" (40 mm)";buah;39000;Material
+;"Tee Ø 2"" (50 mm)";buah;42000;Material
+;"Tee Ø 2-1/2"" (65 mm)";buah;48000;Material
+;"Tee Ø 5"" (125 mm)";buah;55000;Material
+;"Tee Ø 3"" (80 mm)";buah;59000;Material
+;"Tee Ø 4"" (100 mm)";buah;62000;Material
+;"Tee Ø 12"" (300 mm)";buah;235000;Material
+;"Tee Ø 16"" (400 mm)";buah;255000;Material
+MATERIAL BESI DAN BAJA;;;;Material
+;Baja (ulir) U-39;kg;14600;Material
+;Baja (ulir) U-48;kg;14600;Material
+;Baja Tahan Karat  ( Stainless  Steel );kg;80340;Material
+;Baja L 40.40.4;kg;14840;Material
+;Frame besi L.30.30.3;kg;14840;Material
+;Frame Allum L.10.1;kg;25000;Material
+;Besi angkur diameter 8;kg;35000;Material
+;Besi angkur/mur/baut;kg;16660;Material
+;;;;Material
+;Baut ;kg ;17000;Material
+;Besi hollow  38.38.2;kg;13700;Material
+;Besi hollow  50.50.3;kg;13800;Material
+;Besi hollow galvanis 40.40;m';6250;Material
+;Besi lis  kaca (1 x  1) cm;m';10500;Material
+;Besi plat baja tebal 2 mm;kg;25000;Material
+;Besi profil;kg;14840;Material
+;Besi siku;kg;14700;Material
+;Besi siku 30x30x3 mm;kg;13000;Material
+;Besi siku 40x40x4 mm;kg;15667;Material
+;Baja Profil Siku ;kg;15500;Material
+;Besi siku 40x40x4;m';20825;Material
+;Besi siku 20x20 tebal 2 mm;m;19500;Material
+;Besi strip;kg;7500;Material
+;Teralis Besi Strip lengkap dengan accessories ;M2;150000;Material
+;Pelat Strip t=2,6 mm, L=12 cm;buah;21000;Material
+;Pelat Strip t=2,6 mm, L=14 cm;buah;29000;Material
+;Pelat Strip t=2,6 mm, L=17 cm;buah ;39000;Material
+;Pelat Strip t=2,6 mm, L=34 cm;buah;58000;Material
+;Angkur Baja Full Drat ASTM 307 dia. 10 mm Panjang 35 cm ;buah;9200;Material
+;Angkur Baja Full Drat ASTM 307 dia 10 mm Panjang 65 cm ;buah;18000;Material
+;Besi strip (0,2x2) cm;m';5000;Material
+;Besi strip (0,2x2) cm;kg;15000;Material
+;Besi strip (20x3) mm;kg;17250;Material
+;Plat Strip 3/30 mm;m';9900;Material
+;Besi strip tebal 5 mm;kg;7500;Material
+;BjTP;kg;14250;Material
+;Baja Tulangan Polos (BjTP) diameter < 12 mm;kg ;14250;Material
+;Baja Tulangan Polos (BjTP) diameter >12 mm;kg ;16000;Material
+;BjTS;kg;14500;Material
+;Baja Tulangan Sirip (BjTS) diameter < 12 mm;kg ;14500;Material
+;Baja Tulangan Sirip (BjTS) diameter >12 mm;kg ;16500;Material
+;Bronjong kawat  pabrikan Uk.2x1x0,5 ø  3mm mesh 8x10;Unit;460000;Material
+;Bronjong kawat  pabrikan Uk.3x1,5x0,5 ø  3mm mesh 8x10;Unit;891000;Material
+;Bronjong kawat  pabrikan Uk.3x1x0,5 ø  3mm mesh 8x10;Unit;656000;Material
+;Bronjong kawat  pabrikan Uk.4x1x0,5 ø  3mm mesh 8x10;Unit;805000;Material
+;Dinabolt dia. 12mm (10-15 cm);buah;4550;Material
+;Dynabolt M12;buah ;30500;Material
+;Jaring Kawat Baja dilas;kg;15150;Material
+;Kawat  bronjong;kg;15680;Material
+;Kawat  duri;roll;116750;Material
+;Kawat  galvanis  Ø 3 mm;kg;26020;Material
+;Kawat  galvanis  Ø 4 mm;kg;25400;Material
+;Kawat  galvanis  Ø 5 mm;kg;22800;Material
+;Kawat  harmonika 12 x  24 mm;m2;28450;Material
+;Kawat  harmonika 14 x  30 mm;m2;28470;Material
+;Kawat  harmonika 14 x  35 mm;m2;27900;Material
+;Kawat  kasa;m2;26900;Material
+;Kawat beton;kg;18800;Material
+;Kawat bendrat;kg ;18800;Material
+;Kawat duri;m';1750;Material
+;Kawat seng 3mm;kg;18800;Material
+;Kawat harmonika;m2;34620;Material
+;Kawat jaring panjang 240 cm;lembar;300000;Material
+;Kawat las;kg;45550;Material
+;Kawat nyamuk;m3;20190;Material
+;Kawat nyamuk nylon;m2;18000;Material
+;Kawat Ø 4 mm;kg;35000;Material
+;Lapisan hot  deep galvanis;kg;8400;Material
+;Paku;kg;20000;Material
+;Paku 1 inch;kg;15000;Material
+;Paku 12 cm;buah;1500;Material
+;Paku 2 inch;kg;18000;Material
+;Paku 4 inch;kg;19000;Material
+;Paku biasa 5 inchi;kg;20000;Material
+;Paku 5 dan 10 cm ;kg ;20000;Material
+;Paku 5 dan 7 cm;kg;20000;Material
+;Paku 7 - 10 cm ;kg;20000;Material
+;Paku 3 cm ;kg;15000;Material
+;Paku Tripleks ;kg;17500;Material
+;Paku beton;kg;39450;Material
+;Paku Beton 5 cm;buah;200;Material
+;Paku hak panj 15cm;kg;22070;Material
+;Paku pancing 6x23;kg;19460;Material
+;Paku payung;kg;35590;Material
+;Paku rivet;buah;200;Material
+;Paku sekrup;kg;30090;Material
+;Paku sekrup (buah);buah;1600;Material
+;Paku Sekrup 1-2 cm;buah;1600;Material
+;Paku Fishes/kotak;kotak;29000;Material
+;Paku Fishes ;buah ;580;Material
+;Pintu tahan api;unit;8000000;Material
+;Pipa baja dia. 30 cm;m';1680000;Material
+;Pipa baja dia. 40 cm;m';2240000;Material
+;Pipa baja dia. 50 cm;m';2800000;Material
+;Pipa besi hitam 1 inch;m';15500;Material
+;Pipa besi hitam 1,5 inch;m';22000;Material
+;Pipa besi hitam 2 inch;m';31000;Material
+;Pipa besi hitam 3 inch;m';42000;Material
+;Saringan pasir;m';16650;Material
+;Sekrup kait;buah;700;Material
+;Wiremesh M10;kg;12430;Material
+;Wiremesh M12;kg;12660;Material
+;Wiremesh M6;kg;11522;Material
+;Wiremesh M7;kg;11816;Material
+;Wiremesh M8;kg;12049;Material
+;Wiremesh M9;kg;12276;Material
+MATERIAL PENUTUP ATAP;;;;Material
+;Aluminium gelombang 95x180 cm;lembar;180400;Material
+;Asbes  gelombang kecil 4mm (150x105);lembar;47800;Material
+;Asbes  gelombang kecil 4mm (180x105);lembar;57300;Material
+;Asbes  gelombang kecil 4mm (210x105);lembar;65300;Material
+;Asbes  gelombang kecil 4mm (240x105);lembar;75500;Material
+;Asbes gelombang besar 5 mm, 150x105 cm;lembar;120000;Material
+;Asbes gelombang besar 5 mm, 180x92 cm;lembar;85500;Material
+;Asbes gelombang besar 5 mm, 200x92 cm;lembar;94000;Material
+;Asbes gelombang besar 5 mm, 210x105 cm;lembar;125000;Material
+;Asbes gelombang besar 5 mm, 225x92 cm;lembar;104900;Material
+;Asbes gelombang besar 5 mm, 240x105 cm;lembar;130000;Material
+;Asbes gelombang besar 5 mm, 250x92 cm;lembar;113400;Material
+;Asbes gelombang besar 5 mm, 300x105 cm;lembar;135000;Material
+;Asbes gelombang besar 6 mm, 180x108 cm;lembar;93000;Material
+;Asbes gelombang besar 6 mm, 210x108 cm;lembar;92900;Material
+;Asbes gelombang besar 6 mm, 240x108 cm;lembar;99600;Material
+;Asbes gelombang besar 6 mm, 270x108 cm;lembar;113400;Material
+;Asbes gelombang besar 6 mm, 300x108 cm;lembar;131000;Material
+;Asbes gelombang kecil 4 mm, 270x105 cm;lembar;88400;Material
+;Asbes gelombang kecil 4 mm, 300x105 cm;lembar;100500;Material
+;Atap metal berpasir;m2;112500;Material
+;Atap metal lembaran;m2;112500;Material
+;Atap metal menerus;m2;80000;Material
+;Atap Rumbia /  Atap Saung 150cmx50cm;buah;20000;Material
+;Atap UPVC uk. 86x119 cm;m2;200000;Material
+;Bitumen tekstur genting;lembar;62700;Material
+;Bubung genteng kodok;buah;8600;Material
+;Bubung genteng palentong;buah;10700;Material
+;Bubungan asbes  besar;buah;30700;Material
+;Bubungan asbes  kecil;buah;48100;Material
+;Bubungan beton press;buah;5300;Material
+;Fibre glass  (jabes) 180x105 cm;lembar;78500;Material
+;Fibre glass  (jabes) 200x92 cm;lembar;68500;Material
+;Fibre glass  (jabes) 210x105 cm;buah;89700;Material
+;Fibre glass  (jabes) 250x105 cm;buah;122300;Material
+;Fibre glass  (jabes) 250x92 cm;buah;162500;Material
+;Fibreglass 180x90 cm;lembar;59600;Material
+;Frame 'S' 85.50 tinggi profil 85 dan tebal 0,75  mm;batang;145000;Material
+;Galvalum Gelombang Lapis  Pasir;lembar;61200;Material
+;Genteng aspal 80x100 cm;buah;149700;Material
+;Genteng beton;buah;6800;Material
+;Genteng decra bond;buah;9800;Material
+;Genteng kodok;buah;3400;Material
+;Genteng kodok glazuur;buah;5800;Material
+;Genteng metal;lembar;50700;Material
+;Genteng metal berpasir;lembar;30500;Material
+;Genteng palentong;buah;2800;Material
+;Genteng palentong super;buah;5300;Material
+;Listplang papan kalsiboard;buah;56200;Material
+;Listplang tekstur kayu;buah;54500;Material
+;Nok genteng aspal;buah;95000;Material
+;Nok genteng beton;buah;9600;Material
+;Nok genteng metal;buah;25600;Material
+;Nok paten 105 cm;lembar;70000;Material
+;Nok paten 108 cm;lembar;75000;Material
+;Nok paten 92 cm;lembar;65000;Material
+;Nok setel rata 105 cm;lembar;75000;Material
+;Nok setel rata 108 cm;lembar;80000;Material
+;Nok setel rata 92 cm;lembar;70000;Material
+;Nok standar;lembar;67000;Material
+;Nok stel gelombang 105 cm;lembar;70000;Material
+;Nok stel gelombang 108 cm;lembar;80000;Material
+;Nok stel gelombang 92 cm;lembar;60000;Material
+;Reng  batten  0,5;batang;35000;Material
+;Roof light fiberglass;lembar;116300;Material
+;Seng gelombang;lembar;85000;Material
+;Seng gelombang 3x6 inch;lembar;83100;Material
+;Seng Gelombang 105 cm x 180 cm;Lembar ;85000;Material
+;Seng gelombang bjls  0.18 panjang 180 cm;lembar;55200;Material
+;Seng gelombang bjls  0.20 panjang 180 cm;lembar;63900;Material
+;Seng gelombang bjls  30 panjang 180 cm;lembar;73300;Material
+;Seng gelombang bjls  0.40 panjang 180 cm;lembar;73000;Material
+;Seng gelombang bjls  28;lembar;85500;Material
+;Seng gelombang bljs 30;lembar;79000;Material
+;Seng gelombang panjang 200 cm;lembar;85000;Material
+;Seng plat  BJLS 0.18 lebar 55 cm;m';24800;Material
+;Seng plat  BJLS 0.20 lebar 55 cm;m';28100;Material
+;Seng plat  BJLS 0.28 lebar 55 cm;m';30400;Material
+;Seng plat  BJLS 0.30 lebar 55 cm;m';34600;Material
+;Seng plat 3x6 inch;lembar;66900;Material
+;Seng plat 3x6 inch bjls 28;lembar;72200;Material
+;Seng pelat;lembar;72200;Material
+;Seng Pelat  90x180 cm bjls 28;lembar ;72200;Material
+;Seng plat bjls 28;m';70200;Material
+;Seng plat bjls 30;m';74400;Material
+;Seng plat bjls 30;lembar;35000;Material
+;Sirap (100 lbr);pak;200000;Material
+;Sirap kayu;buah;5000;Material
+;Wab  capsule 62.27  tinggi 62  mm dan  tebal 0,4mm;batang;55000;Material
+;MATERIAL PLAFON;;;Material
+;Asbes 1,00  x 1,00  m;lembar;17400;Material
+;Compon Flafond;kg;5000;Material
+;cross tee;batang;18000;Material
+;GRC Pelat t=4 mm uk 122x244 cm;lembar;200000;Material
+;GRCboard (120 cm x  240 cm x  5 mm);m2;80800;Material
+;GRCboard (120 cm x  240 cm x  6 mm);m2;99300;Material
+;Gypsum Board (120 cm x  240 cm x  12 mm);lembar;93000;Material
+;Gypsum Board (122 cm x  244 cm x  12 mm);Lembar ;96000;Material
+;Gypsum board (120 cm x 240 cm x 9 mm);lembar;70000;Material
+;Rockwool tebal 50 mm;m2;290000;Material
+;Lambersening plafon ˂3;m2;180000;Material
+;Lambersening plafon ˃3;m2;200000;Material
+;List gypsum profil;m';15800;Material
+;Listplank GRC lebar 20 cm;m';21000;Material
+;Listplank GRC lebar 30 cm;m';23000;Material
+;Main tee;batang;34000;Material
+;Papan semen;m2;45000;Material
+;Asbes gelombang;lembar;62400;Material
+;Pelat  asbes  tebal 3,5 mm;lembar;62400;Material
+;Pelat  asbes  tebal 4 mm;lembar;69800;Material
+;Plafon akustik 30x30 cm;lembar;6200;Material
+;Plafon akustik 30x60 cm;lembar;13900;Material
+;Plafon akustik 60x120 cm;lembar;24000;Material
+MATERIAL PENUTUP LANTAI DAN DINDING;;;;Material
+;Bata Ekspose Tempel warna natural 8x24x2 cm;m';125000;Material
+;Bata tempel;buah;2500;Material
+;Batako 20x40x10 cm;buah;3000;Material
+;Batu andesit  30x30 t=3cm;m2;165000;Material
+;Batu andesit  30x30 t=5cm;m2;265000;Material
+;Batu paras;m2;125000;Material
+;Batu paros;m2;131600;Material
+;Batu tempel hitam;m2;121600;Material
+;Floor hardener;kg;5000;Material
+;Flooring Kayu Kruing   1,5x13,5x60 cm;m2;195000;Material
+;Flooring Kayu Merbau 1,5x9x30cm;m2;420000;Material
+;Flooring Kayu Sonokeling Grade B  1,5x9x30cm;m2;420000;Material
+;Granit  bakar 10x10, t=2cm;m2;275000;Material
+;Granit  bakar 30x30, t=2cm;m2;315000;Material
+;Granit  tile unpolish /  anti skid;m2;220100;Material
+;Granit tile 30x30 cm (double loading);buah;27700;Material
+;Granit tile 40x40 cm (double loading);buah;39200;Material
+;Granit tile 60x60 cm (double loading);buah;92800;Material
+;Granito  30 x  30 cm;m2;326400;Material
+;Granito  40 x  40 cm;m2;242500;Material
+;Guiding Block Warna t  =  6 cm;m2;330600;Material
+;Homogenous tile 30x30 cm;buah;20000;Material
+;Homogenous tile 40x40 cm;buah;30000;Material
+;Homogenous tile 60x60 cm;buah;50000;Material
+;Homogenous tile unpolish 30x30 cm;buah;27000;Material
+;Homogenous tile unpolish 40x40 cm;buah;39000;Material
+;Homogenous tile unpolish 60x60 cm;buah;56000;Material
+;Homogenous tile dinding 30x30 cm;buah;22000;Material
+;Homogenous tile dinding 40x40 cm;buah;30000;Material
+;Homogenous tile dinding 60x60 cm;buah;35000;Material
+;Karpet;m2;45000;Material
+;Keramik  20  x 25  cm;buah;2400;Material
+;Keramik 10 x  20 cm;buah;2300;Material
+;Keramik 20x20 cm;buah;2200;Material
+;Keramik 25 x  25 cm;buah;3100;Material
+;Keramik 30x30 cm;buah;4000;Material
+;Keramik 40x40 cm;buah;8100;Material
+;Keramik 60x60 cm;buah;12000;Material
+;Keramik Variasi 30x30 cm;buah;4000;Material
+;Keramik Variasi 40x40 cm;buah;8100;Material
+;KeramikVariasi  60x60 cm;buah;12000;Material
+;Step Nosing Keramik 10x60 cm;buah ;28000;Material
+;Keramik Tactile 30x30 cm ;buah ;37000;Material
+;Keramik Tactile 40x40 cm;buah ;39500;Material
+;Keramik artistik 10x10 cm;buah;1500;Material
+;Keramik artistik 20x20 cm;buah;2000;Material
+;Keramik artistik 30x30 cm;buah;3000;Material
+;Keramik artistik 40x40 cm;buah;4000;Material
+;Keramik artistik 8x8 cm;buah;1000;Material
+;Keramik cuting 50x50;buah;27500;Material
+;Keramik dinding 10x20 cm;buah;2000;Material
+;Keramik dinding 20x20 cm;buah;3000;Material
+;Keramik dinding artistik 10x20 cm;buah;2500;Material
+;Keramik dinding artistik 5x20 cm;buah;2000;Material
+;Lamparquet  Kayu Merbau 1x6x20cm;m2;190000;Material
+;Lamparquet  Kayu Merbau 1x9x20cm;m2;200000;Material
+;Lantai engineering wood;m2;200000;Material
+;Lantai Parket  Jati grade A   1,2x5x17 cm;m2;175000;Material
+;Lantai Parket  Jati grade A   1,2x5x20cm;m2;222000;Material
+;Lantai Parket  Jati grade A   1,2x5x25 cm;m2;250000;Material
+;Lantai Parket  Jati grade A   1,2x5x30 cm;m2;280000;Material
+;Lantai Parket  Jati grade B   1,2x5x17 cm;m2;160000;Material
+;Lantai Parket  Jati grade B   1,2x5x20cm;m2;195000;Material
+;Lantai Parket  Jati grade B   1,2x5x25 cm;m2;210000;Material
+;Lantai Parket  Jati grade B   1,2x5x30 cm;m2;250000;Material
+;Lantai Parket  Jati grade C   1,2x5x20cm;m2;140000;Material
+;Lantai Parket  Jati grade C   1,2x5x25 cm;m2;150000;Material
+;Lantai Parket  Jati grade C   1,2x5x30 cm;m2;160000;Material
+;Lem;kg;60000;Material
+;Marmer;buah;800000;Material
+;Marmer;m2;492600;Material
+;Marmer Graphir 10x10 cm;buah;20000;Material
+;Marmer Graphir 12x12 cm;buah;25000;Material
+;Pen Kuningan titik acuan;buah ;27000;Material
+;Mozaik porselen 10 x  20 cm;m2;73400;Material
+;Mozaik porselen 15 x  15 cm;m2;74400;Material
+;Mozaik porselen 20 x  20 cm;m2;75400;Material
+;Mozaik porselen 20 x  25 cm;m2;75400;Material
+;Parquet kayu solid;m2;306600;Material
+;Plint  Kayu 10 cm;buah;85000;Material
+;Plint  keramik 10 x  20 cm;buah;8200;Material
+;Plint  keramik 5 x  20 cm;buah;3400;Material
+;Plint granit 10 cm x 40 cm;buah;24000;Material
+;Plint granit 10cm x 30cm;buah;22600;Material
+;Plint homogenous tile uk. 10-15x30 cm;buah;5000;Material
+;Plint homogenous tile uk. 10-15x40 cm;buah;7000;Material
+;Plint homogenous tile uk. 10-15x60 cm;buah;10000;Material
+;Plint homogenous tile unpolish uk. 10-15x30 cm;buah;7000;Material
+;Plint homogenous tile unpolish uk. 10-15x40 cm;buah;9000;Material
+;Plint homogenous tile unpolish uk. 10-15x60 cm;buah;13000;Material
+;Plint internal cove uk. 5x5x20 cm;buah;5000;Material
+;Plint keramik  10  x 30  cm;buah;15300;Material
+;Plint keramik uk. 10-15x20 cm;buah;2000;Material
+;Plint keramik uk. 10-15x30 cm;buah;3000;Material
+;Plint keramik uk. 10-15x40 cm;buah;4000;Material
+;Plint keramik uk. 10-15x60 cm;buah;5000;Material
+;Plint teralux kerang uk. 10-15x30 cm;buah;2000;Material
+;Plint teralux kerang uk. 10-15x40 cm;buah;3000;Material
+;Plint teralux kerang uk. 10-15x60 cm;buah;4000;Material
+;Plint teralux marmer uk. 10-15x30 cm;buah;2500;Material
+;Plint teralux marmer uk. 10-15x40 cm;buah;3000;Material
+;Plint teralux marmer uk. 10-15x60 cm;buah;4000;Material
+;Plint ubin granit uk. 10-15x30 cm;buah;6000;Material
+;Plint ubin granit uk. 10-15x40 cm;buah;8000;Material
+;Plint ubin granit uk. 10-15x60 cm;buah;10000;Material
+;Plint ubin PC abu-abu uk. 10-15x20 cm;buah;1000;Material
+;Plint ubin PC abu-abu uk. 10-15x30 cm;buah;1500;Material
+;Plint ubin PC abu-abu uk. 10-15x40 cm;buah;2000;Material
+;Plint ubin PC abu-abu uk. 10-15x60 cm;buah;2500;Material
+;Plint ubin teraso uk. 10-15x30 cm;buah;4000;Material
+;Plint ubin teraso uk. 10-15x40 cm;buah;6000;Material
+;Plint ubin warna uk. 10-15x20 cm;buah;1500;Material
+;Plint ubin warna uk. 10-15x30 cm;buah;2000;Material
+;Plint ubin warna uk. 10-15x40 cm;buah;3000;Material
+;Plint ubin warna uk. 10-15x60 cm;buah;4500;Material
+;Porselen 10x20 cm;buah;2000;Material
+;Porselen 11x11 cm;buah;1000;Material
+;Porselen 11x11 cm (dus);dus;83000;Material
+;Porselen 20x20 cm;buah;4000;Material
+;Tangga Papan;m2;160000;Material
+;Tangga Parquet  /  Flooring;m2;180000;Material
+;Tegel plint, PC  abu-abu 15 x  20 cm;buah;6100;Material
+;Tegel plint, PC  warna 10 x  20 cm;buah;5300;Material
+;Teraso cor;m3;3500000;Material
+;Ubin granit 30x30 cm;buah;14200;Material
+;Ubin granit 40x40 cm;buah;20000;Material
+;Ubin granit 60x60 cm;buah;30000;Material
+;Ubin PC abu-abu 20x20 cm;buah;2000;Material
+;Ubin PC abu-abu 30x30 cm;buah;3400;Material
+;Ubin PC abu-abu 40x40 cm;buah;4600;Material
+;Ubin PC abu-abu 60x60 cm;buah;6000;Material
+;Ubin porselen lokal 11 x  11 putih;dos;43800;Material
+;Ubin porselen lokal 11 x  11 warna;dos;46900;Material
+;Ubin porselen lokal 15 x  15 putih;dos;48400;Material
+;Ubin porselen lokal 15 x  15 warna;dos;49900;Material
+;Ubin teralux marmer 30x30 cm;buah;45000;Material
+;Ubin teralux marmer 40x40 cm;buah;60000;Material
+;Ubin teralux marmer 60x60 cm;buah;70000;Material
+;Ubin teraso 30x30 cm;buah;24000;Material
+;Ubin teraso 40x40 cm;buah;30000;Material
+;Ubin warna 20x20 cm;buah;2000;Material
+;Ubin warna 30x30 cm;buah;4500;Material
+;Ubin warna 40x40 cm;buah;6000;Material
+;Ubin warna 60x60 cm;buah;8000;Material
+;Underlayer karpet;m2;10000;Material
+;UPVC decking;m2;500000;Material
+;Vinyl;buah;7000;Material
+MATERIAL BETON DAN ADUKAN PASANGAN;;;;Material
+;Additive;liter;51600;Material
+;Zat Aditif ;kg ;25000;Material
+;Floor lantai (Beton lantai kerja);m3;805600;Material
+;Lantai Kerja;m3;805000;Material
+;Adukan beton berpori (Aggregat  10/20mm) ready mix;m3;2250000;Material
+;Adukan beton K-100 ready mix;m3;788100;Material
+;Adukan beton K-125 ready mix;m3;805600;Material
+;Adukan beton K-175 ready mix;m3;848100;Material
+;Adukan beton K-200 ready mix;m3;869200;Material
+;Adukan beton K-225 ready mix;m3;887700;Material
+;Adukan beton K-250 ready mix;m3;911300;Material
+;Adukan beton K-275 ready mix;m3;937100;Material
+;Adukan beton K-300 ready mix;m3;961200;Material
+;Adukan beton K-350 ready mix;m3;1001900;Material
+;Adukan beton K-400 ready mix;m3;1066100;Material
+;Adukan beton K-500 ready mix;m3;1152800;Material
+;Beton fc' 15 Mpa;m3;1100000;Material
+;Compound gypsum;kg;3500;Material
+;Compound hardboard;kg;3700;Material
+;Curing compound;liter;44100;Material
+;Flexible waterproofing;kg;52400;Material
+;Membran Bakar ;m2;150000;Material
+;Cairan Primer ;kg ;57500;Material
+;Formtie/penjaga jarak bekesting/spacer;buah;7000;Material
+;Kassa;m';8100;Material
+;Kolom beton pracetak;batang;282000;Material
+;Panel beton pracetak;lembar;125000;Material
+;Paper tape hardboard;m';4800;Material
+;Pengisi khusus  rongga nat;kg;15500;Material
+;Perekat  khusus  penutup dinding;kg;21100;Material
+;Perekat  khusus  penutup lantai;kg;17200;Material
+;Semen 40 Kg;zak;46600;Material
+;Semen 50 Kg;zak;63000;Material
+;Semen grout;kg;6000;Material
+;Semen merah;kg;15800;Material
+;Semen Merk II 40 Kg;zak;46500;Material
+;Semen Merk II 50 Kg;zak;57600;Material
+;Semen nat;kg;16100;Material
+;Semen Portland (PC);kg;1260;Material
+;Semen putih 40 Kg;zak;89700;Material
+;Semen putih 50 Kg;zak;97700;Material
+;Semen warna;kg;7800;Material
+;Waterproofing;kg;61200;Material
+;Waterproofing Cristalin;kg;62000;Material
+;Waterproofing Semen Base;kg;74500;Material
+;Waterproofing Acrylic Base;kg;64000;Material
+;Joint Sealant;kg;22000;Material
+;Polytene 125 Mikron;kg ;46000;Material
+;Dowel dia. 25 mm (BjTs);Kg;15367.96537;Material
+;Tie Bar Dia. 16 mm (BjTS);Kg ;17721.51899;Material
+;Lolos screen 2 ukuran 9,5-19,0;m3;1970000;Material
+;Lolos screen 2 ukuran 0-5;m3;1799000;Material
+;Lantai Kerja fc 10 Mpa;m3;1236000;Material
+;Lantai Kerja fc 7,5 Mpa;m3;928000;Material
+;U-Ditch 30x30x120 cm ;Buah;220000;Material
+;U-Ditch 30x40x120 cm ;Buah;240000;Material
+;U-Ditch 40x40x120 cm ;Buah;270000;Material
+;U-Ditch 40x50x120 cm ;Buah;290000;Material
+;U-Ditch 40x60x120 cm ;Buah;320000;Material
+;U-Ditch 50x50x120 cm ;Buah;340000;Material
+;U-Ditch 50x60x120 cm ;Buah;370000;Material
+;U-Ditch 50x70x120 cm ;Buah;390000;Material
+;U-Ditch 60x60x120 cm ;Buah;420000;Material
+;U-Ditch 60x70x120 cm ;Buah;440000;Material
+;U-Ditch 60x80x120 cm ;Buah;470000;Material
+;U-Ditch 80x60x120 cm ;Buah;490000;Material
+;U-Ditch 80x80x120 cm ;Buah;520000;Material
+;U-Ditch 80x100x120 cm ;Buah;540000;Material
+;U-Ditch 100x100x120 cm ;Buah;570000;Material
+;U-Ditch 100x120x120 cm ;Buah;590000;Material
+;U-Ditch 120x120x120 cm ;Buah;620000;Material
+;U-Ditch 120x140x120 cm ;Buah;640000;Material
+;U-Ditch 140x140x120 cm ;Buah;670000;Material
+;U-Ditch 150x100x120 cm ;Buah;680000;Material
+;U-Ditch 150x150x120 cm ;Buah;710000;Material
+;U-Ditch 150x170x120 cm ;Buah;730000;Material
+;U-Ditch 160x160x120 cm ;Buah;750000;Material
+;U-Ditch 160x180x120 cm ;Buah;780000;Material
+;U-Ditch 180x180x120 cm ;Buah;800000;Material
+;U-Ditch 180x200x120 cm ;Buah;830000;Material
+;U-Ditch 200x200x120 cm ;Buah;850000;Material
+;Tutup U-Ditch 39x60x6 (tipe LD);buah ;70000;Material
+;Tutup U-Ditch 51x60x7 (tipe LD);buah ;100000;Material
+;Tutup U-Ditch 62x60x7,5 (tipe LD);buah ;125000;Material
+;Tutup U-Ditch 73x60x7,8 (tipe LD);buah;165000;Material
+;Tutup U-Ditch 94x60x10 (tipe LD);buah ;195000;Material
+;Tutup U-Ditch 39x60x9 (tipe HD);buah ;125000;Material
+;Tutup U-Ditch 51x60x10 (tipe HD);buah ;176000;Material
+;Tutup U-Ditch 73x60x14 (tipe HD);buah ;235000;Material
+;Tutup U-Ditch 94x60x15 (tipe HD);Buah ;375000;Material
+MATERIAL CAT;;;;Material
+;Cat  anti karat;kg;58200;Material
+;Cat  besi;kg;62800;Material
+;Cat  coating;liter;75700;Material
+;Cat  genteng;kg;52800;Material
+;Cat  tembok per 20 kg;kg;528800;Material
+;Cat antara (cat besi);kg;49700;Material
+;Cat dasar (cat besi);kg;52300;Material
+;Cat dasar (cat kayu);kg;38200;Material
+;Cat kayu;kg;50000;Material
+;Cat dasar (cat tembok eksterior);kg;128500;Material
+;Cat dasar (cat tembok interior);kg;119100;Material
+;Cat Dasar Plafond;Kg ;128500;Material
+;Cat Plafond Eksterior;kg;119100;Material
+;Cat epoxy;kg;30000;Material
+;Cat kedap  air  ( water  base);kg;53300;Material
+;Cat penutup (cat besi);kg;54700;Material
+;Cat penutup (cat kayu);kg;58500;Material
+;Cat penutup (cat tembok eksterior);kg;136600;Material
+;Cat penutup (cat tembok interior);kg;130500;Material
+;Cat dinding;m2;25000;Material
+;Cat zyncromate;kg;26000;Material
+;Cat Thermoplast ;kg ;29120;Material
+;Glass Beads ;kg;18000;Material
+;Compressor ;jam ;92500;Material
+;Logo PU Akrilik 40x40 cm ;buah ;400000;Material
+;Logo PU Plat Baja 80x80 cm ;buah ;450000;Material
+;Nomor Rumah Akrilik 15x30 cm;buah ;55000;Material
+;Bak Cuci Piring ;unit ;436500;Material
+;Shower Set;unit;666000;Material
+;Dempul;kg;33500;Material
+;Dempul jadi;kg;35500;Material
+;"Kuas  1""";buah;7100;Material
+;"Kuas  2""";buah;9800;Material
+;"Kuas  4""";buah;14100;Material
+;Kuas 3 inch;buah;10400;Material
+;Melamic;kg;60000;Material
+;Meni besi;kg;39700;Material
+;Meni kayu;kg;34500;Material
+;Pelitur;liter;73700;Material
+;Pelitur jadi;liter;66200;Material
+;Pengencer cat kayu/besi;liter;20000;Material
+;Pengencer cat kayu/besi;kg;17400;Material
+;Pewarna Beton;kg;75000;Material
+;Plamir kayu;kg;30100;Material
+;Plamir tembok;kg;26500;Material
+;Sanding;kg;90000;Material
+;Vernis;liter;44500;Material
+;Wood filler;kg;53000;Material
+;Woodstain;kg;87000;Material
+MATERIAL KUNCI DAN ENGSEL;;;;Material
+;1 set  kunci pintu (kw  1);buah;180900;Material
+;1 set  kunci pintu (kw  2);buah;117900;Material
+;1 set handle+kunci;buah;279000;Material
+;Door closer;buah;167500;Material
+;Door holder;buah;81000;Material
+;Door stop;buah;58500;Material
+;Engsel angin;buah;27400;Material
+;Engsel jendela;buah;18900;Material
+;Engsel kupu-kupu;buah;41700;Material
+;Engsel lengan jendela;buah;26500;Material
+;Engsel pintu (kw 1);buah;31500;Material
+;Engsel pintu (kw 2);buah;23700;Material
+;Floor hinge;buah;500000;Material
+;Gerendel Biasa;buah;32600;Material
+;Grendel;buah;15000;Material
+;Grendel tanam;buah;150000;Material
+;Handle pintu (kw  1);buah;140800;Material
+;Hendle Jendela ;buah ;58500;Material
+;Kait angin;buah;12000;Material
+;Kunci lemari;buah;14100;Material
+;Kunci silinder;buah;70000;Material
+;Kunci slot;buah;101300;Material
+;Kunci tanam;buah;65800;Material
+;Kunci tanam antik;buah;144300;Material
+;Kunci tanam biasa;buah;65800;Material
+;Kunci Tanam ex  lokal 2x  slag;buah;75000;Material
+;Kunci tanam kamar mandi;buah;46900;Material
+;Pull handle (kw  1);buah;290800;Material
+;Pull handle stainless  jumbo  (kw  1);buah;435200;Material
+;Rel pintu dorong;set;243100;Material
+;Spring knip;buah;21600;Material
+;Tarikan Pintu Stainless;buah;60000;Material
+;Venetions blinds dan vertical blinds;m2;140000;Material
+MATERIAL KACA;;;;Material
+;Glass block 20x20 cm;buah;2500;Material
+;Frame besi kaca nako;daun;400000;Material
+;Jendela nako;buah;400000;Material
+;Jendela Kaca Upvc 2 daun ;buah ;2000000;Material
+;Jendela Ornamen GRC ;buah ;596000;Material
+;Jendela Nako Rangka Aluminium (rangka+kaca 5 mm);m2;242000;Material
+;Kaca buram 12mm;m2;317000;Material
+;Kaca cermin 5 mm;m2;221400;Material
+;Kaca cermin 6mm;m2;270900;Material
+;Kaca cermin 8 mm;m2;796100;Material
+;Kaca es  kabur 3 mm;m2;85000;Material
+;Kaca es  kabur 5 mm;m2;95000;Material
+;Kaca gravire 5mm;m2;794400;Material
+;Kaca gravire putih 5mm;m2;750000;Material
+;Kaca laminated 12 mm;m2;900000;Material
+;Kaca laminated 8 mm;m2;700000;Material
+;Kaca lukis  alur 5mm;m2;688700;Material
+;Kaca patri 5 mm;m2;1516300;Material
+;Kaca polos;m2;120000;Material
+;Kaca polos 3 mm;m2;120000;Material
+;Kaca polos 5 mm;m2;198000;Material
+;Kaca polos 6 mm;m2;237000;Material
+;Kaca polos 8 mm;m2;226400;Material
+;Kaca tanpa tripel 5mm;m2;3447000;Material
+;Kaca tempered 12 mm;m2;600000;Material
+;Kaca triple 5mm;m2;3179400;Material
+;Kaca triple platinum 5mm;m2;3702800;Material
+;Kaca wireglass 5 mm;m2;144800;Material
+;Profil kaca;m¹;14500;Material
+;Profil kaca tebal 6 mm;m2;15000;Material
+;Ray Band 3mm;m2;85100;Material
+;Ray Band 5mm;m2;112400;Material
+MATERIAL SANITAIR;;;;Material
+;Bak  reservoir  fibreglass (kapasitas 1050  liter);buah;1793400;Material
+;Bak  reservoir  fibreglass (kapasitas 1200  liter);buah;1448700;Material
+;Bak  reservoir  fibreglass (kapasitas 1550  liter);buah;2125600;Material
+;Bak  reservoir  fibreglass (kapasitas 2000  liter);buah;2778200;Material
+;Bak  reservoir  fibreglass (kapasitas 650  liter);buah;868300;Material
+;Bak cuci stainlesteel;buah;230600;Material
+;Bak cuci teraso;buah;600000;Material
+;Bak fiberglass 1 m3;buah;400000;Material
+;Bak fiberglass 70x70x66 cm;buah;328400;Material
+;Bak teraso;buah;450000;Material
+;Bathup;unit;2500000;Material
+;Carbon filter kap. 0,1 m3/hari;unit;650000;Material
+;Carbon filter kap. 0,6 m3/hari;unit;3000000;Material
+;Clean out;buah;70000;Material
+;Flexible hose;m';55000;Material
+;Flexible hose;buah;50000;Material
+;Floor drain stainles steel;buah;44700;Material
+;Grab bar;buah;120000;Material
+;Grease trap central fiberglass, kap. 5 m3;unit;20000000;Material
+;Grease trap portable fiberglass, kap. 30 Liter;unit;1000000;Material
+;Grease trap portable stainless, kap. 30 Liter;unit;1500000;Material
+;Jet washer;buah;100000;Material
+;Kloset duduk/monoblok;buah;1490000;Material
+;Kloset jongkok;buah;250000;Material
+;Komunal 10;unit;30000000;Material
+;Komunal 100;unit;310000000;Material
+;Komunal 125;unit;390000000;Material
+;Komunal 150;unit;465000000;Material
+;Komunal 25;unit;70000000;Material
+;Komunal 50;unit;135000000;Material
+;Komunal 75;unit;245000000;Material
+;Kran air;buah;41700;Material
+;Partisi urinoir;buah;700000;Material
+;Pintu kubikel;set;1000000;Material
+;Pompa booster 150 lpm (vertical in line-packaged);unit;1200000;Material
+;Pompa booster 450 lpm (centrifugal end suction);unit;2970000;Material
+;Pompa jet 100 lpm;unit;2000000;Material
+;Pompa jet 27 lpm;unit;900000;Material
+;Pompa jet 34 lpm;unit;1200000;Material
+;Pompa lift 250 lpm;unit;3500000;Material
+;Pompa lift 80 lpm;unit;1000000;Material
+;Pompa transfer 150 lpm (centrifugal end suction);unit;1000000;Material
+;Pressure tank 1.000 liter;unit;17000000;Material
+;Priming tank fiber 1.000 liter;unit;2850000;Material
+;Priming tank fiber 2.000 liter;unit;4000000;Material
+;Priming tank fiber 500 liter;unit;1300000;Material
+;Priming tank fiber 800 liter;unit;2080000;Material
+;Robe hook;buah;70000;Material
+;Roof tank fiberglass kap. 12 m3;unit;36000000;Material
+;Roof tank fiberglass kap. 2 m3;unit;6000000;Material
+;Roof tank fiberglass kap. 4 m3;unit;12000000;Material
+;Roof tank stainless kap. 12 m3;unit;48000000;Material
+;Roof tank stainless kap. 2 m3;unit;6400000;Material
+;Roof tank stainless kap. 4 m3;unit;15000000;Material
+;Sand filter kap. 0,1 m3/hari;unit;2500000;Material
+;Sand filter kap. 14 m3/hari;unit;4800000;Material
+;Sekat kubikel;m2;1200000;Material
+;Septic  0,6;unit;3200000;Material
+;Septic  0,8;unit;3500000;Material
+;Septic  1;unit;3600000;Material
+;Septic  2;unit;4600000;Material
+;Septic  5;unit;16000000;Material
+;Sewage Treatment Plant (STP) fiberglass kap. 10 m3;unit;53200000;Material
+;Sewage Treatment Plant (STP) fiberglass kap. 2 m3;unit;19500000;Material
+;Sewage Treatment Plant (STP) fiberglass kap. 30 m3;unit;100000000;Material
+;Sewage Treatment Plant (STP) fiberglass kap. 5 m3;unit;33000000;Material
+;Sewage Treatment Plant (STP) precast kap. 30 m3;unit;84000000;Material
+;Silika filter kap. 0,1 m3/hari;unit;500000;Material
+;Soap holder;buah;150000;Material
+;"Stop kran PVC 1/2""";buah;4000;Material
+;"Stop kran PVC 3/4""";buah;6000;Material
+;Submersible cutter pump kap. 100 lpm;unit;8500000;Material
+;Tangki toren kap. 0,7 m3;unit;1100000;Material
+;Tangki toren kap. 1,5 m3;unit;1700000;Material
+;Tangki toren kap. 2,5 m3;unit;3400000;Material
+;Tangki toren kap. 3 m3;unit;4600000;Material
+;Tangki toren kap. 4 m3;unit;5500000;Material
+;Tangki toren kap. 5 m3;unit;6900000;Material
+;Tangki toren kap. 5,5 m3;unit;7100000;Material
+;Tangki toren kap. 6 m3;unit;7850000;Material
+;Tangki Panel FRP kap. 12 m3;unit ;15000000;Material
+;Tangki panel Stainless Steel kapasitas 12 m3 + Material Bantu / Aksesoris;Unit ;12500000;Material
+;"Tangki panel GRP
+kapasitas 12 m3 +
+Material Bantu /
+Aksesoris";Unit ;12000000;Material
+;Tangki Toren Kapasitas 0,5 m3;Unit ;650000;Material
+;Pompa Jet 30 lpm ;unit;730000;Material
+;Galian tanah biasa;m3;45000;Material
+;Urukan Tanah ;m2;65000;Material
+;Timbunan Pasir ;m3;150000;Material
+;Buis Beton 1/2 dia. 30 cm ;buah ;93000;Material
+;Buis Beton 1/2 dia. 40 cm ;buah ;110250;Material
+;Buis Beton 1/2 dia. 50 cm ;buah ;115000;Material
+;Buis Beton 1/2 dia. 60 cm ;buah ;125500;Material
+;Buis beton 1/2 dia. 80 cm ;buah ;150600;Material
+;Buis Beton 1/2 dia. 100 cm ;buah ;190000;Material
+;Buis Beton dia. 30 cm ;buah ;75000;Material
+;Buis Beton dia. 40 cm ;buah ;120000;Material
+;Buis Beton dia. 50 cm ;buah ;150000;Material
+;Buis Beton dia. 60 cm ;buah ;250000;Material
+;Buis beton dia. 80 cm ;buah ;255400;Material
+;Buis Beton dia. 100 cm ;buah ;269500;Material
+;Ijuk ;kg ;7000;Material
+;Beton ;m3;825000;Material
+;tulangan ;kg;10300;Material
+;Bekisting ;m2;37500;Material
+;Kanstin uk. 10x20x40;Buah ;27383;Material
+;Kanstin uk. 15x40x60;buah ;93000;Material
+;Box Culvert 40x40x100 cm;buah ;855000;Material
+;Box Culvert 50x50x100 cm;buah ;1119000;Material
+;Box Culvert 60x60x100 cm;buah ;1504000;Material
+;Box Culvert 80x80x100 cm;buah ;2560000;Material
+;Box Culvert 100x100x100 cm;buah ;3052000;Material
+;Box Culvert 150x150x100 cm;buah ;3570000;Material
+;Box Culvert 200x200x100 cm;buah ;3930000;Material
+;Box Culvert 300x300x100 cm;buah ;4110000;Material
+;Tempat  sabun gantung;buah;70100;Material
+;Tempat  sabun tanam;buah;53300;Material
+;Tissue holder;buah;150000;Material
+;Towel bar;buah;150000;Material
+;Urinoir;buah;456800;Material
+;Wastafel;buah;325100;Material
+;Water drain;set;321900;Material
+MATERIAL MINYAK;;;;Material
+;Bensin;liter;7800;Material
+;Bensin (industri);liter;8100;Material
+;Bentonite;m3;20000000;Material
+;Cairan perontok karat;kg;20000;Material
+;Cuka bibit;liter;50000;Material
+;Minyak bekisting;liter;16800;Material
+;Minyak cat;kg;24000;Material
+;Minyak pelumas;liter;28000;Material
+;Minyak tanah;liter;15300;Material
+;Oli hidrolis;liter;31300;Material
+;Oli mesin;liter;30300;Material
+;Premium (industri);liter;9400;Material
+;Residu;liter;21000;Material
+;Solar;liter;6500;Material
+;Solar (industri);liter;8800;Material
+;Steamvet;liter;51000;Material
+;Teak oil;liter;29200;Material
+;Thinner;liter;21800;Material
+;Thinner A;liter;18800;Material
+MATERIAL ALUMINIUM DAN BESI;;;;Material
+;Aluminium composite panel;m2;225800;Material
+;Aluminium spandrel 10x600 cm;lembar;200000;Material
+;Aluminium strip;m';50000;Material
+;Besi as  drat;kg;40200;Material
+;Besi profil;kg;34500;Material
+;Blok besi cor type skep;bh;1055700;Material
+;Blok besi type ronsel;bh;1508800;Material
+;Buis  brons;bh;422000;Material
+;C  channel galvanis  lebar 40 mm;m';10700;Material
+;C  channel galvanis  lebar 75 mm;m';13600;Material
+;Cat  meni;kg;50600;Material
+;Daun Pintu HDF 36x720x2100;unit;475000;Material
+;Pintu uPVC lebar 80 cm ;buah ;1043100;Material
+;Pintu uPVC lebar 70 cm ;buah ;730000;Material
+;Frame aluminium;m';38333;Material
+;Rangka Aluminium;m';39000;Material
+;Gembok;bh;102300;Material
+;Grease;kg;67800;Material
+;Hollow  galvanis  20x40x0,4 mm;m';7500;Material
+;Metal Hollow 20x40 mm;m';7500;Material
+;Hollow galvanis 40x40x0,4 mm;m';10700;Material
+;Jalusi aluminium;m2;600000;Material
+;Jalusi uPVC;buah ;49500;Material
+;Kontra mur type ronsel;bh;343800;Material
+;Kontra mur type skep;bh;301300;Material
+;kopel/universal join;bh;542800;Material
+;"Kusen aluminium 4""  putih";m';107000;Material
+;Kusen Bovenlight Upvc;bauh ;270000;Material
+;Lager type ronsel;bh;905000;Material
+;Lager type skep;bh;693400;Material
+;"Mur baut  1/2""  x  4""";bh;16100;Material
+;"Mur baut  5/8""  x  4""";bh;19500;Material
+;Mur baut  M8 steinless;bh;19500;Material
+;"Baut dan Mur f12 L=4"" ";buah ;20000;Material
+;"Baut dan Mur f12, L=6""";buah ;22000;Material
+;"Baut dan Mur f12, L=7""";buah ;23000;Material
+;Ring Plat ;buah ;2500;Material
+;Mur brons  ronsel;kg;210400;Material
+;Mur brons  type skep;kg;210400;Material
+;Pen spindie type ronsel;bh;102300;Material
+;Penyangga roda gigi;bh;542800;Material
+;Pintu alluminium;m';73600;Material
+;Pintu KM  aluminium;unit;1500000;Material
+;Pintu lipat  besi;m2;494200;Material
+;Pintu lipat PVC;m2;750000;Material
+;Plat  peluncur;kg;210400;Material
+;Plat besi 3 mm;kg;34500;Material
+;Profil aluminium;m';130000;Material
+;Profil Aluminium ”T”;m';15000;Material
+;Profil slimar aluminium;m';60000;Material
+;Rangka metal hollow 40.40.1,2 mm;m';16200;Material
+;Rangka metal hollow 40.40.2 mm;m';19000;Material
+;roda gigi nanas;bh;1025800;Material
+;Roda gigi pinggiran;bh;1750300;Material
+;Rolling door aluminium;m2;600600;Material
+;Rolling door besi;m2;509100;Material
+;Rubber seal;m';1811200;Material
+;Sliding pintu J4;buah;456000;Material
+;"Stang draft  diameter 1,5""  +  mur baut";m';2750000;Material
+;"Stang draft  diameter 1,75""  +  mur baut";m';3150000;Material
+;"Stang draft  diameter 2""  +  mur baut";m';3500000;Material
+;"Stang draft  diameter 2,25""  +  mur baut";m';3800000;Material
+;Stang gembok;bh;78200;Material
+;Stang pemutar type ronsel;bh;1146500;Material
+;Stang pemutar type skep;bh;633600;Material
+;Sunscreen aluminium;m2;381900;Material
+;Talang galvalum lebar 50 cm tebal 0,4 mm;m';53300;Material
+;Talang datar/jurai seng lebar 90cm;m;75000;Material
+;Talang Seng 1/2 lingkaran diameter 15cm ;m;133000;Material
+;Thinner;ltr;35600;Material
+MATERIAL LISTRIK;;;;Material
+;Hanger tray panjang 2,5 m;buah;300000;Material
+;Kabel BCC 10 mm² (0,10 kg/m);m';29000;Material
+;Kabel BCC 16 mm² (0,16 kg/m);m';33000;Material
+;Kabel BCC 25 mm² (0,25 kg/m);m';53000;Material
+;Kabel BCC 35 mm² (0,35 kg/m);m';72000;Material
+;Kabel BCC 4 mm² (0,04 kg/m);m';12000;Material
+;Kabel BCC 50 mm² (0,50 kg/m);m';95500;Material
+;Kabel BCC 6 mm² (0,06 kg/m);m';13200;Material
+;BCC 6 mm2 (0,06 kg/m) dan aksesoris;m';38300;Material
+;Kabel BCC 70 mm² (0,70 kg/m);m';136000;Material
+;Kabel BCC 95 mm² (0,95 kg/m);m';185000;Material
+;Kabel FRC 1 x 150 mm²;m';275000;Material
+;Kabel FRC 2 x 1,5 mm²;m';23000;Material
+;Kabel FRC 2 x 1,5 mm2 + PVC Conduit HI 20 mm dan aksesoris;m';27100;Material
+;Kabel FRC 2 x 2,5 mm²;m';33500;Material
+;Kabel FRC 2 x 2,5 mm2 + PVC Conduit HI 20 mm dan aksesoris;m';37600;Material
+;Kabel FRC 3 x 2,5 mm²;m';40000;Material
+;Kabel FRC 4 x 150 mm²;m';1607400;Material
+;Kabel FRC 4 x 4 mm²;m';90000;Material
+;Kabel FRC 4 x 6 mm²;m';110000;Material
+;Kabel NYA 1 x 1,5 mm²;m';3200;Material
+;Kabel NYA 1 x 10 mm²;m';20000;Material
+;Kabel NYA 1 x 16 mm²;m';33000;Material
+;Kabel NYA 1 x 2,5 mm²;m';5300;Material
+;Kabel NYA 1 x 4 mm²;m';8300;Material
+;Kabel NYA 1 x 6 mm²;m';12200;Material
+;Kabel NYA 2 x 1,5 mm²;m';9200;Material
+;Kabel NYA 3 x 1,5 mm²;m';14000;Material
+;Kabel NYA 3 x 2,5 mm²;m';19448;Material
+;Kabel NYA 5 x 2,5 mm²;m';51500;Material
+;Kabel NYA 1 x 35 mm²;m';71250;Material
+;Kabel NYA 1 x 95 mm²;m';181000;Material
+;Kabel NYFGBY 2 x 1,5 mm²;m';22750;Material
+;Kabel NYFGBY 2 x 10 mm²;m';60750;Material
+;Kabel NYFGBY 2 x 16 mm²;m';82000;Material
+;Kabel NYFGBY 2 x 2,5 mm²;m';30500;Material
+;Kabel NYFGBY 2 x 4 mm²;m';35200;Material
+;Kabel NYFGBY 2 x 6 mm²;m';43350;Material
+;Kabel NYFGBY 3 x 1,5 mm²;m';28500;Material
+;Kabel NYFGBY 3 x 10 mm²;m';79600;Material
+;Kabel NYFGBY 3 x 16 mm²;m';128900;Material
+;Kabel NYFGBY 3 x 2,5 mm²;m';32900;Material
+;Kabel NYFGBY 3 x 4 mm²;m';49000;Material
+;Kabel NYFGBY 3 x 6 mm²;m';63500;Material
+;Kabel NYFGBY 4 x 1,5 mm²;m';29400;Material
+;Kabel NYFGBY 4 x 10 mm²;m';100600;Material
+;Kabel NYFGBY 4 x 120 mm²;m';969500;Material
+;Kabel NYFGBY 4 x 150 mm²;m';1187650;Material
+;Kabel NYFGBY 4 x 16 mm²;m';159300;Material
+;Kabel NYFGBY 4 x 185 mm²;m';1470650;Material
+;Kabel NYFGBY 4 x 2,5 mm²;m';38600;Material
+;Kabel NYFGBY 4 x 240 mm²;m';1921500;Material
+;Kabel NYFGBY 4 x 25 mm²;m';247200;Material
+;Kabel NYFGBY 4 x 300 mm²;m';2392250;Material
+;Kabel NYFGBY 4 x 35 mm²;m';314750;Material
+;Kabel NYFGBY 4 x 4 mm²;m';66000;Material
+;Kabel NYFGBY 4 x 50 mm²;m';411600;Material
+;Kabel NYFGBY 4 x 6 mm²;m';70200;Material
+;Kabel NYFGBY 4 x 70 mm²;m';575250;Material
+;Kabel NYFGBY 4 x 95 mm²;m';743750;Material
+;Kabel NYM 2 x 1,5 mm²;m';8880;Material
+;Kabel NYM 2 x 10 mm²;m';49000;Material
+;Kabel NYM 2 x 2,5 mm²;m';13250;Material
+;Kabel NYM 2 x 4 mm²;m';19950;Material
+;Kabel NYM 2 x 6 mm²;m';29000;Material
+;Kabel NYM 3 x 1,5 mm²;m';11400;Material
+;Kabel NYM 3 x 10 mm²;m';69200;Material
+;Kabel NYM 3 x 2,5 mm²;m';21300;Material
+;Kabel NYM 3 x 4 mm²;m';27000;Material
+;"Kabel NYM 3 x 2,5
+mm2 (LSOH)";M';21300;Material
+;Kabel NYM 3 x 6 mm²;m';43100;Material
+;Kabel NYM 4 x 1,5 mm²;m';14400;Material
+;Kabel NYM 4 x 10 mm²;m';92900;Material
+;Kabel NYM 4 x 16 mm²;m';150000;Material
+;Kabel NYM 4 x 2,5 mm²;m';22700;Material
+;Kabel NYM 4 x 4 mm²;m';37000;Material
+;Kabel NYM 4 x 6 mm²;m';54400;Material
+;Kabel NYMHY 2 x 1,5 mm²;m';9300;Material
+;Kabel NYMHY 2 x 2,5 mm²;m';13900;Material
+;Kabel NYMHY 3 x 1,5 mm²;m';13400;Material
+;"Kabel NYMHY 2(3 x
+1,5 mm2) + Conduit
+PVC HI 20 mm dan
+aksesoris";m';35000;Material
+;"Kabel NYMHY 3 x 1,5
+mm2 + Conduit PVC
+HI 20 mm dan
+aksesoris";m';17500;Material
+;Kabel NYMHY 3 x 2,5 mm²;m';21300;Material
+;Kabel NYMHY 4 x 2,5 mm²;m';28700;Material
+;Kabel NYY 1 x 10 mm²;m';18000;Material
+;Kabel NYY 1 x 120 mm²;m';246500;Material
+;Kabel NYY 1 x 150 mm²;m';303000;Material
+;Kabel NYY 1 x 16 mm²;m';36000;Material
+;Kabel NYY 1 x 185 mm²;m';377000;Material
+;Kabel NYY 1 x 25 mm²;m';56000;Material
+;Kabel NYY 1 x 250 mm²;m';496000;Material
+;Kabel NYY 1 x 300 mm²;m';619000;Material
+;Kabel NYY 1 x 35 mm²;m';75000;Material
+;Kabel NYY 1 x 4 mm²;m';7500;Material
+;Kabel NYY 1 x 400 mm²;m';786000;Material
+;Kabel NYY 1 x 50 mm²;m';99600;Material
+;Kabel NYY 1 x 500 mm²;m';1004400;Material
+;Kabel NYY 1 x 6 mm²;m';12000;Material
+;Kabel NYY 1 x 630 mm²;m';1245000;Material
+;Kabel NYY 1 x 70 mm²;m';142000;Material
+;Kabel NYY 1 x 95 mm²;m';196500;Material
+;Kabel NYY 2 x 1,5 mm²;m';12000;Material
+;Kabel NYY 2 x 10 mm²;m';57500;Material
+;Kabel NYY 2 x 16 mm²;m';92000;Material
+;Kabel NYY 2 x 2,5 mm²;m';16560;Material
+;Kabel NYY 2 x 4 mm²;m';23000;Material
+;Kabel NYY 2 x 6 mm²;m';35000;Material
+;Kabel NYY 3 x 1,5 mm²;m';15000;Material
+;Kabel NYY 3 x 10 mm²;m';74600;Material
+;Kabel NYY 3 x 16 mm²;m';114000;Material
+;Kabel NYY 3 x 2,5 mm²;m';21500;Material
+;Kabel NYY 3 x 25 mm²;m';174900;Material
+;Kabel NYY 3 x 35 mm²;m';235500;Material
+;Kabel NYY 3 x 4 mm²;m';33000;Material
+;Kabel NYY 3 x 50 mm²;m';305700;Material
+;Kabel NYY 3 x 6 mm²;m';46000;Material
+;Kabel NYY 4 x 1,5 mm²;m';18600;Material
+;Kabel NYY 4 x 10 mm²;m';96000;Material
+;Kabel NYY 4 x 120 mm²;m';1011900;Material
+;Kabel NYY 4 x 150 mm²;m';1245000;Material
+;Kabel NYY 4 x 16 mm²;m';148500;Material
+;Kabel NYY 4 x 185 mm²;m';1552800;Material
+;Kabel NYY 4 x 2,5 mm²;m';28620;Material
+;Kabel NYY 4 x 240 mm²;m';2044800;Material
+;Kabel NYY 4 x 25 mm²;m';228000;Material
+;Kabel NYY 4 x 300 mm²;m';2550900;Material
+;Kabel NYY 4 x 35 mm²;m';310500;Material
+;Kabel NYY 4 x 4 mm²;m';43000;Material
+;Kabel NYY 4 x 50 mm²;m';412200;Material
+;Kabel NYY 4 x 6 mm²;m';61000;Material
+;Kabel NYY 4 x 70 mm²;m';584700;Material
+;Kabel NYY 4 x 95 mm²;m';805200;Material
+;Kabel STP AWG 18 ;m';4500;Material
+;Kabel STP AWG 18 + PVC Conduit HI 20 mm (dari MCFA ke TB) dan aksesoris;;10700;Material
+;Kabel ITC 2x2x0,6 mm2;m';3924;Material
+;Kabel ITC 2 x 2 x 0,6 mm2 + PVC Conduit HI 20 mm dan aksesoris;m';13100;Material
+;Kabel UTP CAT 6;m';1500;Material
+;Kabel Coaxial 7C-2V ;m';22800;Material
+;Kabel Ladder 500 x100 mm ;unit ;494000;Material
+;Kabel Ladder 600 x100 mm ;Unit ;535000;Material
+;Kabel Ladder 800 x100 mm ;Unit ;569000;Material
+;Kabel Tray 600 x 100 mm Hotdip Galvanized ;Unit ;1639000;Material
+;Kabel Tray 600 x100 mm Elektro Galvanized ;Unit;1255500;Material
+;Kabel Tray 600 x 100 mm Powder Coating ;Unit ;890000;Material
+;Kabel Tray (Horizontal) 1000 x 100 mm TRU Powder Coating dan aksesoris;Unit;650000;Material
+;Kabel Tray (Horizontal) 1000 x 100 mm TRU Hot Dip Galvanized dan aksesoris;unit;670000;Material
+;Kabel Tray (Horizontal) 1000 x 100 mm TRU OCP dan aksesoris;Unit;710000;Material
+;Kabel Tray (Horizontal) 1000 x 100 mm TRC Powder Coating dan aksesoris;Unit ;750000;Material
+;Kabel Tray (Horizontal) 1000 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;670000;Material
+;Kabel Tray (Horizontal) 1000 x 100 mm TRC OCP dan aksesoris;Unit ;710000;Material
+;Kabel Tray (Horizontal) 900 x 100 mm TRU Powder Coating dan aksesoris;Unit ;550000;Material
+;"Kabel Tray
+(Horizontal) 900 x
+100 mm TRU Hot Dip
+Galvanized dan
+aksesoris";Unit;570000;Material
+;"Kabel Tray
+(Horizontal) 900 x
+100 mm TRU OCP
+dan aksesoris";Unit;590000;Material
+;Kabel Tray (Horizontal) 900 x 100 mm TRC Powder Coating dan aksesoris;unit ;600000;Material
+;Kabel Tray (Horizontal) 900 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit;630000;Material
+;"Kabel Tray
+(Horizontal) 900 x
+100 mm TRC OCP
+dan aksesoris";Unit;650000;Material
+;"Kabel Tray
+(Horizontal) 800 x
+100 mm TRU Powder
+Coating dan aksesoris";Unit;400000;Material
+;"Kabel Tray
+(Horizontal) 800 x
+100 mm TRU Hot Dip
+Galvanized dan
+aksesoris";unit ;430000;Material
+;"Kabel Tray
+(Horizontal) 800 x
+100 mm TRU OCP
+dan aksesoris";Unit;450000;Material
+;"Kabel Tray
+(Horizontal) 800 x
+100 mm TRC Powder
+Coating dan aksesoris";Unit;470000;Material
+;"Kabel Tray
+(Horizontal) 800 x
+100 mm TRC Hot Dip
+Galvanized dan
+aksesoris";Unit;490000;Material
+;Kabel Tray (Horizontal) 800 x 100 mm TRC OCP dan aksesoris;unit ;510000;Material
+;Kabel Tray (Horizontal) 700 x 100 mm TRU Powder Coating dan aksesoris;Unit;350000;Material
+;Kabel Tray (Horizontal) 700 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit;370000;Material
+;Kabel Tray (Horizontal) 700 x 100 mm TRU OCP dan aksesoris;Unit;390000;Material
+;Kabel Tray (Horizontal) 700 x 100 mm TRC Powder Coating dan aksesoris;unit ;410000;Material
+;Kabel Tray (Horizontal) 700 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit;430000;Material
+;Kabel Tray (Horizontal) 700 x 100 mm TRC;Unit;450000;Material
+;Kabel Tray (Horizontal) 600 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit;470000;Material
+;(Horizontal) 600 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;350000;Material
+;Pemasangan 1 Unit Kabel Tray (Horizontal) 600 x 100 mm TRC OCP;Unit;370000;Material
+;Kabel Tray (Horizontal) 500 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit ;385000;Material
+;Kabel Tray (Horizontal) 500 x 100 mm TRU OCP dan aksesoris;Unit;395000;Material
+;Kabel Tray (Horizontal) 500 x 100 mm TRC Powder Coating dan aksesoris;Unit ;415000;Material
+;Kabel Tray (Horizontal) 500 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit;430000;Material
+;Kabel Tray (Horizontal) 500 x 100 mm TRC OCP dan aksesoris;Unit ;445000;Material
+;Kabel Tray (Horizontal) 400 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit;350000;Material
+;Kabel Tray (Horizontal) 400 x 100 mm TRU OCP dan aksesoris;Unit ;365000;Material
+;Kabel Tray (Horizontal) 400 x 100 mm TRC Powder Coating dan aksesoris;Unit;380000;Material
+;Kabel Tray (Horizontal) 400 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;395000;Material
+;Kabel Tray (Horizontal) 400 x 100 mm TRC OCP dan aksesoris;Unit;410000;Material
+;Kabel Tray (Horizontal) 300 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit ;300000;Material
+;Kabel Tray (Horizontal) 300 x 100 mm TRU OCP dan aksesoris;Unit;320000;Material
+;Kabel Tray (Horizontal) 300 x 100 mm TRC Powder Coating dan aksesoris;Unit ;340000;Material
+;Kabel Tray (Horizontal) 300 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit;360000;Material
+;Kabel Tray (Horizontal) 300 x 100 mm TRC OCP dan aksesoris;Unit ;380000;Material
+;Kabel Tray (Horizontal) 200 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit;400000;Material
+;Kabel Tray (Horizontal) 200 x 100 mm TRU OCP dan aksesoris;Unit ;250000;Material
+;Kabel Tray (Horizontal) 200 x 100 mm TRC Powder Coating dan aksesoris;Unit;270000;Material
+;Kabel Tray (Horizontal) 200 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;280000;Material
+;Kabel Tray (Horizontal) 200 x 100 mm TRC OCP dan aksesoris;Unit;300000;Material
+;Kabel Tray (Horizontal) 150 x 100 mm TRU Powder Coating dan aksesoris;Unit ;250000;Material
+;Kabel Tray (Horizontal) 150 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit;260000;Material
+;Kabel Tray (Horizontal) 150 x 100 mm TRU OCP dan aksesoris;Unit ;280000;Material
+;Kabel Tray (Horizontal) 150 x 100 mm TRC Powder Coating dan aksesoris;Unit;300000;Material
+;Kabel Tray (Horizontal) 150 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;320000;Material
+;Kabel Tray (Horizontal) 150 x 100 mm TRC OCP dan aksesoris;Unit;350000;Material
+;Kabel Tray (Vertikal) 1000 x 100 mm TRU Powder Coating dan aksesoris;Unit ;350000;Material
+;Kabel Tray (Vertikal) 1000 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit;370000;Material
+;Kabel Tray (Vertikal) 1000 x 100 mm TRU OCP dan aksesoris;Unit ;390000;Material
+;Kabel Tray (Vertikal) 1000 x 100 mm TRC Powder Coating dan aksesoris;Unit;400000;Material
+;Kabel Tray (Vertikal) 1000 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;410000;Material
+;Kabel Tray (Vertikal) 1000 x 100 mm TRC OCP dan aksesoris;Unit;420000;Material
+;Kabel Tray (Vertikal) 900 x 100 mm TRU Powder Coating dan aksesoris;Unit;340000;Material
+;Kabel Tray (Vertikal) 900 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit ;350000;Material
+;Kabel Tray (Vertikal) 900 x 100 mm TRU OCP dan aksesoris;Unit;360000;Material
+;Kabel Tray (Vertikal) 900 x 100 mm TRC Powder Coating dan aksesoris;Unit;370000;Material
+;Kabel Tray (Vertikal) 900 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;380000;Material
+;Kabel Tray (Vertikal) 900 x 100 mm TRC OCP dan aksesoris;Unit;390000;Material
+;Kabel Tray (Vertikal) 800 x 100 mm TRU Powder Coating dan aksesoris;Unit;350000;Material
+;Kabel Tray (Vertikal) 800 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit ;360000;Material
+;Kabel Tray (Vertikal) 800 x 100 mm TRU OCP dan aksesoris;Unit;370000;Material
+;Kabel Tray (Vertikal) 800 x 100 mm TRC Powder Coating dan aksesoris;Unit;380000;Material
+;Kabel Tray (Vertikal) 800 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;390000;Material
+;Kabel Tray (Vertikal) 800 x 100 mm TRC OCP dan aksesoris;Unit;400000;Material
+;Kabel Tray (Vertikal) 700 x 100 mm TRU Powder Coating dan aksesoris;Unit;340000;Material
+;Kabel Tray (Vertikal) 700 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit ;350000;Material
+;Kabel Tray (Vertikal) 700 x 100 mm TRU OCP dan aksesoris;Unit;360000;Material
+;Kabel Tray (Vertikal) 700 x 100 mm TRC Powder Coating dan aksesoris;Unit;370000;Material
+;Kabel Tray (Vertikal) 700 x 100 mm TRC Hot Dip Galvanized dan aksesoris;Unit ;380000;Material
+;Kabel Tray (Vertikal) 700 x 100 mm TRC OCP dan aksesoris;Unit;390000;Material
+;Kabel Tray (Vertikal) 600 x 100 mm TRU Hot Dip Galvanized dan aksesoris;Unit;340000;Material
+;Kabel Tray (Vertikal) 600 x 100 mm TRU OCP dan aksesoris;Unit ;350000;Material
+;"Kabel Tray (Vertikal)
+600 x 100 mm TRC
+Powder Coating dan
+aksesoris";Unit ;360000;Material
+;"Kabel Tray (Vertikal)
+600 x 100 mm TRC
+Hot Dip Galvanized
+dan aksesoris";Unit;370000;Material
+;"Kabel Tray (Vertikal)
+600 x 100 mm TRC
+OCP dan aksesoris";Unit ;390000;Material
+;"Kabel Tray (Vertikal)
+500 x 100 mm TRU
+Hot Dip Galvanized
+dan aksesoris";Unit;340000;Material
+;"Kabel Tray (Vertikal)
+500 x 100 mm TRU
+OCP dan aksesoris";Unit ;350000;Material
+;"Kabel Tray (Vertikal)
+500 x 100 mm TRC
+Powder Coating dan
+aksesoris";Unit;360000;Material
+;"Kabel Tray (Vertikal)
+500 x 100 mm TRC
+Hot Dip Galvanized
+dan aksesoris";Unit ;370000;Material
+;"Kabel Tray (Vertikal)
+500 x 100 mm TRC
+OCP dan aksesoris";Unit;380000;Material
+;"Kabel Tray (Vertikal)
+400 x 100 mm TRU
+Hot Dip Galvanized
+dan aksesoris";Unit ;340000;Material
+;"Kabel Tray (Vertikal)
+400 x 100 mm TRU
+OCP dan aksesoris";Unit;350000;Material
+;"Kabel Tray (Vertikal)
+400 x 100 mm TRC
+Powder Coating dan
+aksesoris";Unit ;360000;Material
+;"Kabel Tray (Vertikal)
+400 x 100 mm TRC
+Hot Dip Galvanized
+dan aksesoris";Unit;370000;Material
+;"Kabel Tray (Vertikal)
+400 x 100 mm TRC
+OCP dan aksesoris";Unit ;380000;Material
+;"Kabel Tray (Vertikal)
+300 x 100 mm TRU
+Hot Dip Galvanized
+dan aksesoris";Unit;340000;Material
+;"Kabel Tray (Vertikal)
+300 x 100 mm TRU
+OCP dan aksesoris";Unit ;350000;Material
+;"Kabel Tray (Vertikal)
+300 x 100 mm TRC
+Powder Coating dan
+aksesoris";Unit;360000;Material
+;"Kabel Tray (Vertikal)
+300 x 100 mm TRC
+Hot Dip Galvanized
+dan aksesoris";Unit ;370000;Material
+;"Kabel Tray (Vertikal)
+300 x 100 mm TRC
+OCP dan aksesoris";Unit;380000;Material
+;"Kabel Tray (Vertikal)
+200 x 100 mm TRU
+Hot Dip Galvanized
+dan aksesoris";Unit ;330000;Material
+;"Kabel Tray (Vertikal)
+200 x 100 mm TRU
+OCP dan aksesoris";Unit;340000;Material
+;"Kabel Tray (Vertikal)
+200 x 100 mm TRC
+Powder Coating dan
+aksesoris";Unit ;350000;Material
+;"Kabel Tray (Vertikal)
+200 x 100 mm TRC
+Hot Dip Galvanized
+dan aksesoris";Unit;360000;Material
+;"Kabel Tray (Vertikal)
+200 x 100 mm TRC
+OCP dan aksesoris";Unit ;370000;Material
+;"Kabel Tray (Vertikal)
+150 x 100 mm TRU
+Powder Coating dan
+aksesoris";Unit;330000;Material
+;"Kabel Tray (Vertikal)
+150 x 100 mm TRU
+Hot Dip Galvanized
+dan aksesoris";Unit ;340000;Material
+;"Kabel Tray (Vertikal)
+150 x 100 mm TRU
+OCP dan aksesoris";Unit;350000;Material
+;"Kabel Tray (Vertikal)
+150 x 100 mm TRC
+Powder Coating dan
+aksesoris";Unit ;360000;Material
+;"Kabel Tray (Vertikal)
+150 x 100 mm TRC
+Hot Dip Galvanized
+dan aksesoris";Unit;370000;Material
+;"Kabel Tray (Vertikal)
+150 x 100 mm TRC
+OCP dan aksesoris";Unit ;380000;Material
+;Kabel tray 200 x 100 mm;m';175000;Material
+;Kabel tray 300 x 100 mm;m';219000;Material
+;Kabel tray 400 x 100 mm;m';265000;Material
+;Kabel tray 500 x 100 mm;m';309000;Material
+;Kabel tray 600 x 100 mm;m';352000;Material
+;Klem kabel tray;buah;6000;Material
+;Klem 20 mm;buah ;900;Material
+;Mur baut kabel tray;buah;1000;Material
+;PVC conduit HI 20 mm²;m';4100;Material
+;Flexible Conduit 20 mm;m;5400;Material
+;PVC conduit HI 32 mm²;m1;20000;Material
+;Conduit HI 20 mm ;m;4000;Material
+;Saklar Tunggal ;buah ;24000;Material
+;Saklar Ganda ;Buah ;33000;Material
+;Saklar Triple ;Buag ;76000;Material
+;Grid Switch ;Buah ;108000;Material
+;Grid Switch 4 x 2 Gang ;buah ;180000;Material
+;Stop Kontak ;Buah ;70000;Material
+;Stop Kontak AC;buah ;67900;Material
+;T Dus ;buah ;4000;Material
+;Socket Conduit 20 mm;buah ;700;Material
+;Klem 20 mm ;buah ;298;Material
+;Isolasi ;m;416;Material
+;lasdop ;buah ;580;Material
+;Elbow ;buah ;550;Material
+;Fischer S6 + Sekrup ;buah ;21.5;Material
+;kWh meter Token 1 Phase ;unit ;534000;Material
+;kWh meter Token 3 Phase ;unit ;3150000;Material
+;Software sistem kwh meter swakelola prabayar ;buah ;2000000;Material
+;PC Server ;buah ;33900000;Material
+;Panel Utama Tegangan Menengah;unit ;3100000;Material
+;Panel Utama Tegangan Rendah;unit ;1500000;Material
+;MDP Floor Standing;unit ;4500000;Material
+;MDP Wall Mounted ;Unit ;4900000;Material
+;SDP Floor Standing ;unit;3500000;Material
+;SDP Wall  Mounted ;unit;3300000;Material
+;Panel Lantai Wall Mounted 800x600x200;Unit ;3200000;Material
+;Panel Lantai Wall Mounted 600x 400 x200;unit;3000000;Material
+;Panel kWh Meter ;unit;2500000;Material
+;Panel Penerang Luar Outdoor termasuk material batu ;Unit;3500000;Material
+;Panel Kontrol Pompa;unit;5500000;Material
+;Panel Power Gondola termasuk material bantu;unit ;5700000;Material
+;Panel Power Elektronik termasuk material bantu;unit;3500000;Material
+;Panel Power AHU termasuk material bantu ;unit ;4900000;Material
+;Panel Power AC termasuk material bantu ;unit ;1700000;Material
+;Panel Power Chiller termasuk material bantu ;unit ;2300000;Material
+;Panel Kontrol Power Chiller termasuk material bantu;unit ;2500000;Material
+;Panel Kontrol Power Cooling Tower termasuk material bantu ;unit ;1900000;Material
+;Panel Kontrol Fan Presurisasi termasuk material bantu;unit ;2100000;Material
+;MCB Box ;unit ;450000;Material
+;Genset Kap : 75kVA Silent Type dan aksesoris ;unit;75000000;Material
+;Genset Kap : 100 kVA Silent Type dan aksesoris ;unit ;79000000;Material
+;Genset Kap : 400 kVA Silent Type dan aksesoris ;unit ;85000000;Material
+;UPS 5 KVA ;unit ;18000000;Material
+;Tangki Solar Harian 500 liter ;unit ;4000000;Material
+;"Hand Pump Solar
+dan aksesoris";Buah ;4000000;Material
+;Trafo Kap : 630 Kva : Synthetic Oil Ester;unit;17000000;Material
+;Downlight 5 Inch 14, 5 Watt LED + Aksesoris;buah ;82000;Material
+;Lampu LED E27 10 watt + Aksesoris ;buah ;22000;Material
+;Fitting E27 + Aksesoris ;buah ;5200;Material
+;Nicad Battery ;buah;110000;Material
+;Lampu LED E27 19 watt;buah ;70500;Material
+;RM TKI 2 x 16 Watt LED;unit;265000;Material
+;Lampu Sorot LED 100 Watt;unit ;125000;Material
+;Lampu Sorot RGB 30 Watt untuk Outdoor ;unit ;34000;Material
+;Pelindung Lampu ;unit ;18000;Material
+;Lampu High Bay 100 Watt ;unit ;1620000;Material
+;Lampu Eksit LED 3 Watt c/w Battery ;buah ;148000;Material
+;Lampu TLED 1  x 14 Watt 2.100 Lumen ;buah;65000;Material
+;Lampu TLED 1 x 24 Watt 2.100 Lumen;buah ;72000;Material
+;Lampu TLED 2 x 24 Watt 2.100 Lumen;buah ;144000;Material
+;Lampu PJU LED 50 Watt ;buah ;495000;Material
+;Tiang PJU Kawasan 6-7 m;buah ;2000000;Material
+;Lampu PJU LED 50 Watt + Solar Cell;buah ;700000;Material
+;Lampu Taman 25 Watt +Tiang 1 m;buah ;155000;Material
+;Fitting;buah ;16000;Material
+;Lampu LED 7 Watt ;buah ;27000;Material
+;Lampu LED 9 Watt ;buah ;34000;Material
+;Lampu Baret 20 Watt;buah ;77000;Material
+;Lampu Baret 32 Watt;;97000;Material
+;Lampu Pijar 40 Watt ;;28000;Material
+;Lampu TL 18 Watt ;;20000;Material
+;Lampu TLED 18 Watt ;;30000;Material
+;Lampu TL  36 Watt;;25000;Material
+;Lampu TLED  36 Watt;;75000;Material
+;Lampu Sport Floodlight Led ;buah ;375000;Material
+;Brackket ;buah ;11500;Material
+;Junction Box IP Rated ;buah ;142000;Material
+;Kabel Fiber Optic Dual Core Single Mode ;m';11300;Material
+;Pipa HDPE Conduit 20 mm;m';3800;Material
+;DMX LED Controller 1 Universe;buah ;1400000;Material
+;Sensor Cahaya ;buah ;58000;Material
+;Sensor Gerak ;buah ;65900;Material
+;MCP-FA (Semi Addressable 1 Loop);unit;26250000;Material
+;Programming, Testing & commisioning;lot ;3500000;Material
+;PC Komputer ;Unit ;3500000;Material
+;Alarm Printer ;unit;2500000;Material
+;Report Printer;unit;1900000;Material
+;Announciator;unit;2100000;Material
+;Terminal Box Fire Alarm ;unit ;265000;Material
+;Smoke Detector Addressable ;Unit;780000;Material
+;Rate of Rise Detector Addressable ;unit ;343000;Material
+;Fix Heat Detector Addressable ;unit ;318000;Material
+;Smoke Detector Konvensional ;unit ;245000;Material
+;Rate of Rise Detector Konvensional;unit ;240000;Material
+;Fix Heat Detector Konvensioanl;unit ;290000;Material
+;Lamp Indicator ;unit ;57000;Material
+;Manual Break Glass;unit ;60000;Material
+;Horn Strobe;unit ;175000;Material
+;Fire Fighting Telepon ;unit ;135000;Material
+;Alarm Bell;unit ;85000;Material
+;Sirine Module ;buah;650000;Material
+;Control Module;Buah;350000;Material
+;Relay Module;buah ;103500;Material
+;Isolator Module ;buah ;220000;Material
+;Monitor Module;buah;200000;Material
+;Rectifier;unit;3500000;Material
+;Power Surge Arrester;unit;1279000;Material
+;UPS 2 KVA 15 Menit ;unit;3800000;Material
+;UPS 2 KVA 30 Menit;unit;4100000;Material
+;UPS 2 KVA 1 Jam;unit;4900000;Material
+;UPS 2 KVA 2 Jam;unit;5200000;Material
+;UPS 2 KVA 4 Jam;unit;5700000;Material
+;End of Line Resistor ;unit;20000;Material
+;Patch Panel UTP Cat 6 4 Port;unit;1540000;Material
+;Wiring Management;;110000;Material
+;PoE Switch HUB;;273000;Material
+;Network  Video Recorder (NVR) Kapasitas 32 Chanel;;5500000;Material
+;8 TB Hardisk ;;1960000;Material
+;"Rak 19"" 12 U Lengkap dengan Power Outlet ";;770000;Material
+;"LCD Monitor 32""";;2380000;Material
+;"Bracket Monitor 32""";;88500;Material
+;"LCD Monitor 50""";;3500000;Material
+;"Bracket Monitor 50""";;150000;Material
+;Keyboard + Mouse ;;350000;Material
+;Indoor Fix Dome IP Camera ;;465000;Material
+;Outdoor Fix Dome IP Camera ;;504000;Material
+;MDF-SS;;1450000;Material
+;Selector Switch c/w Control Panel;;850000;Material
+;Power Amplifier 360 Watt;;1500000;Material
+;Power Amplifier 240 Watt;;1200000;Material
+;Power Amplifier 120 Watt;;1000000;Material
+;System Controller (Mixer Pre Amp + Equalizer);;250000;Material
+;VCD/DVD/MP3/Mp4;;250000;Material
+;Automatic Alarm System;unit ;1000000;Material
+;Paging Mic Keypad;;640000;Material
+;UPS 1 KVA 4 Jam ;;2475000;Material
+;Rack Cabinet;;670000;Material
+;Terminal Box Tata Suara (TBTS);;75000;Material
+;Ceiling Speaker;;680000;Material
+;Wall Speaker;;650000;Material
+;Horn Speaker;;250000;Material
+;Tiang ;m';55500;Material
+;MDF 2 x 8 Pair;Unit;125000;Material
+;MDF 2 x 10 Pair;Unit;150000;Material
+;Pemasangan 1 Unit PABX Kap: 1 Line 10 Extension ;Unit ;1000000;Material
+;Pemasangan 1 Unit PABX Kap: 1 Line 8 Extension ;Unit ;870000;Material
+;Terminal Box Telepon;;250000;Material
+;Outlet Telepon;unit ;102000;Material
+;Server / Gateway c/w PC, Monitor, Keyboard, Mouse;Unit ;6500000;Material
+;Main Switch HUB 24 Port;unit;950000;Material
+;Main Switch HUB 12 Port;unit;650000;Material
+;Router Broadband;;550000;Material
+;Fire Wall + Anti Virus;;250000;Material
+;Outlet Data;;150000;Material
+;Patch Cord;;30000;Material
+;Patch Panel 24 Port;;500000;Material
+;Wifi Access Point (Wifi 6 Radius 50 M);;1500000;Material
+;Switch Hub 8 Port;;250000;Material
+;Media Converter ;;110000;Material
+;OTB ;;150000;Material
+;"Touch Screen Panel 7""";;2300000;Material
+;"Touch Screen Panel 10""";;2500000;Material
+;"Touch Screen Panel 12""";;2900000;Material
+;"Touch Screen Panel 14""";;3200000;Material
+;Wall Mounted Rack 15U;;150000;Material
+;Workstation, Meja+Kursi;;2550000;Material
+;Connector ;;2550;Material
+;Splitter TV 6 Port;;100000;Material
+;Splitter TV 7 Port;;125000;Material
+;Terminal Bocx TV;;250000;Material
+;Antena UHF;;130000;Material
+;Antena VHF;;150000;Material
+;AC Wall Mounted Kap : 5.000 BTUH;;3200000;Material
+;AC Wall Mounted Kap : 6.500 BTUH;;3800000;Material
+;AC Wall Mounted Kap : 7.000 BTUH;;4200000;Material
+;AC Wall Mounted Kap : 9.000 BTUH;;4500000;Material
+;AC Wall Mounted Kap : 12.000 BTUH;;5300000;Material
+;AC Wall Mounted Kap : 24.000 BTUH;;7600000;Material
+;AC Wall Mounted Kap : 35.000 BTUH;;10000000;Material
+;Ceiling Fan, 50 CFM;;900000;Material
+;Ceiling Fan, 75 CFM;;1200000;Material
+;Ceiling Fan, 100 CFM;;1350000;Material
+;Ceiling Fan, 200 CFM;;1500000;Material
+;Inline  Fan, 500 CFM;;1300000;Material
+;Inline  Fan, 700 CFM;;1700000;Material
+;"Axial Fan ; 2.600 CFM";;780000;Material
+;"Axial Fan ; 2.800 CFM";;860000;Material
+;"Axial Fan ; 3.200 CFM";;995000;Material
+;"Axial Fan ; 3.500 CFM";;1020000;Material
+;"Axial Fan ; 4.000 CFM";;1350000;Material
+;"Axial Fan ; 5.500 CFM";;1700000;Material
+;Rotary Fan;;750000;Material
+;Ceiling Fan Rotary;;1500000;Material
+;"Bifurcated Fan; 1.500 CFM";;8300000;Material
+;Propeller Fan, 75 CFM;;1800000;Material
+;Propeller Fan, 100 CFM;;2100000;Material
+;Propeller Fan, 150 CFM;;2300000;Material
+;Propeller Fan, 370 CFM;;250000;Material
+;Propeller Fan, 375 CFM;;2900000;Material
+;Propeller Fan, 500 CFM;;3500000;Material
+;Propeller Fan, 600 CFM;;3900000;Material
+;Propeller Fan, 1200 CFM;;4500000;Material
+;Intake Grille 600 x 300 mm;;95000;Material
+;Intake Grille 650 x 350 mm;;115000;Material
+;Intake Grille 800 x 350 mm;;130000;Material
+;Intake Grille 800 x 400 mm;;145000;Material
+; Intake Louvre 700 x 400 mm;;135000;Material
+; Fan Louvre 750 x 400 mm;;150000;Material
+; Fan Louvre 900 x 500 mm;;220000;Material
+; Fan Louvre 1.000 x 400 mm;;250000;Material
+; Fan Louvre 1.000 x 450 mm;;270000;Material
+;Exhaust Grille 150 x 150 mm;;140000;Material
+;Exhaust Grille 200 x 200 mm;;160000;Material
+;Exhaust Grille 600 x 300 mm;;200000;Material
+;Exhaust Grille 650 x 350 mm;;230000;Material
+;Exhaust Grille 900 x 400 mm;;300000;Material
+;Exhaust Louvre;;450000;Material
+;ZINK BJLS ;;222000;Material
+;Flinkote ;lot ;56500;Material
+;finish Cat ;lot ;92000;Material
+;Hanger + Support;lolt ;55000;Material
+;;;;Material
+MATERIAL SISTEM PEMBUMIAN ;;;;Material
+;Bak Kontrol Pemeriksaan dari Batu Bata 45 x 45 x 45 cm + Tutup Beton 45 x 45 x 10 cm;buah ;829900;Material
+;Terminal Busbar 300 x 50 x 5 mm;buah;135000;Material
+;Batang Tembaga Pembumian Dia.5/8” (kedalaman min. 12 m);batang;1135000;Material
+;Pantek (kedalaman min. 12 m);lot;245000;Material
+;Kabel BC 95 mm2;m;145000;Material
+;Kabel Skun 95 mm2;m;26400;Material
+;Rod Coupling;buah;130000;Material
+;Material Bantu;lot;50000;Material
+;Batang Tembaga Pembumian Dia.3/4” (kedalaman min. 12 m);batang;1666000;Material
+;Air Terminal ;unit;1634000;Material
+;Base Air Terminal ;unit ;587600;Material
+;DC Clip Non Metalic Clamp ;unit;13500;Material
+;Square Tape Clamp;unit;55000;Material
+;Bimetallic Connector ;unit ;35000;Material
+;Grounding Test Box;unit;492000;Material
+;"5/8"" Rod Coupling ";unit ;45000;Material
+;"5/8"" Driving Stud ";unit;83000;Material
+;Rod to Cable Clamp (Type GUV);unit ;252900;Material
+;Polymer Inspection Pit;unit;530000;Material
+;Coupling Bonding Grounded Rod 70 mm2;unit ;2040000;Material
+;Clamp BC L ukuran BC 70 mm2;unit ;25500;Material
+;"Clamp PVC 1""";unit ;1500;Material
+;Copper Air Terminal Base 15 mm ;;189000;Material
+;15x500 mm Aluminium Air Rod ;;160000;Material
+;15x500 mm Copper Air Rod ;;582000;Material
+;25x3 mm Bare Aluminium Tape;m';58620;Material
+;"5/8"" x 1800 mm Extensible Copperbond Rod ";buah ;496000;Material
+;"5/8"" Copperbond Rod ";buah ;185000;Material
+;"Grounding Rod Gip 1"" Panjang 1 m ";buah;142500;Material
+;"Grounding Rod Gip 1"" Panjang 2 m ";buah;285000;Material
+;Exothermic Welding;buah ;185000;Material
+;Surge Arrester 1 Phase (15 KA);unit ;690000;Material
+;Surge Arrester 3 Phase (15 KA);unit ;962000;Material
+MATERIAL LAIN-LAIN;;;;Material
+;Air;liter;200;Material
+;Banner plastik 0.6x0.8 m2;m2;100000;Material
+;Air (m3);m3;50000;Material
+;Akrilik 4 mm;m2;179000;Material
+;Alang-alang;ikat;30000;Material
+;Alat  tulis;buah;68600;Material
+;Aluminium foil;m2;10000;Material
+;Aluminium foil double side;m2;11000;Material
+;Amplas;lembar;3900;Material
+;Baja ringan C75 x 0,75 mm;batang;95000;Material
+;Baja ringan C75 x 0,75 mm (permeter);m;15833.33333;Material
+;Baja Profil ;kg;16480;Material
+;Baja ringan C75 x 0,8 mm;batang;82400;Material
+;Baja ringan C75 x 1,00 mm;batang;106000;Material
+;Baja ringan C75 x 1,00 mm (m);m';17667;Material
+;Bata Ringan (ukuran 60x20x10 cm);m3;755000;Material
+;Batu Andesit  Bakar 10x10, t=3cm;Unit;145000;Material
+;Batu Andesit  Bakar 30x30, t=3cm;Unit;170000;Material
+;Batu apung;kg;6100;Material
+;Bollard Besi Tempa (BL1);unit;1262500;Material
+;Bollard Besi Tempa (BL2);unit;1040000;Material
+;"Bollard cast  iron (tinggi 1,2m ; Ø bawah 5""  ; Ø atas  4"")";buah;2626500;Material
+;"Bollard stainless  steel (tinggi 1m ; Ø 4"")";buah;555600;Material
+;Bubuk poles;kg;180000;Material
+;Aspal;kg;1200;Material
+;Coldmix  (Aspal Tambal Dingin) 25 kg;Zak;225000;Material
+;Cutting sticker;m2;100000;Material
+;Epoxy resin grout;kg;216700;Material
+;Formica;lembar;51400;Material
+;Formika;lembar;170000;Material
+;Gebalan Rumput  Jenis  Lamuran;m²;10600;Material
+;Glasswool tebal 8 cm;m2;29167;Material
+;Guardrail;m';761200;Material
+;Hebel Block (ukuran 60x20x15 cm);buah;20200;Material
+;Huruf/letter timbul stainless  steel;buah;9200;Material
+;Ijuk;m3;39700;Material
+;Insulasi foam;m2;70000;Material
+;Jaringan udara (LVTC  2x15 mm);unit;2156800;Material
+;Jendela type J1;unit;2740500;Material
+;Jendela type J2;unit;5481000;Material
+;Joint  Sealent;kg;37300;Material
+;Kapur;m3;263700;Material
+;Kapur padam;kg;7000;Material
+;Karung goni;m2;14500;Material
+;Karung plastik;buah;3900;Material
+;Kisdam (sewa sheet  pile selama 2 bulan);batang;710500;Material
+;Lem Aibon;kg;42500;Material
+;Lem epoxy;kg;145000;Material
+;Lem kayu;kg;16400;Material
+;Lem vinyl;kg;36900;Material
+;Lem Karpet ;kg;75000;Material
+;Lethering akrilik tinggi 100 tebal 20 cm;buah;1167200;Material
+;Lethering akrilik tinggi 25 tebal 5 cm;buah;140000;Material
+;Lethering akrilik tinggi 45 tebal 20 cm;buah;525200;Material
+;Lethering akrilik tinggi 70 tebal 20 cm;buah;817000;Material
+;Lis  profil beton (50 cm);buah;8000;Material
+;Mortar Acian Bata Ringan;zak;99600;Material
+;Mortar Perekat  Bata Ringan;zak;85600;Material
+;Mortar Plesteran Bata Ringan;zak;82600;Material
+;Mortar siap pakai;kg;1850;Material
+;Mortar Skimcoat;kg;5070;Material
+;Nako  per daun;buah;8700;Material
+;Pasir Ottawa;Zak;515000;Material
+;Pemasangan lantai tempered laminated glass  Jemabatan Kaca;Unit;107070707;Material
+;Pen akrilik;buah;7000;Material
+;Perekat untuk  wallpaper;kg;36800;Material
+;Pintu lipat  (folding door) bahan plastik/PVC;m2;215000;Material
+;Pintu type P1;unit;4689300;Material
+;"Pipa screen pvc  Ø 4""";m¹;94600;Material
+;"Pipa stainless  steel diameter 0,5 ""  panjang 6 m";batang;1152000;Material
+;"Pipa stainless  steel diameter 0,75 ""  panjang 6 m";batang;1253500;Material
+;"Pipa stainless  steel diameter 1 ""  panjang 6 m";batang;1598600;Material
+;"Pipa stainless  steel diameter 1,5 ""  panjang 6 m";batang;1877700;Material
+;"Pipa stainless  steel diameter 2 ""  panjang 6 m";batang;2461300;Material
+;"Pipa stainless  steel diameter 2,5 ""  panjang 6 m";batang;3045000;Material
+;"Pipa stainless  steel diameter 3 ""  panjang 6 m";batang;4403200;Material
+;Plastik aerator;buah;15900;Material
+;Prasasti marmer 20x20;Unit;120000;Material
+;Ramset;buah;3200;Material
+;Recorder paper;set;174100;Material
+;Rel pintu dorong;buah;243700;Material
+;Reng baja ringan;batang;33900;Material
+;Reng baja ringan;m;6000;Material
+;Roster 10 x  20 cm;buah;11300;Material
+;Roster 15 x  25 cm;buah;19300;Material
+;Roster 15 x  30 cm;buah;19800;Material
+;Roster 20 x 20 cm;buah;13100;Material
+;Roster 25 x  25 cm;buah;16500;Material
+;Roster 30 x  30 cm;buah;20500;Material
+;Roster/terawang;buah;21500;Material
+;Rumput  sintetis  uk. 1mx1m tebal 2 cm;buah;149300;Material
+;Sabun;Kg;19400;Material
+;Screen low  carbon;m¹;549300;Material
+;"Screen stainless  steel ø  4""";m¹;1137800;Material
+;Sealant;tube;33100;Material
+;Sealant;tube;33500;Material
+;Sealant  kaca;kg;32100;Material
+;Sealtape;buah;5700;Material
+;Semen Sika;Zak;163900;Material
+;Septic  tank pabrikasi 1000 liter;buah;3605000;Material
+;Septic  tank pabrikasi 1200 liter;buah;5150000;Material
+;Septic  tank pabrikasi 2000 liter;buah;9785000;Material
+;Septic  tank pabrikasi 800 liter;buah;2629500;Material
+;Sesek bambu;lembar;19100;Material
+;Signage RMJ;unit;1987300;Material
+;Signage Plat Baja lengkap dengan accessories;buah ;1500000;Material
+;Sitting Group (cast  iron, kayu);unit;2389300;Material
+;Skrup fixer;buah;1600;Material
+;Soda api;kg;17900;Material
+;Strorox-100;kg;40000;Material
+;Tali ijuk;kg;8200;Material
+;Tali Ijuk ;m';200;Material
+;Terpal;m2;12000;Material
+;"Tiang Bolard (Bollard cast  iron) tinggi 1,2 m; ø bawah 5""; ø atas  4""";buah;1429100;Material
+;Venetions  blinds  dan vertical blinds  (tirai);m2;7400;Material
+;Wallpaper;m';13500;Material
+;Waterstop lebar 150 mm;m';75000;Material
+;Waterstop lebar 200 mm;m';94000;Material
+;Waterstop lebar 250 mm;m';136000;Material
+;Wax;kg;130000;Material
+;Paving Block Tebal 6 cm fc 20 Mpa;m2;70000;Material
+;Pasir Filler ;m3;300000;Material
+;Paving Block Tebal 6 cm fc 25 Mpa;m2;82000;Material
+;Paving Block Tebal 8 cm fc 20 Mpa;m2;85000;Material
+;Paving Block Tebal 8 cm fc 25 Mpa;m2;97000;Material
+;Stepping Band Lebar 15 mm;m;8570;Material
+;Palet Kayu uk. 120x120x10 cm ;buah ;123000;Material
+;Geotextile >100 gr/m2;m2;17500;Material
+;Geotextile >400 gr/m2;m2;21000;Material
+;Geotextile >800 gr/m2;m2;32000;Material
+;Geotekstil woven 400 gr/m2;m2;25000;Material
+;Geomembran ;m2;18950;Material
+;Geosynthetic Clay Liner;m2;25000;Material
+;Bentonite ;kg ;25000;Material
+;MATERIAL LANSEKAP ;;;Material
+;Pupuk Organik ;m3;178000;Material
+;Kompos ;m3;165000;Material
+;Pohon Bunga Mentega di Polybag 20 Liter ;buah ;135000;Material
+;"Pohon Bunga Mentega di
+Polybag 25 Liter";Buah ;150000;Material
+;Pohon Bunga Terompet Kuning di Polybag 20 Liter;buah ;135000;Material
+;"Pohon Bunga Terompet
+Kuning di Polybag 25 Liter";Buah ;150000;Material
+;Pohon Bunga Terompet Kuning di Polybag 50 Liter;Buah ;200000;Material
+;Pohon Bungur Sakura di Polybag 20 Liter ;buah ;150000;Material
+;"Pohon Bungur
+Sakura/Bungur Jepang di
+Polybag 25 Liter";Buah ;175000;Material
+;Pohon Bungur di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Bungur di Polybag 100 Liter;buah ;375000;Material
+;Pohon Cassia Glauca di Polybag 20 Liter ;buah ;155000;Material
+;"Pohon Cassia glauca di
+Polybag 25 Liter";buah ;170000;Material
+;Pohon Dracaena'song of india' di polybag 20 liter;Buah ;165000;Material
+;"Pohon Dracaena ‘Song of
+India’ di Polybag 25 Liter";Buah ;180000;Material
+;"Pohon Dracaena 'Song of
+Jamaica' di Polybag 20
+Liter";Buah ;170000;Material
+;"Pohon Dracaena 'Song of
+Jamaica' di Polybag 25
+Liter";Buah;190000;Material
+;"Pohon Jarak Batavia di
+Polybag 20 Liter";Buah ;175000;Material
+;Pohon Jarak Batavia di Polybag 25 Liter;Buah;190000;Material
+;"Pohon Kayu Putih
+Kuning di Polybag 20
+Liter";Buah ;180000;Material
+;Pohon Kayu Putih Kuning di Polybag 25 Liter;Buah ;190000;Material
+;"Pohon Bugenvil/bunga
+kertas di Polybag 20 Liter";Buah ;185000;Material
+;"Pohon Penda Merah di
+Polybag 20 Liter";Buah ;190000;Material
+;Pohon Pucuk merah di Polybag 25 Liter;Buah ;200000;Material
+;"Pohon Sikat Botol di
+Polybag 20 Liter";buah ;150000;Material
+;"Pohon Sikat Botol di
+Polybag 25 Liter";Buah ;165000;Material
+;Pohon kecil Anggur terompet ;buah ;18000;Material
+;Anti Rayap tanah ;kg;28500;Material
+;Pohon kecil Pucuk merah ;buah;50000;Material
+;Pohon Pucuk Merah di Polybag 20 Liter ;Pohon ;350000;Material
+;Pohon Pucuk Merah di Polybag 25 Liter ;Pohon ;400000;Material
+;Pohon Bunga Kupu-kupu di Polybag 50 Liter ;Pohon ;500000;Material
+;Pohon Bunga Kupu-kupu di Polybag 75 Liter ;Pohon ;530000;Material
+;"Pohon Pulai di Polybag 75
+Liter";Buah ;150000;Material
+;Pohon Pulai di Polybag 100 Liter;Buah ;275000;Material
+;Pohon Pulai di Polybag 150 Liter;buah ;300000;Material
+;Pohon Pulai di Polybag 200 Liter;Buah ;325000;Material
+;"Pohon Pulai di Polybag 250
+Liter";Buah ;350000;Material
+;Pohon sedang Ketapang Kencana ;buah;150000;Material
+;"Pohon Mahoni di Polybag
+75 Liter";Buah;150000;Material
+;Pohon Mahoni di Polybag 100 Liter;Pohon ;400000;Material
+;Pohon Mahoni di Polybag 150 Liter;Pohon ;425000;Material
+;Pohon Beringin di Polybag 200 Liter;Pohon ;550000;Material
+;Pohon Beringin di Polybag 250 Liter;Pohon ;590000;Material
+;Pohon Beringin di Polybag 100 Liter;buah ;250000;Material
+;Pohon Beringin di Polybag 150 Liter;Buah ;275000;Material
+;"Pohon Beringin di Polybag
+250 Liter";Buah ;300000;Material
+;Pohon sedang Tabebuya;buah;450000;Material
+;"Pohon Bintaro di Polybag
+50 Liter";Buah ;220000;Material
+;Pohon Bintaro di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Besar Kamboja;buah;550000;Material
+;Pohon Besar Beringin;buah;2900000;Material
+;Pohon Besar Pulai;buah;5390000;Material
+;Pohon Besar Trembesi;buah;650000;Material
+;Pohon Trembesi di Polybag 75 Liter;buah ;150000;Material
+;Pohon Trembesi di Polybag 100 Liter;buah ;275000;Material
+;"Pohon Trembesi di Polybag 150
+Liter";Buah ;300000;Material
+;"Pohon Trembesi di Polybag 200
+Liter";Buah;325000;Material
+;"Pohon Trembesi di Polybag
+250 Liter";Buah;350000;Material
+;"Pohon Thevetia di
+Polybag 20 Liter";buah ;170000;Material
+;Pohon Thevetia di Polybag 25 Liter;Buah ;190000;Material
+;"Pohon Turi di Polybag 20
+Liter";buah ;180000;Material
+;Pohon Turi di Polybag 25 Liter;buah ;190000;Material
+;"Pohon Kembang Merak di
+Polybag 20 Liter";buah ;210000;Material
+;"Pohon Pandan Bali di
+Polybag 20 Liter";buah ;200000;Material
+;"Pohon Yucca di Polybag
+20 Liter";buah ;190000;Material
+;Pohon Flamboyan di Polybag 50 Liter;Buah ;210000;Material
+;Pohon Flamboyan Kuning di Polybag 50 Liter;Buah ;210000;Material
+;Pohon Flamboyan di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Flamboyan di Polybag 100 Liter;Buah ;375000;Material
+;Pohon Flamboyan di Polybag 150 Liter;Buah ;400000;Material
+;Pohon Flamboyan di Polybag 200 Liter;Buah ;425000;Material
+;Pohon Flamboyan Kuning di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Janda Merana di Polybag 50 Liter;Buah ;220000;Material
+;Pohon Janda Merana di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Ketapang kencana di Polybag 50 Liter;Buah ;225000;Material
+;Pohon Ketapang kencana di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Ketapang kencana di Polybag 100 Liter;Buah ;375000;Material
+;Pohon Trembesi di Polybag 150 Liter;Buah;300000;Material
+;Pohon Sosis di Polybag 50 Liter;Buah ;225000;Material
+;Pohon Sosis di Polybag 75 Liter;Buah ;150000;Material
+;Pohon Sosis di Polybag 100 Liter;Buah ;275000;Material
+;Pohon Sosis di Polybag 150 Liter;Buah ;300000;Material
+;Pohon Sosis di Polybag 200 Liter;Buah ;325000;Material
+;"Pohon Sosis di Polybag 250
+Liter";Buah;350000;Material
+;Pohon Tabebuya di Polybag 50 Liter;Buah ;225000;Material
+;Pohon Tabebuya di Polybag 75 Liter;Buah ;150000;Material
+;Pohon Waru di Polybag 50 Liter;Buah ;225000;Material
+;Pohon Waru di Polybag 75 Liter;Buah ;250000;Material
+;Pohon Biola Cantik di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Biola Cantik di Polybag 100 Liter;Buah ;375000;Material
+;Pohon Kamboja di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Kamboja di Polybag 100 Liter;buah ;375000;Material
+;Pohon Kamboja di Polybag 150 Liter;Buah ;400000;Material
+;Pohon Kamboja Fosil di Polybag 200 Liter;Buah ;425000;Material
+;Pohon Keben di Polybag 75 Liter;Buah ;350000;Material
+;Pohon Keben di Polybag 100 Liter;Buah ;350000;Material
+;"Pohon Kecrutan di Polybag
+75 Liter";Buah ;350000;Material
+;Pohon Kecrutan di Polybag 100 Liter;Buah ;375000;Material
+;"Pohon Putat di Polybag 75
+Liter";Buah ;150000;Material
+;Pohon Putat di Polybag 100 Liter;Buah ;275000;Material
+;Pohon Bodhi di Polybag 100 Liter;buah ;275000;Material
+;Pohon Bodhi di Polybag 150 Liter;Buah ;300000;Material
+;Pohon Bodhi di Polybag 200 Liter;Buah ;325000;Material
+;"Pohon Bodhi di Polybag 250
+Liter";Buah;350000;Material
+;"Pohon Baobab di Polybag 250
+Liter";Buah;350000;Material
+;"Palem ekor tupai di Polybag 100
+Liter";Buah ;250000;Material
+;Sylvertris di Polybag 100 Liter;Buah ;250000;Material
+;Sylvertris di Polybag 150 Liter;Buah ;300000;Material
+;Sylvertris di Polybag 200 Liter;Buah ;400000;Material
+;Sylvertris di Polybag 250 Liter;Buah ;450000;Material
+;Palem Putri di Polybag 100 Liter;Buah ;200000;Material
+;Palem Putri di Polybag 150 Liter;Buah ;300000;Material
+;Palem Putri di Polybag 200 Liter;Buah ;400000;Material
+;Palem Putri di Polybag 250 Liter;Buah ;450000;Material
+;Palem raja di Polybag 100 Liter;Buah ;250000;Material
+;Palem raja di Polybag 150 Liter;Buah ;300000;Material
+;Palem raja di Polybag 200 Liter;Buah ;400000;Material
+;Palem raja di Polybag 250 Liter;Buah;450000;Material
+;"Palem sadeng di Polybag 100
+Liter";Buah ;250000;Material
+;Palem sadeng di Polybag 150 Liter;Buah ;300000;Material
+;"Palem sadeng di Polybag 200
+Liter";Buah ;400000;Material
+;"Palem Sadeng di Polybag 250
+Liter";Buah ;450000;Material
+;Palem Kecil Palem Wregu;buah;15000;Material
+;Palem Kecil Palem Kuning;buah;45000;Material
+;Palem Besar Palem Ekor Tupai ;buah;230000;Material
+;"Palem ekor tupai di Polybag 150
+Liter";Buah ;300000;Material
+;"Palem ekor tupai di Polybag 200
+Liter";Buah ;400000;Material
+;"Palem ekor tupai di Polybag 250
+Liter";Buah ;450000;Material
+;Palem Besar Kelapa ;buah;445000;Material
+;Palem Besar Palem Botol ;;460000;Material
+;Palem jepang di Polybag 50 Liter;Buah ;150000;Material
+;"Palem jepang di Polybag 75
+Liter";Buah;200000;Material
+;"Palem komodoria/
+komodor/chamadorea di
+Polybag 50 Liter";Buah ;150000;Material
+;"Palem komodoria/
+komodor/chamadorea di
+Polybag 75 Liter";Buah;200000;Material
+;"Palem kuning di Polybag 50
+Liter";Buah ;150000;Material
+;"Palem kuning di Polybag 75
+Liter";Buah;200000;Material
+;"Palem Merah/ Pinang Merah di
+Polybag 50 Liter";Buah ;150000;Material
+;"Palem waregu di Polybag 50
+Liter";Buah ;150000;Material
+;"Palem waregu di Polybag 75
+Liter";Buah ;200000;Material
+;"Sikas Halus/Mawar Jambe di
+Polybag 50 Liter";Buah;150000;Material
+;"Sikas Halus/Mawar Jambe di
+Polybag 75 Liter";Buah ;200000;Material
+;"Palem Phoenix di Polybag 50
+Liter";Buah;150000;Material
+;"Palem Phoenix di Polybag 75
+Liter";Buah;200000;Material
+;"Palem Merah/ Pinang Merah di
+Polybag 75 Liter";Buah ;200000;Material
+;Palem Besar Palem Sadeng;Buah ;510000;Material
+;Semak Alamanda di Polybag 5 Liter;Polybag ;10000;Material
+;Semak Alamanda di Polybag 11 Liter;Polybag ;15000;Material
+;Semak Alamanda di Polybag 20 Liter;Polybag ;20000;Material
+;"Semak Alamanda/Bunga
+terompet emas di Polybag 5
+Liter";Buah;3000;Material
+;"Semak Alamanda/Bunga
+terompet emas di Polybag 11
+Liter";Buah ;5000;Material
+;"Semak Alamanda/Bunga
+terompet emas di Polybag 20 Liter";Buah ;9000;Material
+;"Semak Agave/lidah naga di
+Polybag 11 Liter";Buah ;5000;Material
+;"Semak Agave/lidah naga di
+Polybag 20 Liter";Buah ;9000;Material
+;"Semak Bakung Lele di Polybag
+5 Liter";Buah ;3500;Material
+;"Semak Bakung Lele di
+Polybag 11 Liter";Buah ;5000;Material
+;"Semak Bakung Jawa di
+Polybag 11 Liter";Buah ;5000;Material
+;"Semak Bakung Jawa di Polybag
+20 Liter";Buah ;9000;Material
+;"Semak Bromelia di Polybag
+11 Liter";Buah ;5000;Material
+;"Semak Bromelia di Polybag 20
+Liter";Buah ;9000;Material
+;"Semak Bugenvil/bunga kertas di
+Polybag 20 Liter";Buah ;9000;Material
+;"Semak Bunga Iris di Polybag 5
+Liter";Buah ;3000;Material
+;"Semak Bunga Terompet
+Kuning di Polybag 11 Liter";Buah;5000;Material
+;"Semak Bunga Terompet Kuning di
+Polybag 20 Liter";Buah ;9000;Material
+;"Semak Calathea di Polybag 5
+Liter";Buah ;3000;Material
+;Semak Canna di Polybag 20 Liter;Buah ;9000;Material
+;Semak Capit Udang;Buah ;2100;Material
+;"Semak Cendrawasih di Polybag
+5 Liter";Buah ;3000;Material
+;"Semak Costus di Polybag 11
+Liter";Buah;5000;Material
+;"Semak Costus di Polybag 11
+Liter";Buah;5000;Material
+;"Semak Dracaena ‘Song of
+India’ di Polybag 11 Liter";Buah ;5000;Material
+;"Semak Dracaena 'Song of
+Jamaica' di Polybag 11 Liter";Buah ;5000;Material
+;"Semak Dracaena ‘Song of India’ di
+Polybag 20 Liter";Buah ;9000;Material
+;"Semak Dracaena 'Song of
+Jamaica' di Polybag 20 Liter";Buah ;9000;Material
+;"Semak Helliconia di Polybag
+11 Liter";Buah ;5000;Material
+;"Semak Helliconia di Polybag 20
+Liter";Buah ;9000;Material
+;"Semak Honje/Kecombrang di
+Polybag 11 Liter";Buah ;5000;Material
+;"Semak Honje/Kecombrang di
+Polybag 20 Liter";Buah ;9000;Material
+;"Semak Hujan Mas di Polybag 5
+Liter";Buah ;3000;Material
+;"Semak Hujan Mas di Polybag
+11 Liter";Buah ;5000;Material
+;"Semak Hujan Mas di Polybag 20
+Liter";Buah ;9000;Material
+;"Semak Kacapiring
+wangi/Gardenia di Polybag 5
+Liter";Buah ;3000;Material
+;"Semak Kaca piring di Polybag
+11 Liter";Buah;5000;Material
+;"Semak Kacapiring
+wangi/Gardenia di Polybag
+11 Liter";Buah ;5000;Material
+;"Semak Kacapiring
+wangi/Gardenia di Polybag 20
+Liter";Buah ;9000;Material
+;"Semak Kembang sepatu di
+Polybag 20 Liter";Buah ;9000;Material
+;"Semak Kemuning di Polybag 5
+Liter";Buah;3000;Material
+;"Semak Kana di Polybag 11
+Liter";Buah ;5000;Material
+;"Semak Lili Brazil di Polybag
+11 Liter";Buah ;5000;Material
+;"Semak Melati Putih di Polybag
+5 Liter";Buah;3000;Material
+;"Semak Melati Putih di
+Polybag 11 Liter";Buah ;5000;Material
+;"Semak Nusa Indah di
+Polybag 11 Liter";Buah;5000;Material
+;"Semak Oleander/Bunga
+Mentega di Polybag 11 Liter";Buah ;5000;Material
+;"Semak Oleander/Bunga Mentega
+di Polybag 20 Liter";Buah ;9000;Material
+;"Semak Pandan Kuning di
+Polybag 5 Liter";Buah;3000;Material
+;"Semak Penda Emas di Polybag 20
+Liter";Buah ;9000;Material
+;"Semak Pretty Pink di Polybag 5
+Liter";Buah;3000;Material
+;"Semak Pretty Pink di Polybag
+11 Liter";Buah ;5000;Material
+;"Semak Puring di Polybag 11
+Liter";Buah ;5000;Material
+;Semak Puring di Polybag 20 Liter;Buah ;9000;Material
+;"Semak Ruelia / Kencana
+Ungu di Polybag 11 Liter";Buah ;5000;Material
+;"Semak Sansevieria/Lidah
+Mertua di Polybag 5 Liter";Buah ;3000;Material
+;"Semak Sansevieria/Lidah
+Mertua di Polybag 11 Liter";Buah ;5000;Material
+;"Semak Soka di Polybag 11
+Liter";Buah ;5000;Material
+;"Semak Tabernae/Mondokaki di
+Polybag 5 Liter";Buah ;3000;Material
+;"Semak Tabernae di Polybag
+11 Liter";Buah ;5000;Material
+;"Semak Tabernac di Polybag 20
+Liter";Buah ;9000;Material
+;"Semak Walisongo/Umbrella
+tree di Polybag 5 Liter";Buah ;3000;Material
+;"Semak Walisongo/Umbrella
+Tree di Polybag 11 Liter";Buah ;5000;Material
+;"Semak Walisongo/Umbrella Tree
+di Polybag 20 Liter";Buah ;9000;Material
+;Penutup Tanah Kacang Hias ;;2500;Material
+;"Penutup Tanah Kacang hias di
+Polybag 0.5 Liter";m2;15000;Material
+;"Penutup Tanah Kucai Mini di
+Polybag 0.5 Liter";m2;15000;Material
+;"Penutup Tanah Lantana di
+Polybag 0.5 Liter";m2;15000;Material
+;"Penutup Tanah Sutra bombay
+di Polybag 0.5 Liter";m2;15000;Material
+;"Penutup Tanah Widelia di
+Polybag 0.5 Liter";m2;15000;Material
+;Rumput embun;m2;17000;Material
+;Rumput gajah;m2;10000;Material
+;Rumput Gajah Mini;m2;15000;Material
+;Rumput peking;m2;19000;Material
+;Matras Tipe I, Termasuk angkur / penguat matras ;m2;5600;Material
+;Perekat Campuran Hydroseeding ;kg;16000;Material
+;Bibit Vegetasi (Biji Rumput);kg;80000;Material
+;Mulsa ;kg;35000;Material
+;Pupuk anorganik *);kg;18000;Material
+;Pupuk anorganik (ex: NPK);m3;180000;Material
+;Pupuk anorganik cair (ex: NPK);M3;150000;Material
+;Pupuk anorganik padat ;m3;150000;Material
+;"Perekat Matras
+Perkuatan (Lem)";kg;18000;Material
+;Matras Tipe II, Termasuk angkur / penguat matras ;m2;7500;Material
+;Matras Tipe III, Termasuk angkur / penguat matras ;;9500;Material
+;Bibit Vegetasi (Biji Legume Crop Cover/LCC);kg;166000;Material
+;Material Organik ;m3;10500;Material
+;Kapur ;kg ;3100;Material
+;Pasir ;m3;250000;Material
+;sulfur ;kg;12000;Material
+;Air Bersih;liter ;550;Material
+;Fungisida/Insektisida;kg ;430000;Material
+;Cat Minyak;liter ;48500;Material
+;Tong Sampah 2 tabung;buah;340000;Material
+;Besi Hollow 30x60;m3;13700;Material
+;Bambu* dia. 3-5 cm ;m';700;Material
+;Bambu* dia. 5-8 cm ;m;900;Material
+;bambu* dia. 8-10 cm ;M;12000;Material
+;bambu* dia. 10-12 cm ;m;15000;Material
+;Tali/pengikat sejenisnya ;m;500;Material
+;Sewa Lahan;m2;1000000;upah
+SEWA PERALATAN;;;;
+;Alat  bantu;set;50000;alat
+;Asphalt Distributor;jam;307300;alat
+;Asphalt  finisher;jam;602500;alat
+;Asphalt  liquid mixer 1000 ℓ;jam;61100;alat
+;Asphalt  mixing plant;jam;6253800;alat
+;Asphalt  sprayer 850 ℓ;jam;74900;alat
+;Bender baja beton;hari;850000;alat
+;Blending equipment;jam;235000;alat
+;Bore pile machine;jam;476900;alat
+;Bulldozer 100-150 HP;jam;912500;alat
+;Chain saw;jam;60200;alat
+;"Chainsaw 20”; 5,5HP";hari;300000;alat
+;"Chainsaw 30”; 7,5HP";hari;300000;alat
+;Cold milling machine;jam;648500;alat
+;"Colt T-120 (D); R-Blk. 4; 12 m3";jam;314110.76;alat
+;Compressor 4000-6500 ℓ\m;jam;185500;alat
+;Compressor bor;unit;700000;alat
+;Concrete mixer 350 ℓ;jam;94600;alat
+;Concrete mixer 500 ℓ;jam;103400;alat
+;Concrete mixer truck 5 m³;jam;576100;alat
+;Concrete pan mixer;jam;800700;alat
+;Concrete pump;jam;296800;alat
+;Concrete slip form paver;jam;582400;alat
+;Concrete vibrator;hari;800000;alat
+;Crane on track 35 ton;jam;440800;alat
+;"Crane Truck 3 ton; Winch 5 Ton";jam;430662.86;alat
+;Crane on wheel 10-15 ton;jam;359800;alat
+;Cutter baja beton;hari;800000;alat
+;Cutting machine;jam;55100;alat
+;Depresiasi alat  compressor;hari;425000;alat
+;Depresiasi mesin pompa uji;hari;42000;alat
+;Depresiasi peralatan pemboran;hari;265000;alat
+;Dump truck 1;jam;556100;alat
+;Dump truck 2;jam;556100;alat
+;Dump truck 3;jam;556100;alat
+;Dump truck 20 ton;jam;556100;alat
+;Dump truck 3,5 ton;jam;304800;alat
+;Dump truck 40 ton;jam;676500;alat
+;Dump truck 7,5 ton;jam;344400;alat
+;Pick up L300;jam;268539.71;alat
+;"Fuso (D); R-Blk. 8; 35 m3";jam;418543.76;alat
+;Flat deck truck 7 ton;hari ;2700000;alat
+;Hoist 1 ton ;hari ;180000;alat
+;Excavator 95 HP;jam;480000;alat
+;Excavator ;Hari ;5150000;alat
+;Excavator 80-140 HP;jam;668200;alat
+;Flat  bed truck 3-4 m³;jam;465100;alat
+;Generator set  135 KVA;jam;410200;alat
+;Jack hammer;hari;350000;alat
+;Jack hammer + genset;hari;2300000;alat
+;Sewa Genset ;hari ;150000;alat
+;Logging;unit;280000;alat
+;Mata bor auger 20 cm;hari;100000;alat
+;Mata bor auger 30 cm;hari;170000;alat
+;Mata bor auger 40 cm;hari;250000;alat
+;Mata bor auger 50 cm;hari;340000;alat
+;Mesin bor;unit;450000;alat
+;Mesin gilas  2 roda 6 - 10 ton;jam;325000;alat
+;Mesin gilas  3 roda 6 - 10 ton;jam;350000;alat
+;Mesin gilas  roda karet  8 - 10 ton;jam;415000;alat
+;Mesin kerek;unit;50000;alat
+;Mesin poles;hari;150000;alat
+;Mesin trowel;jam;45000;alat
+;Mesin Gendong;Jam ;150000;alat
+;Motor grader >100 HP;jam;548600;alat
+;Pedestrian Roller;jam;99800;alat
+;Pile driver +  hammer 2,5 ton;jam;153400;alat
+;Pneumatic  tire roller 8-10 ton;jam;491000;alat
+;"Pompa beton ∅ 2,5"", 75KW; 120 bar, T= 50 m'/H=80 m’";hari;6600000;alat
+;"Pompa beton ∅ 2,5"",20 KW; 20 bar, T = 18 m'";hari;6300000;alat
+;"Pompa beton ∅ 3"",140KW; 180 bar, T = 75 m' / H=150 m'";hari;8000000;alat
+;"Pompa beton φ 1,5"";5 KW; 8 bar; T = 5 m'";hari;6000000;alat
+;Pompa injeksi;unit;300000;alat
+;Pompa tangan;unit;160000;alat
+;Road Marking Machine;jam;491000;alat
+;Sewa alat cutting machine;hari;25000;alat
+;Sewa alat las;hari;25000;alat
+;Alat las listrik ;jam ;3125;alat
+;Alat las listrik 150 A;jam ;3125;alat
+;Alat las listrik 250 A;jam ;3125;alat
+;Alat las listrik 350 A;jam ;3125;alat
+;Alat las listrik 500 A;jam ;3125;alat
+;Mesin Las Gotextile;hari ;25000;alat
+;Kunci Momen ;hari;20000;alat
+;Sewa bor horisontal;hari;150000;alat
+;Sewa Scaffolding :;;;alat
+;- ScaffoldingPipe brancing 3 m;bulan;8800;alat
+;- Scaffolding Pipe brancing 6 m;bulan;17600;alat
+;Sewa Scaffolding;hari;586.6666667;alat
+;Sewa Gondola ;hari;322000;alat
+;Sewa Pipe Support;hari ;850;alat
+;Stamper;jam;35000;alat
+;Sprayer Gendong ;Hari ;350000;alat
+;Stamper Kodok 150 kg ;Hari ;350000;alat
+;Stamper Kuda ;hari ;290000;alat
+;Stamper D-Drum ;hari ;310000;alat
+;Stamper Smooth_Drum;hari ;350000;alat
+;"Stang bor, batang bor dia. 1-1/4""";hari;95000;alat
+;Stone crusher;jam;799500;alat
+;Tandem roller 6-8 ton;jam;469500;alat
+;Theodolit;hari;150000;alat
+;Three wheel roller;jam;262300;alat
+;P. Tyre Roller ;jam ;275000;alat
+;Tower crane arm 30 m;hari;3442900;alat
+;Crane ;hari ;3442900;alat
+;Crane ;jam ;430000;alat
+;Sewa Crane kapasitas 1 ton ;jam ;430000;alat
+;Transportasi peralatan drailler;unit;500000;alat
+;Vibratory plate tamper;jam;58800;alat
+;Vibratory roller 1 ton;jam;95000;alat
+;Vibratory roller 5-8 ton;jam;392200;alat
+;Water pump 70-100 mm;jam;71700;alat
+;Water tanker truck 3000-4000 ℓ;jam;255200;alat
+;Water Truck ;hari ;1550000;alat
+;Waterpass;hari;75000;alat
+;Wheel loader;jam;472400;alat
+;AMP ;Jam ;3981125;alat
+;Asphalt Finisher ;Jam ;450000;alat
+;Wheel loader 1,0-1,6 m³;jam;472400;alat
+;Alat  pancang Hammer 0.5 ton;hari;350000;alat
+;Alat Pancang Mini Pile;hari ;250000;alat
+;Alat pancang Hidraulik Pile Driver;hari ;487000;alat
+;Alat  penyambung tiang pancang dolken;hari;350000;alat
+;Alat Penyambung Balok;buah ;200000;alat
+;Alat Penyambung Beton ;buah ;250000;alat
+;Alat Penyambung Beton dia. 30 cm;buah ;250000;alat
+;Alat Penyambung Beton dia. 35 cm;buah ;255000;alat
+;Alat sambung kayu terbuat dari baja;buah ;250000;alat
+;Sepatu pancang;buah ;124500;alat
+;Sepatu pancang beton;buah ;124500;alat
+;Sepatu Pancang dia. 30 cm;buah ;135000;alat
+;Sepatu Pancang dia. 35 cm;buah ;140000;alat
+;Crawler Crane 10 Ton + Ladder 14 ton;jam ;500000;alat
+;Crawler Crane 20 Ton + Ladder 14 ton;jam ;550000;alat
+;Driver Hammer;jam ;50000;alat
+;Driver Hammer 2 ton;jam ;50000;alat
+;Sewa Mesin Hydroseeding 2000L ;liter ;350000;alat
+;Angkur/mur/baut;set;45000;alat
+;Angkur M16 ;buah ;18500;alat
+;Beton Neser;batang;52000;alat
+;BP (Biaya Penyambungan);VA;969;alat
+;Cutting stiker +  pasang;buah;15000;alat
+;Gergaji besi;buah;3500;alat
+;GIL  (Gambar Instalasi Langganan), administrasi pemasangan;VA;850;alat
+;Linggis (baja keras);buah;30000;alat
+;Mesin bor (jam);jam;85000;alat
+;Molen beton mixer 350 liter;hari;300000;alat
+;Mesin Molen 1m3;hari ;300000;alat
+;Pahat beton (baja keras);buah;15000;alat
+;Palu/godam (baja keras);buah;25000;alat
+;Perapian lokasi kerja;ls;20000;alat
+;Pisau Gerinda;buah;52000;alat
+;Pompa Air,   diesel 10 KW;hari;500000;alat
+;Pompa Air,   diesel 20 KW;hari;1000000;alat
+;Pompa Air,   diesel 5 KW;hari;250000;alat
+;Pompa Sedot;hari;280000;alat
+;Pompa Sedot Pasir ;hari ;280000;alat
+;Pompa Lumpur ;hari ;260000;alat
+;Mobil Sedot Lumpur ;Jam;67500;alat
+;Boom Lift ;hari;3300000;alat
+;Pompa submesible;unit;1920000;alat
+;"Pressure grout machine 30 KW; 60 -75 bar (D)";jam;42000;alat
+;Sewa alat  cutting machine;hari;44000;alat
+;Sewa bekisting;hari;7500;alat
+;Sewa bekisting rigid;hari;7500;alat
+;Sewa bor horisontal;hari;150000;alat
+;Sewa mobil crane;hari;1450000;alat
+;Sewa mobil crane kapasitas  15 Ton;hari;3400000;alat
+;Sewa mobil crane kapasitas  25 Ton;hari;6250000;alat
+;Sewa mobil crane kapasitas  5 Ton;hari;1450000;alat
+;Sewa tangga 7 meter;buah;50000;alat
+;Sewa tangga 7 meter;hari;50000;alat
+;Tandon Air kap. 2 m3 ;hari ;25000;alat
+;Tangga Service ;buah ;1144000;alat
+;SLO (Sertifikat  Laik Operasi);VA;30;alat
+;Tripod tinggi 5 m;hari;250000;alat
+;Truck Crane 5 ton;jam;525000;alat
+;UJL  (Uang Jaminan Langganan);VA;165;alat
+;Sewa casing PVC dia. 20 cm;m;25000;alat
+;Sewa casing pipa baja dia. 30 cm;m;30700;alat
+;Sewa casing pipa baja dia. 40 cm;m;43500;alat
+;Sewa casing pipa baja dia. 50 cm;m;55800;alat
+;Pengelasan;cm;332;alat
+;Baja Strip ;kg ;28000;Material
