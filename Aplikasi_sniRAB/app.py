@@ -1,12 +1,11 @@
 import streamlit as st
 import pandas as pd
 import os
+# Pastikan ini sesuai dengan nama folder Anda
 from src.parsers import ingest_analysis_file
-# Hapus import cleaning dulu jika belum dipakai agar tidak error
-# from src.cleaning import clean_resource_database 
 
 st.set_page_config(page_title="SmartRAB - Ingestion", layout="wide")
-st.title("🛠️ SmartRAB - Mesin Penelan Data (Ingestion Engine)")
+st.title("🛠️ SmartRAB - Mesin Penelan Data")
 
 uploaded_files = st.file_uploader(
     "Upload File CSV (Analisis & Sumber Daya)", 
@@ -17,51 +16,46 @@ uploaded_files = st.file_uploader(
 if uploaded_files:
     st.write(f"Menerima {len(uploaded_files)} file.")
     
-    # Buat container agar rapi
     for uploaded_file in uploaded_files:
         with st.expander(f"Memproses: {uploaded_file.name}", expanded=True):
             
-            # 1. Simpan file sementara (buffer)
-            with open(f"temp_{uploaded_file.name}", "wb") as f:
+            # 1. Simpan file sementara
+            temp_path = f"temp_{uploaded_file.name}"
+            with open(temp_path, "wb") as f:
                 f.write(uploaded_file.getbuffer())
-            file_path = f"temp_{uploaded_file.name}"
             
             try:
-                # 2. Panggil Parser Cerdas kita
-                df = ingest_analysis_file(file_path)
+                # 2. Panggil Parser
+                df = ingest_analysis_file(temp_path)
                 
-                # 3. Cek Apakah DataFrame Kosong?
-                if df.empty:
-                    st.error("❌ File terbaca tapi kosong atau format tidak dikenali.")
-                    continue
-                
-                # 4. Tampilkan Kolom yang Terdeteksi (Untuk Debugging Anda)
+                # 3. Tampilkan Kolom yang Ditemukan (Untuk Debugging)
                 cols = df.columns.tolist()
-                st.code(f"Kolom ditemukan: {cols}", language="python")
+                st.code(f"Kolom terdeteksi: {cols}", language="python")
                 
-                # 5. Logika Deteksi Jenis File (Logika Baru)
+                # 4. Logika Deteksi Tipe File (YANG DIPERBAIKI)
+                # Cek apakah kolom kunci ada di dalam daftar kolom yang sudah dibersihkan parser
+                
+                # File Analisis (Beton, Pondasi, dll) biasanya punya koefisien
                 is_analisis = 'koefisien' in cols and 'deskripsi' in cols
+                
+                # File Sumber Daya (Upah Bahan) TIDAK punya koefisien, tapi punya harga_satuan
                 is_sumberdaya = 'harga_satuan' in cols and 'deskripsi' in cols and 'koefisien' not in cols
                 
                 if is_analisis:
                     st.success("✅ TIPE: FILE ANALISIS (AHSP)")
                     st.dataframe(df.head(3), use_container_width=True)
-                    st.caption("Sistem mengenali kolom 'koefisien' dan 'deskripsi'. Siap untuk perhitungan.")
-                    
                 elif is_sumberdaya:
                     st.info("📦 TIPE: FILE SUMBER DAYA (Upah/Bahan)")
                     st.dataframe(df.head(3), use_container_width=True)
-                    st.caption("Sistem mengenali kolom 'harga_satuan'. Siap dijadikan referensi harga.")
-                    
                 else:
-                    st.warning("⚠️ TIPE TIDAK DIKENALI")
-                    st.write("File terbaca, tapi kolom wajib tidak lengkap.")
-                    st.write("Yang diharapkan: ('deskripsi' + 'koefisien') ATAU ('deskripsi' + 'harga_satuan')")
+                    # Jika gagal, beri tahu user kolom apa yang kurang
+                    st.warning("⚠️ Format Belum Dikenali")
+                    st.write("Sistem membutuhkan kolom: 'deskripsi' DAN ('koefisien' ATAU 'harga_satuan')")
             
             except Exception as e:
-                st.error(f"Error tak terduga: {e}")
+                st.error(f"Error: {e}")
             
             finally:
-                # Bersihkan file sampah
-                if os.path.exists(file_path):
-                    os.remove(file_path)
+                # Hapus file sementara
+                if os.path.exists(temp_path):
+                    os.remove(temp_path)
