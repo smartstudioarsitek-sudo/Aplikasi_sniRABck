@@ -5,48 +5,73 @@ import xlsxwriter
 import altair as alt
 import os
 
-# --- IMPORT OTAK BARU (Parser) ---
-# Ini wajib ada agar bisa membaca file CSV kakak yang unik itu
+# --- IMPORT OTAK BARU ---
 try:
-    from src.parsers import ingest_analysis_file
+    from src.parsers import extract_ahsp_items
 except ImportError:
-    st.error("⚠️ File src/parsers.py tidak ditemukan. Pastikan folder src sudah dibuat.")
+    st.error("⚠️ File src/parsers.py tidak ditemukan.")
     st.stop()
 
 # ==========================================
-# KONFIGURASI HALAMAN (TETAP SAMA)
+# KONFIGURASI HALAMAN (ASLI APP 36)
 # ==========================================
 st.set_page_config(page_title="SmartRAB - Sistem Estimasi Konstruksi", layout="wide", page_icon="🏗️")
 
-# CSS Styling (TETAP SAMA SESUAI APP 36)
 st.markdown("""
 <style>
     .main-header {font-size: 30px; font-weight: bold; color: #2E86C1; text-align: center; margin-bottom: 20px;}
     .sub-header {font-size: 18px; color: #555; text-align: center; margin-bottom: 30px;}
     .card {background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;}
-    .metric-card {text-align: center; padding: 15px; background: #ffffff; border-radius: 8px; border: 1px solid #eee;}
-    div[data-testid="stMetricValue"] {font-size: 24px; color: #2E86C1;}
 </style>
 """, unsafe_allow_html=True)
 
-# Inisialisasi Session State (Agar data persisten)
-if 'project_data' not in st.session_state:
-    st.session_state['project_data'] = {}
-if 'rab_items' not in st.session_state:
-    st.session_state['rab_items'] = []
-if 'global_overhead' not in st.session_state:
-    st.session_state['global_overhead'] = 10.0
-# State baru untuk menyimpan data upload
-if 'dynamic_ahsp_data' not in st.session_state:
-    st.session_state['dynamic_ahsp_data'] = []
+# Inisialisasi Session State
+if 'project_data' not in st.session_state: st.session_state['project_data'] = {}
+if 'rab_items' not in st.session_state: st.session_state['rab_items'] = []
+if 'global_overhead' not in st.session_state: st.session_state['global_overhead'] = 10.0
+if 'dynamic_ahsp_data' not in st.session_state: st.session_state['dynamic_ahsp_data'] = []
 
 # ==========================================
-# 1. MODUL SIDEBAR (BARU: UPLOAD DATABASE)
+# LOGIKA PEMETAAN DIVISI (STANDAR PU)
 # ==========================================
-# Kita taruh logika upload di sini agar tidak mengganggu UI utama
+def map_filename_to_division(filename):
+    """
+    Deep Thinking: Memetakan nama file sembarang ke Standar Divisi PU.
+    """
+    fname = filename.lower()
+    
+    # Divisi 1: Umum
+    if any(x in fname for x in ['persiapan', 'k3', 'mobilisasi', 'bongkaran', 'angkut']):
+        return "Divisi 1: Umum & Persiapan"
+    
+    # Divisi 2: Tanah & Pondasi
+    if any(x in fname for x in ['tanah', 'galian', 'urugan', 'timbunan', 'pondasi', 'drainase', 'sumur']):
+        return "Divisi 2: Pekerjaan Tanah & Pondasi"
+    
+    # Divisi 3: Struktur
+    if any(x in fname for x in ['beton', 'baja', 'risha', 'tiang pancang', 'sloof', 'kolom', 'balok', 'plat']):
+        return "Divisi 3: Pekerjaan Struktur"
+    
+    # Divisi 4: Arsitektur
+    if any(x in fname for x in ['dinding', 'lantai', 'plafon', 'cat', 'pengecatan', 'keramik', 'pintu', 'jendela', 'kaca', 'alumunium', 'atap', 'sanitair', 'ornamen', 'railing']):
+        return "Divisi 4: Pekerjaan Arsitektur"
+    
+    # Divisi 5: MEP
+    if any(x in fname for x in ['listrik', 'elektrikal', 'mekanikal', 'pipa', 'plambing', 'air minum', 'air limbah', 'ac', 'stop kontak']):
+        return "Divisi 5: Mekanikal & Elektrikal"
+    
+    # Divisi 6: Eksternal / Lansekap
+    if any(x in fname for x in ['lansekap', 'jalan', 'paving', 'pagar', 'signage', 'taman']):
+        return "Divisi 6: Lansekap & Luar Gedung"
+        
+    return "Divisi Lainnya"
+
+# ==========================================
+# SIDEBAR: UPLOAD DATABASE
+# ==========================================
 with st.sidebar:
     st.header("📂 Database Control")
-    st.info("Upload file CSV Analisis & Harga di sini (Beton, Upah, dll)")
+    st.info("Upload Semua File AHSP (Beton, Arsitek, MEP, dll) di sini.")
     
     uploaded_db_files = st.file_uploader(
         "Pilih File CSV", 
@@ -55,139 +80,82 @@ with st.sidebar:
     )
     
     if uploaded_db_files:
-        if st.button("🔄 Update Database"):
+        if st.button("🔄 Update Full Database"):
             all_data_list = []
             progress_bar = st.progress(0)
             
             for i, uploaded_file in enumerate(uploaded_db_files):
-                # Simpan file sementara
                 temp_path = f"temp_{uploaded_file.name}"
                 with open(temp_path, "wb") as f:
                     f.write(uploaded_file.getbuffer())
                 
                 try:
-                    # PROSES PARSING (OTAK BARU)
-                    df_new = ingest_analysis_file(temp_path)
+                    # 1. Tentukan Divisi berdasarkan Nama File
+                    division = map_filename_to_division(uploaded_file.name)
                     
-                    # Ambil Nama Kategori dari nama file
-                    cat_name = uploaded_file.name.replace('.csv', '').replace('.csv', '') # double clean
-                    cat_name = cat_name.replace('data_rab (2).xlsx - ', '').strip()
-
-                    # Konversi DataFrame ke Format List of Dict (sesuai format APP 36)
-                    # APP 36 butuh: Category, Item, Unit, Price
-                    if not df_new.empty and 'deskripsi' in df_new.columns:
-                        for _, row in df_new.iterrows():
-                            # Logika: Jika ada harga satuan, ambil. Jika 0 tapi ada koefisien, itu Analisis (skip dulu atau simpan)
-                            # Untuk RAB sederhana, kita butuh harga jadi.
-                            # Asumsi: File CSV kakak sudah ada harga satuannya (hasil hitungan parser)
-                            
-                            price = row.get('harga_satuan', 0)
-                            # Jika harga 0, mungkin ini file analisis murni tanpa harga terhitung.
-                            # Tapi kita masukkan saja agar user tau datanya masuk.
-                            
-                            item_dict = {
-                                "Category": cat_name,
-                                "Item": row['deskripsi'],
-                                "Unit": row.get('satuan', 'ls'),
-                                "Price": price
-                            }
-                            all_data_list.append(item_dict)
+                    # 2. Ekstrak Item & Harga (Pakai Parser Baru)
+                    df_items = extract_ahsp_items(temp_path)
+                    
+                    if not df_items.empty:
+                        for _, row in df_items.iterrows():
+                            all_data_list.append({
+                                "Category": division, # Kategori sekarang adalah DIVISI
+                                "SubCategory": uploaded_file.name.replace('.csv', '').replace('data_rab (2).xlsx - ', ''),
+                                "Item": row['Item'],
+                                "Unit": row['Unit'],
+                                "Price": row['Price']
+                            })
                             
                 except Exception as e:
-                    st.error(f"Gagal: {uploaded_file.name} - {e}")
+                    st.error(f"Error {uploaded_file.name}: {e}")
                 
-                if os.path.exists(temp_path):
-                    os.remove(temp_path)
-                
+                if os.path.exists(temp_path): os.remove(temp_path)
                 progress_bar.progress((i + 1) / len(uploaded_db_files))
             
-            # Simpan ke Session State untuk menggantikan data statis
             st.session_state['dynamic_ahsp_data'] = all_data_list
-            st.success(f"✅ Sukses! {len(all_data_list)} item masuk database.")
-
+            st.success(f"✅ Database Update! {len(all_data_list)} item pekerjaan masuk.")
 
 # ==========================================
-# 2. MODUL DATABASE AHSP (DIMODIFIKASI)
+# MAIN APP (LOGIKA UI TETAP)
 # ==========================================
 def load_ahsp_database():
-    """
-    MODIFIKASI: Sekarang fungsi ini cerdas.
-    Jika ada data hasil upload, dia pakai itu.
-    Jika tidak, dia kembalikan list kosong (atau data dummy jika mau).
-    """
-    if st.session_state['dynamic_ahsp_data']:
-        return st.session_state['dynamic_ahsp_data']
-    
-    # Fallback: Data Kosong agar user sadar harus upload
-    # Atau bisa Kakak isi data dummy sedikit kalau mau tampilan tidak kosong saat start
-    return []
+    return st.session_state['dynamic_ahsp_data']
 
-# ==========================================
-# 3. FUNGSI UTILITAS (TETAP SAMA)
-# ==========================================
 def render_header():
     st.markdown('<div class="main-header">🏗️ SmartRAB - Sistem Estimasi Konstruksi SNI</div>', unsafe_allow_html=True)
     st.markdown('<div class="sub-header">Perencanaan Anggaran Biaya, Analisis Material & Jadwal Proyek</div>', unsafe_allow_html=True)
 
 def render_footer():
     st.markdown("---")
-    st.markdown("""
-    <div style='text-align: center; color: #888; font-size: 12px;'>
-        &copy; 2025 SmartRAB System | Berbasis SNI 2024 | Dibuat dengan Streamlit & Python<br>
-        Engine v2.0 (Dynamic Parser Integration)
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; color: #888; font-size: 12px;'>&copy; 2025 SmartRAB System | Berbasis SNI 2024</div>", unsafe_allow_html=True)
 
 def to_excel_download(df, sheet_name):
     output = io.BytesIO()
     with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
         df.to_excel(writer, index=False, sheet_name=sheet_name)
-    processed_data = output.getvalue()
-    return processed_data
+    return output.getvalue()
 
-def render_print_button():
-    st.button("🖨️ Cetak Laporan (PDF)", help="Fitur ini akan mencetak halaman ini ke PDF (Coming Soon)")
-
-# --- FUNGSI KURVA S (DATA DUMMY UTK VISUALISASI) ---
+# --- FUNGSI DUMMY KURVA S ---
 def generate_s_curve_data():
-    if not st.session_state['rab_items']:
-        return None, None
-    
-    df_rab = pd.DataFrame(st.session_state['rab_items'])
-    total_cost = df_rab['Jumlah Harga'].sum()
-    
-    # Simulasi Distribusi Normal (Bell Curve) untuk 12 Minggu
+    if not st.session_state['rab_items']: return None, None
+    df = pd.DataFrame(st.session_state['rab_items'])
+    total = df['Jumlah Harga'].sum()
     weeks = list(range(1, 13))
-    # Bobot progress per minggu (Total harus 100)
-    weights = [2, 4, 7, 10, 15, 20, 18, 12, 6, 3, 2, 1] 
-    
-    curve_data = []
-    cumulative = 0
-    for w, weight in zip(weeks, weights):
-        cumulative += weight
-        weekly_cost = (weight/100) * total_cost
-        curve_data.append({
-            "Minggu": f"Minggu {w}",
-            "Minggu_Int": w,
-            "Bobot_Rencana": weight,
-            "Rencana_Kumulatif": cumulative,
-            "Biaya_Mingguan": weekly_cost
-        })
-    
-    return df_rab, pd.DataFrame(curve_data)
+    weights = [2, 4, 7, 10, 15, 20, 18, 12, 6, 3, 2, 1]
+    data = []
+    cum = 0
+    for w, wei in zip(weeks, weights):
+        cum += wei
+        data.append({"Minggu": w, "Rencana_Kumulatif": cum})
+    return df, pd.DataFrame(data)
 
-
-# ==========================================
-# 4. APLIKASI UTAMA (MAIN) - STRUKTUR UI TETAP
-# ==========================================
 def main():
     render_header()
     
-    # --- LOAD DATA (DARI UPLOAD) ---
+    # Load Data (Format Baru: Ada Divisi)
     ahsp_data = load_ahsp_database()
     df_master = pd.DataFrame(ahsp_data)
 
-    # Tab Navigasi (Persis UI Lama)
     tabs = st.tabs(["📋 Data Proyek", "📚 AHSP Master", "✏️ Input RAB", "💰 Preview RAB", "🧱 Rekap Material", "📈 Kurva S"])
 
     # === TAB 1: DATA PROYEK ===
@@ -195,173 +163,117 @@ def main():
         st.header("📋 Informasi Umum Proyek")
         with st.container():
             st.markdown('<div class="card">', unsafe_allow_html=True)
-            col1, col2 = st.columns(2)
-            with col1:
-                st.session_state['project_data']['nama'] = st.text_input("Nama Proyek", value=st.session_state['project_data'].get('nama', 'Pembangunan Gedung Kantor'))
-                st.session_state['project_data']['lokasi'] = st.text_input("Lokasi Proyek", value=st.session_state['project_data'].get('lokasi', 'Jakarta Selatan'))
-            with col2:
-                st.session_state['project_data']['pemilik'] = st.text_input("Pemilik / Owner", value=st.session_state['project_data'].get('pemilik', 'Dinas Pekerjaan Umum'))
-                st.session_state['project_data']['tahun'] = st.text_input("Tahun Anggaran", value=st.session_state['project_data'].get('tahun', '2025'))
+            c1, c2 = st.columns(2)
+            st.session_state['project_data']['nama'] = c1.text_input("Nama Proyek", value=st.session_state['project_data'].get('nama', ''))
+            st.session_state['project_data']['lokasi'] = c1.text_input("Lokasi", value=st.session_state['project_data'].get('lokasi', ''))
+            st.session_state['project_data']['pemilik'] = c2.text_input("Pemilik", value=st.session_state['project_data'].get('pemilik', ''))
+            st.session_state['project_data']['tahun'] = c2.text_input("Tahun", value=st.session_state['project_data'].get('tahun', '2025'))
             st.markdown('</div>', unsafe_allow_html=True)
         render_footer()
 
-    # === TAB 2: AHSP MASTER ===
+    # === TAB 2: AHSP MASTER (UI BARU: GROUP BY DIVISI) ===
     with tabs[1]:
         st.header("📚 Katalog Harga Satuan (AHSP)")
-        
         if df_master.empty:
-            st.warning("⚠️ Database Kosong! Silakan Upload File CSV di Sidebar sebelah kiri.")
-            st.info("Format CSV: 'Beton.csv', 'Upah Bahan.csv', dll.")
+            st.warning("⚠️ Database Kosong! Upload file CSV di Sidebar.")
         else:
-            col_filter1, col_filter2 = st.columns([1, 2])
-            with col_filter1:
-                categories = ["Semua Kategori"] + sorted(list(df_master['Category'].unique()))
-                selected_cat = st.selectbox("Filter Kategori:", categories)
+            # Filter Divisi
+            divisi_list = sorted(df_master['Category'].unique())
+            selected_div = st.selectbox("Pilih Divisi Pekerjaan:", ["Semua Divisi"] + divisi_list)
             
-            with col_filter2:
-                search_query = st.text_input("Cari Item Pekerjaan:", placeholder="Contoh: Beton, Galian, Pipa...")
-            
-            # Filtering Logic
             df_view = df_master.copy()
-            if selected_cat != "Semua Kategori":
-                df_view = df_view[df_view['Category'] == selected_cat]
-            if search_query:
-                df_view = df_view[df_view['Item'].str.contains(search_query, case=False)]
-                
+            if selected_div != "Semua Divisi":
+                df_view = df_view[df_view['Category'] == selected_div]
+            
+            search = st.text_input("Cari Item:", placeholder="Contoh: Beton K-250...")
+            if search:
+                df_view = df_view[df_view['Item'].str.contains(search, case=False)]
+            
             st.dataframe(
-                df_view[['Category', 'Item', 'Unit', 'Price']], 
+                df_view[['Category', 'SubCategory', 'Item', 'Unit', 'Price']], 
                 use_container_width=True,
-                column_config={
-                    "Price": st.column_config.NumberColumn("Harga Satuan", format="Rp %d")
-                }
+                column_config={"Price": st.column_config.NumberColumn("Harga Satuan", format="Rp %d")}
             )
-            st.caption(f"Menampilkan {len(df_view)} item dari total {len(df_master)} database.")
+            st.caption(f"Total Item: {len(df_view)}")
         render_footer()
 
     # === TAB 3: INPUT RAB ===
     with tabs[2]:
         st.header("✏️ Input Item Pekerjaan")
-        
         if df_master.empty:
-            st.error("Database belum siap. Harap upload data terlebih dahulu.")
+            st.error("Upload database dulu.")
         else:
             with st.container():
                 st.markdown('<div class="card">', unsafe_allow_html=True)
                 
-                # Input Form
-                c1, c2 = st.columns([3, 1])
+                # Dropdown Bertingkat (Divisi -> Item)
+                div_opts = sorted(df_master['Category'].unique())
+                sel_div_input = st.selectbox("1. Pilih Divisi:", div_opts, key="div_input")
                 
-                # Dropdown Cerdas (Gabung Kategori + Item)
-                df_master['Display_Label'] = df_master['Category'] + " | " + df_master['Item']
-                options = df_master['Display_Label'].tolist()
+                # Filter Item berdasarkan Divisi
+                df_filtered = df_master[df_master['Category'] == sel_div_input]
+                df_filtered['Label'] = df_filtered['SubCategory'] + " | " + df_filtered['Item']
                 
-                with c1:
-                    selected_label = st.selectbox("Pilih Item Pekerjaan:", options)
+                item_opts = df_filtered['Label'].tolist()
+                sel_item_label = st.selectbox("2. Pilih Item:", item_opts, key="item_input")
                 
-                # Ambil data baris terpilih
-                selected_row = df_master[df_master['Display_Label'] == selected_label].iloc[0]
+                # Ambil Data
+                sel_row = df_filtered[df_filtered['Label'] == sel_item_label].iloc[0]
                 
-                with c2:
-                    st.metric("Harga Satuan", f"Rp {selected_row['Price']:,.0f}")
+                c1, c2, c3 = st.columns([1,1,2])
+                vol = c1.number_input("Volume:", min_value=0.0, step=0.01)
+                c2.text_input("Satuan:", value=sel_row['Unit'], disabled=True)
+                total = vol * sel_row['Price']
+                c3.text_input("Total:", value=f"Rp {total:,.0f}", disabled=True)
                 
-                c3, c4, c5 = st.columns([1, 1, 2])
-                with c3:
-                    volume_input = st.number_input("Volume:", min_value=0.0, step=0.01, format="%.2f")
-                with c4:
-                    st.text_input("Satuan:", value=selected_row['Unit'], disabled=True)
-                with c5:
-                    total_row = volume_input * selected_row['Price']
-                    st.text_input("Total Harga (Estimasi):", value=f"Rp {total_row:,.2f}", disabled=True)
-                
-                if st.button("➕ Tambah ke Daftar RAB", type="primary"):
-                    if volume_input > 0:
-                        new_item = {
-                            "Kategori": selected_row['Category'],
-                            "Uraian Pekerjaan": selected_row['Item'],
-                            "Volume": volume_input,
-                            "Satuan": selected_row['Unit'],
-                            "Harga Satuan": selected_row['Price'],
-                            "Jumlah Harga": total_row
-                        }
-                        st.session_state['rab_items'].append(new_item)
-                        st.success("Item berhasil ditambahkan!")
-                        st.rerun()
-                    else:
-                        st.warning("Volume tidak boleh 0.")
+                if st.button("➕ Tambah Item"):
+                    st.session_state['rab_items'].append({
+                        "Divisi": sel_row['Category'],
+                        "Uraian": sel_row['Item'],
+                        "Volume": vol,
+                        "Satuan": sel_row['Unit'],
+                        "Harga Satuan": sel_row['Price'],
+                        "Jumlah Harga": total
+                    })
+                    st.success("Item Masuk!")
+                    st.rerun()
                 st.markdown('</div>', unsafe_allow_html=True)
             
-            # Tabel Preview Kecil
             if st.session_state['rab_items']:
-                st.subheader("Daftar Sementara")
-                st.dataframe(pd.DataFrame(st.session_state['rab_items']), use_container_width=True)
-                if st.button("Hapus Semua Item"):
-                    st.session_state['rab_items'] = []
-                    st.rerun()
+                st.dataframe(pd.DataFrame(st.session_state['rab_items']))
+                if st.button("Hapus Semua"): st.session_state['rab_items'] = []; st.rerun()
 
     # === TAB 4: PREVIEW RAB ===
     with tabs[3]:
-        st.header("💰 Rencana Anggaran Biaya (RAB)")
-        
-        if not st.session_state['rab_items']:
-            st.info("Belum ada data RAB. Silakan input di Tab Input RAB.")
-        else:
+        st.header("💰 Rencana Anggaran Biaya")
+        if st.session_state['rab_items']:
             df_rab = pd.DataFrame(st.session_state['rab_items'])
             
-            # Rekapitulasi per Kategori
-            st.subheader(f"Proyek: {st.session_state['project_data'].get('nama', '-')}")
-            
-            # Pengaturan Overhead
-            st.session_state['global_overhead'] = st.slider("Margin / Jasa Konstruksi (%)", 0, 30, 10)
-            
-            grand_total_real = 0
-            
-            unique_cats = df_rab['Kategori'].unique()
-            for cat in unique_cats:
-                st.markdown(f"**{cat}**")
-                df_sub = df_rab[df_rab['Kategori'] == cat]
-                st.table(df_sub[['Uraian Pekerjaan', 'Volume', 'Satuan', 'Harga Satuan', 'Jumlah Harga']])
-                subtotal = df_sub['Jumlah Harga'].sum()
-                grand_total_real += subtotal
-                st.caption(f"Sub-Total {cat}: Rp {subtotal:,.2f}")
+            grand_total = 0
+            # Grouping by Divisi
+            for div in sorted(df_rab['Divisi'].unique()):
+                st.subheader(div)
+                df_sub = df_rab[df_rab['Divisi'] == div]
+                st.table(df_sub[['Uraian', 'Volume', 'Satuan', 'Harga Satuan', 'Jumlah Harga']])
+                sub_tot = df_sub['Jumlah Harga'].sum()
+                st.markdown(f"**Subtotal {div}: Rp {sub_tot:,.0f}**")
+                grand_total += sub_tot
                 st.markdown("---")
             
-            overhead_val = grand_total_real * (st.session_state['global_overhead']/100)
-            grand_total_final = grand_total_real + overhead_val
-            
-            col1, col2, col3 = st.columns(3)
-            col1.metric("Real Cost", f"Rp {grand_total_real:,.0f}")
-            col2.metric("Jasa/Overhead", f"Rp {overhead_val:,.0f}")
-            col3.metric("GRAND TOTAL", f"Rp {grand_total_final:,.0f}")
-            
-            st.download_button("📥 Download Excel RAB", to_excel_download(df_rab, "RAB Final"), "RAB_Export.xlsx")
-        render_footer()
-
-    # === TAB 5: REKAP MATERIAL ===
-    with tabs[4]:
-        st.header("🧱 Rekapitulasi Material (BOM)")
-        st.info("Fitur ini akan otomatis memecah Analisis (Beton -> Semen, Pasir) setelah Fase Linking selesai.")
-        st.caption("Saat ini data masih berbasis Harga Satuan Jadi dari file CSV yang diupload.")
-        render_footer()
-
-    # === TAB 6: KURVA S ===
-    with tabs[5]:
-        st.header("📈 Kurva S - Jadwal Proyek")
-        render_print_button()
-        df_rab_curve, df_curve_data = generate_s_curve_data()
-        
-        if df_curve_data is not None:
-            chart = alt.Chart(df_curve_data).mark_line(point=True, strokeWidth=3).encode(
-                x=alt.X('Minggu_Int', title='Minggu Ke-', scale=alt.Scale(domainMin=1)),
-                y=alt.Y('Rencana_Kumulatif', title='Bobot Kumulatif (%)', scale=alt.Scale(domain=[0, 100])),
-                tooltip=['Minggu', 'Rencana_Kumulatif', 'Biaya_Mingguan']
-            ).properties(height=400)
-            
-            st.altair_chart(chart, use_container_width=True)
-            
-            with st.expander("Lihat Data Tabel Kurva S"):
-                st.dataframe(df_curve_data)
+            st.metric("GRAND TOTAL", f"Rp {grand_total:,.0f}")
+            st.download_button("Download Excel", to_excel_download(df_rab, "RAB"), "RAB.xlsx")
         else:
-            st.warning("Buat RAB terlebih dahulu untuk menjana Kurva S.")
+            st.info("RAB Kosong")
+        render_footer()
+
+    # === TAB 5 & 6 (Standard) ===
+    with tabs[4]: st.header("🧱 Rekap Material"); st.info("Coming Soon"); render_footer()
+    with tabs[5]: 
+        st.header("📈 Kurva S")
+        _, df_curve = generate_s_curve_data()
+        if df_curve is not None:
+            chart = alt.Chart(df_curve).mark_line().encode(x='Minggu', y='Rencana_Kumulatif')
+            st.altair_chart(chart, use_container_width=True)
         render_footer()
 
 if __name__ == "__main__":
